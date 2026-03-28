@@ -1,0 +1,1 @@
+[{"content":"MySQL 索引原理 索引用于加速数据查询，本质是数据结构（如B+树）。\n","permalink":"http://localhost:1313/posts/02-%E6%95%B0%E6%8D%AE%E5%BA%93/mysql-index/","summary":"\u003ch1 id=\"mysql-索引原理\"\u003eMySQL 索引原理\u003c/h1\u003e\n\u003cp\u003e索引用于加速数据查询，本质是数据结构（如B+树）。\u003c/p\u003e","title":"MySQL 索引原理"}]

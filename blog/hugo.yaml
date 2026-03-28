@@ -1,0 +1,17 @@
+baseURL: "https://eastseven.github.io/"
+url: "https://github.com/eastseven"
+languageCode: "zh-cn"
+title: "D7 的知识库"
+theme: "PaperMod"
+hasCJKLanguage: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  ShowReadingTime: true
+  ShowToc: true
+  ShowCodeCopyButtons: true

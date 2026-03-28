@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>数据库 on D7 的知识库</title>
+    <link>http://localhost:1313/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+    <description>Recent content in 数据库 on D7 的知识库</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 28 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL 索引原理</title>
+      <link>http://localhost:1313/posts/02-%E6%95%B0%E6%8D%AE%E5%BA%93/mysql-index/</link>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/02-%E6%95%B0%E6%8D%AE%E5%BA%93/mysql-index/</guid>
+      <description>&lt;h1 id=&#34;mysql-索引原理&#34;&gt;MySQL 索引原理&lt;/h1&gt;
+&lt;p&gt;索引用于加速数据查询，本质是数据结构（如B+树）。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
