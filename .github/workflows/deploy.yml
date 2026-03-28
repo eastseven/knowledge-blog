@@ -1,32 +1,63 @@
-name: Deploy
+name: Deploy Hugo Site
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
 
-      - name: Install Hugo
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.125.7'
+          extended: true
 
       - name: Install rsync
-        run: sudo apt-get install -y rsync
+        run: sudo apt-get update && sudo apt-get install -y rsync
 
-      - name: Sync
+      - name: Sync notes
         run: bash ./scripts/sync_notes.sh
 
       - name: Build
-        run: cd blog && hugo --minify
+        working-directory: ./blog
+        run: hugo --minify --baseURL "https://eastseven.github.io/knowledge-blog/"
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./blog/public
+          path: ./blog/public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
