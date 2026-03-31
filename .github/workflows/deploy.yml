@@ -42,7 +42,7 @@ jobs:
 
       - name: Build
         working-directory: ./blog
-        run: hugo --minify --baseURL "https://eastseven.github.io/knowledge-blog/"
+        run: hugo --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
