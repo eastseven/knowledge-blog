@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>GitNexus | D7 的知识库</title>
+<meta name="keywords" content="open-source, code-intelligence, knowledge-graph, mcp, cli-tool, ai-agent, developer-tools">
+<meta name="description" content="GitNexus - 零服务端代码智能引擎
+简介
+GitNexus 是一个客户端代码知识图谱生成器，完全在浏览器或本地运行。丢入一个 GitHub 仓库或 ZIP 文件，即可生成交互式知识图谱，并内置 Graph RAG Agent。">
+<meta name="author" content="abhigyanpatwari">
+<link rel="canonical" href="https://blog.eastseven.cn/posts/03-ai/gitnexus---%E9%9B%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E5%BC%95%E6%93%8E/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.199042e659bc7245f5609d333d6c044eb554a0640849bb874e1dff8eb0f57209.css" integrity="sha256-GZBC5lm8ckX1YJ0zPWwETrVUoGQISbuHTh3/jrD1cgk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://blog.eastseven.cn/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.eastseven.cn/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.eastseven.cn/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.eastseven.cn/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.eastseven.cn/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh-cn" href="https://blog.eastseven.cn/posts/03-ai/gitnexus---%E9%9B%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E5%BC%95%E6%93%8E/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://blog.eastseven.cn/posts/03-ai/gitnexus---%E9%9B%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E5%BC%95%E6%93%8E/">
+  <meta property="og:site_name" content="D7 的知识库">
+  <meta property="og:title" content="GitNexus">
+  <meta property="og:description" content="GitNexus - 零服务端代码智能引擎 简介 GitNexus 是一个客户端代码知识图谱生成器，完全在浏览器或本地运行。丢入一个 GitHub 仓库或 ZIP 文件，即可生成交互式知识图谱，并内置 Graph RAG Agent。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-10T00:00:00+00:00">
+    <meta property="article:tag" content="Open-Source">
+    <meta property="article:tag" content="Code-Intelligence">
+    <meta property="article:tag" content="Knowledge-Graph">
+    <meta property="article:tag" content="Mcp">
+    <meta property="article:tag" content="Cli-Tool">
+    <meta property="article:tag" content="Ai-Agent">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="GitNexus">
+  <meta name="twitter:description" content="GitNexus - 零服务端代码智能引擎 简介 GitNexus 是一个客户端代码知识图谱生成器，完全在浏览器或本地运行。丢入一个 GitHub 仓库或 ZIP 文件，即可生成交互式知识图谱，并内置 Graph RAG Agent。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://blog.eastseven.cn/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "GitNexus",
+      "item": "https://blog.eastseven.cn/posts/03-ai/gitnexus---%E9%9B%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E5%BC%95%E6%93%8E/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "GitNexus",
+  "name": "GitNexus",
+  "description": "GitNexus - 零服务端代码智能引擎 简介 GitNexus 是一个客户端代码知识图谱生成器，完全在浏览器或本地运行。丢入一个 GitHub 仓库或 ZIP 文件，即可生成交互式知识图谱，并内置 Graph RAG Agent。\n",
+  "keywords": [
+    "open-source", "code-intelligence", "knowledge-graph", "mcp", "cli-tool", "ai-agent", "developer-tools"
+  ],
+  "articleBody": "GitNexus - 零服务端代码智能引擎 简介 GitNexus 是一个客户端代码知识图谱生成器，完全在浏览器或本地运行。丢入一个 GitHub 仓库或 ZIP 文件，即可生成交互式知识图谱，并内置 Graph RAG Agent。\n核心理念：为 AI Agent 构建\"神经系统\"，让它们对代码库有深层架构认知，不再遗漏依赖、破坏调用链。\nLike DeepWiki, but deeper. DeepWiki 帮你理解代码，GitNexus 帮你分析代码。\n两种使用方式 维度 CLI + MCP Web UI 用途 本地索引仓库，通过 MCP 连接 AI Agent 浏览器中可视化图谱 + AI 对话 适用 日常开发（Cursor、Claude Code、Codex） 快速探索、演示、一次性分析 存储 LadybugDB 原生（快速持久化） LadybugDB WASM（内存中） 隐私 全部本地，无网络 全部浏览器内，无服务器 Bridge 模式：gitnexus serve 连接两者 — Web UI 自动检测本地服务，无需重复上传/索引。\n核心功能 代码索引 — 将任意代码库索引为知识图谱：依赖关系、调用链、集群、执行流 MCP Server — 为 AI Agent（Cursor、Claude Code、Codex、Windsurf）提供深层代码感知 Graph RAG Agent — 内置图谱 RAG，让 AI 问答更精准 自动生成上下文 — 一条命令生成 AGENTS.md / CLAUDE.md 上下文文件 多编辑器支持 — Claude Code（完整）、Cursor（MCP+Skills）、Codex（MCP+Skills）、Windsurf、OpenCode Code Wiki — 自动生成且保持更新的代码文档 快速开始 # 索引仓库（从仓库根目录运行） npx gitnexus analyze # 配置 MCP（只需运行一次） npx gitnexus setup 企业版 提供 SaaS 和自托管部署，额外包含：PR Review（爆炸半径分析）、自动重索引、多仓库统一图谱、优先语言/功能支持等。\n链接 GitHub: https://github.com/abhigyanpatwari/GitNexus Web UI: https://gitnexus.vercel.app Enterprise: https://akonlabs.com ",
+  "wordCount" : "655",
+  "inLanguage": "zh-cn",
+  "datePublished": "2026-04-10T00:00:00Z",
+  "dateModified": "2026-04-10T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "abhigyanpatwari"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.eastseven.cn/posts/03-ai/gitnexus---%E9%9B%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E5%BC%95%E6%93%8E/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "D7 的知识库",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.eastseven.cn/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://blog.eastseven.cn/" accesskey="h" title="D7 的知识库 (Alt + H)">D7 的知识库</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      GitNexus
+    </h1>
+    <div class="post-meta"><span title='2026-04-10 00:00:00 +0000 UTC'>April 10, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>abhigyanpatwari</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#gitnexus---%e9%9b%b6%e6%9c%8d%e5%8a%a1%e7%ab%af%e4%bb%a3%e7%a0%81%e6%99%ba%e8%83%bd%e5%bc%95%e6%93%8e" aria-label="GitNexus - 零服务端代码智能引擎">GitNexus - 零服务端代码智能引擎</a><ul>
+                        
+                <li>
+                    <a href="#%e7%ae%80%e4%bb%8b" aria-label="简介">简介</a></li>
+                <li>
+                    <a href="#%e4%b8%a4%e7%a7%8d%e4%bd%bf%e7%94%a8%e6%96%b9%e5%bc%8f" aria-label="两种使用方式">两种使用方式</a></li>
+                <li>
+                    <a href="#%e6%a0%b8%e5%bf%83%e5%8a%9f%e8%83%bd" aria-label="核心功能">核心功能</a></li>
+                <li>
+                    <a href="#%e5%bf%ab%e9%80%9f%e5%bc%80%e5%a7%8b" aria-label="快速开始">快速开始</a></li>
+                <li>
+                    <a href="#%e4%bc%81%e4%b8%9a%e7%89%88" aria-label="企业版">企业版</a></li>
+                <li>
+                    <a href="#%e9%93%be%e6%8e%a5" aria-label="链接">链接</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="gitnexus---零服务端代码智能引擎">GitNexus - 零服务端代码智能引擎<a hidden class="anchor" aria-hidden="true" href="#gitnexus---零服务端代码智能引擎">#</a></h1>
+<h2 id="简介">简介<a hidden class="anchor" aria-hidden="true" href="#简介">#</a></h2>
+<p>GitNexus 是一个客户端代码知识图谱生成器，完全在浏览器或本地运行。丢入一个 GitHub 仓库或 ZIP 文件，即可生成交互式知识图谱，并内置 Graph RAG Agent。</p>
+<p>核心理念：为 AI Agent 构建&quot;神经系统&quot;，让它们对代码库有深层架构认知，不再遗漏依赖、破坏调用链。</p>
+<blockquote>
+<p>Like DeepWiki, but deeper. DeepWiki 帮你理解代码，GitNexus 帮你分析代码。</p>
+</blockquote>
+<h2 id="两种使用方式">两种使用方式<a hidden class="anchor" aria-hidden="true" href="#两种使用方式">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>维度</th>
+          <th>CLI + MCP</th>
+          <th>Web UI</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>用途</td>
+          <td>本地索引仓库，通过 MCP 连接 AI Agent</td>
+          <td>浏览器中可视化图谱 + AI 对话</td>
+      </tr>
+      <tr>
+          <td>适用</td>
+          <td>日常开发（Cursor、Claude Code、Codex）</td>
+          <td>快速探索、演示、一次性分析</td>
+      </tr>
+      <tr>
+          <td>存储</td>
+          <td>LadybugDB 原生（快速持久化）</td>
+          <td>LadybugDB WASM（内存中）</td>
+      </tr>
+      <tr>
+          <td>隐私</td>
+          <td>全部本地，无网络</td>
+          <td>全部浏览器内，无服务器</td>
+      </tr>
+  </tbody>
+</table>
+<p>Bridge 模式：<code>gitnexus serve</code> 连接两者 — Web UI 自动检测本地服务，无需重复上传/索引。</p>
+<h2 id="核心功能">核心功能<a hidden class="anchor" aria-hidden="true" href="#核心功能">#</a></h2>
+<ul>
+<li><strong>代码索引</strong> — 将任意代码库索引为知识图谱：依赖关系、调用链、集群、执行流</li>
+<li><strong>MCP Server</strong> — 为 AI Agent（Cursor、Claude Code、Codex、Windsurf）提供深层代码感知</li>
+<li><strong>Graph RAG Agent</strong> — 内置图谱 RAG，让 AI 问答更精准</li>
+<li><strong>自动生成上下文</strong> — 一条命令生成 AGENTS.md / CLAUDE.md 上下文文件</li>
+<li><strong>多编辑器支持</strong> — Claude Code（完整）、Cursor（MCP+Skills）、Codex（MCP+Skills）、Windsurf、OpenCode</li>
+<li><strong>Code Wiki</strong> — 自动生成且保持更新的代码文档</li>
+</ul>
+<h2 id="快速开始">快速开始<a hidden class="anchor" aria-hidden="true" href="#快速开始">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 索引仓库（从仓库根目录运行）</span>
+</span></span><span style="display:flex;"><span>npx gitnexus analyze
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 配置 MCP（只需运行一次）</span>
+</span></span><span style="display:flex;"><span>npx gitnexus setup
+</span></span></code></pre></div><h2 id="企业版">企业版<a hidden class="anchor" aria-hidden="true" href="#企业版">#</a></h2>
+<p>提供 SaaS 和自托管部署，额外包含：PR Review（爆炸半径分析）、自动重索引、多仓库统一图谱、优先语言/功能支持等。</p>
+<h2 id="链接">链接<a hidden class="anchor" aria-hidden="true" href="#链接">#</a></h2>
+<ul>
+<li>GitHub: <a href="https://github.com/abhigyanpatwari/GitNexus">https://github.com/abhigyanpatwari/GitNexus</a></li>
+<li>Web UI: <a href="https://gitnexus.vercel.app">https://gitnexus.vercel.app</a></li>
+<li>Enterprise: <a href="https://akonlabs.com">https://akonlabs.com</a></li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://blog.eastseven.cn/tags/open-source/">Open-Source</a></li>
+      <li><a href="https://blog.eastseven.cn/tags/code-intelligence/">Code-Intelligence</a></li>
+      <li><a href="https://blog.eastseven.cn/tags/knowledge-graph/">Knowledge-Graph</a></li>
+      <li><a href="https://blog.eastseven.cn/tags/mcp/">Mcp</a></li>
+      <li><a href="https://blog.eastseven.cn/tags/cli-tool/">Cli-Tool</a></li>
+      <li><a href="https://blog.eastseven.cn/tags/ai-agent/">Ai-Agent</a></li>
+      <li><a href="https://blog.eastseven.cn/tags/developer-tools/">Developer-Tools</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://blog.eastseven.cn/">D7 的知识库</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

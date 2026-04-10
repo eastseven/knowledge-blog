@@ -1,5 +1,5 @@
 ---
-title: "驾驭工程：在「智能体优先」的世界里借力 Codex"
+title: 驾驭工程：在「智能体优先」的世界里借力 Codex
 date: 2026-04-10
 slug: 驾驭工程---智能体优先世界的codex实践
 tags: [article, ai-agent, codex, llm-coding, engineering, agent-first, best-practices, context-engineering]

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Karpathy | D7 的知识库</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="https://blog.eastseven.cn/tags/karpathy/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.199042e659bc7245f5609d333d6c044eb554a0640849bb874e1dff8eb0f57209.css" integrity="sha256-GZBC5lm8ckX1YJ0zPWwETrVUoGQISbuHTh3/jrD1cgk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://blog.eastseven.cn/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.eastseven.cn/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.eastseven.cn/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.eastseven.cn/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.eastseven.cn/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://blog.eastseven.cn/tags/karpathy/index.xml" title="rss">
+<link rel="alternate" hreflang="zh-cn" href="https://blog.eastseven.cn/tags/karpathy/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://blog.eastseven.cn/tags/karpathy/">
+  <meta property="og:site_name" content="D7 的知识库">
+  <meta property="og:title" content="Karpathy">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Karpathy">
+
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://blog.eastseven.cn/" accesskey="h" title="D7 的知识库 (Alt + H)">D7 的知识库</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    Karpathy
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Andrej Karpathy Skills
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Andrej Karpathy Skills - LLM 编码准则 简介 一个 CLAUDE.md 文件，源自 Andrej Karpathy 对 LLM 编码常见问题的观察总结，用于改善 Claude Code 的行为。
+Karpathy 指出的 LLM 编码问题 模型会默默做出错误假设，不检查就一路走下去 不管理困惑、不寻求澄清、不暴露矛盾、不展示权衡 喜欢过度复杂化代码和 API，臃肿的抽象，不清理死代码 100 行能搞定的事写成 1000 行 有时会误删/修改它们不完全理解的注释和代码 四大原则 1. Think Before Coding（先思考再编码） 不假设、不隐藏困惑、展示权衡 明确陈述假设 — 不确定就问，不要猜 展示多种理解 — 有歧义时不要静默选择 该反驳就反驳 — 如果有更简单的方案，直说 困惑时停下来 — 说出不清楚的地方，请求澄清 2. Simplicity First（简洁优先） 用最少的代码解决问题，不写投机性代码 不添加没要求的功能、不为单次使用建抽象 不搞没请求的&#34;灵活性&#34;和&#34;可配置性&#34; 如果 200 行可以写成 50 行，就重写 检验标准：高级工程师会认为这过于复杂吗？ 3. Surgical Changes（精准修改） 只触碰必要的代码，只清理自己制造的混乱 不&#34;改善&#34;相邻代码、注释或格式 不重构没坏的东西，匹配已有风格 你的改动产生的废弃代码要删掉，但预存的死代码只提不删 检验标准：每一行改动都能追溯到用户的请求 4. Goal-Driven Execution（目标驱动执行） 定义成功标准，循环直到验证通过 把命令式任务转化为可验证的目标： “添加验证” → “为无效输入写测试，然后让它们通过” “修复 bug” → “写一个复现它的测试，然后让测试通过” “重构 X” → “确保重构前后测试都通过” 多步任务先列计划，每步附验证检查点 安装方式 Claude Code 插件（推荐）：
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-04-10 00:00:00 +0000 UTC'>April 10, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>forrestchang</span></footer>
+  <a class="entry-link" aria-label="post link to Andrej Karpathy Skills" href="https://blog.eastseven.cn/posts/03-ai/andrej-karpathy-skills---llm%E7%BC%96%E7%A0%81%E5%87%86%E5%88%99/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://blog.eastseven.cn/">D7 的知识库</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

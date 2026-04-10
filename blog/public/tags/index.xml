@@ -2,17 +2,241 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on D7 的知识库</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://blog.eastseven.cn/tags/</link>
     <description>Recent content in Tags on D7 的知识库</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 28 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.eastseven.cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Agent</title>
+      <link>https://blog.eastseven.cn/tags/agent/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/agent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agent-First</title>
+      <link>https://blog.eastseven.cn/tags/agent-first/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/agent-first/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ai-Agent</title>
+      <link>https://blog.eastseven.cn/tags/ai-agent/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/ai-agent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ai-Coding</title>
+      <link>https://blog.eastseven.cn/tags/ai-coding/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/ai-coding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Article</title>
+      <link>https://blog.eastseven.cn/tags/article/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/article/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Autonomous-Company</title>
+      <link>https://blog.eastseven.cn/tags/autonomous-company/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/autonomous-company/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Best-Practices</title>
+      <link>https://blog.eastseven.cn/tags/best-practices/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/best-practices/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chinese</title>
+      <link>https://blog.eastseven.cn/tags/chinese/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/chinese/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Claude-Code</title>
+      <link>https://blog.eastseven.cn/tags/claude-code/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/claude-code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cli-Tool</title>
+      <link>https://blog.eastseven.cn/tags/cli-tool/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/cli-tool/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Code-Intelligence</title>
+      <link>https://blog.eastseven.cn/tags/code-intelligence/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/code-intelligence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Codex</title>
+      <link>https://blog.eastseven.cn/tags/codex/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/codex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Coding-Guidelines</title>
+      <link>https://blog.eastseven.cn/tags/coding-guidelines/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/coding-guidelines/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Context-Engineering</title>
+      <link>https://blog.eastseven.cn/tags/context-engineering/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/context-engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Developer-Tools</title>
+      <link>https://blog.eastseven.cn/tags/developer-tools/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/developer-tools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Distributed-Systems</title>
+      <link>https://blog.eastseven.cn/tags/distributed-systems/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/distributed-systems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Engineering</title>
+      <link>https://blog.eastseven.cn/tags/engineering/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interview</title>
+      <link>https://blog.eastseven.cn/tags/interview/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/interview/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Karpathy</title>
+      <link>https://blog.eastseven.cn/tags/karpathy/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/karpathy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Knowledge-Graph</title>
+      <link>https://blog.eastseven.cn/tags/knowledge-graph/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/knowledge-graph/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Llm-Coding</title>
+      <link>https://blog.eastseven.cn/tags/llm-coding/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/llm-coding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mcp</title>
+      <link>https://blog.eastseven.cn/tags/mcp/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/mcp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Methodology</title>
+      <link>https://blog.eastseven.cn/tags/methodology/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/methodology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multi-Agent</title>
+      <link>https://blog.eastseven.cn/tags/multi-agent/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/multi-agent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Notes</title>
+      <link>https://blog.eastseven.cn/tags/notes/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/notes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open-Source</title>
+      <link>https://blog.eastseven.cn/tags/open-source/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/open-source/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Orchestration</title>
+      <link>https://blog.eastseven.cn/tags/orchestration/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/orchestration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Prompt-Engineering</title>
+      <link>https://blog.eastseven.cn/tags/prompt-engineering/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/prompt-engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spec-Coding</title>
+      <link>https://blog.eastseven.cn/tags/spec-coding/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/spec-coding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Startup</title>
+      <link>https://blog.eastseven.cn/tags/startup/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/startup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Study-Material</title>
+      <link>https://blog.eastseven.cn/tags/study-material/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/study-material/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>System-Design</title>
+      <link>https://blog.eastseven.cn/tags/system-design/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/tags/system-design/</guid>
+      <description></description>
+    </item>
     <item>
       <title>MySQL</title>
-      <link>http://localhost:1313/tags/mysql/</link>
+      <link>https://blog.eastseven.cn/tags/mysql/</link>
       <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mysql/</guid>
+      <guid>https://blog.eastseven.cn/tags/mysql/</guid>
       <description></description>
     </item>
   </channel>

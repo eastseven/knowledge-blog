@@ -1,5 +1,5 @@
 ---
-title: "System Design Notes"
+title: System Design Notes
 date: 2026-04-10
 slug: system-design-notes---系统设计面试笔记
 tags: [open-source, system-design, interview, notes, study-material, distributed-systems]

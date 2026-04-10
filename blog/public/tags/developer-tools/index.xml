@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Developer-Tools on D7 的知识库</title>
+    <link>https://blog.eastseven.cn/tags/developer-tools/</link>
+    <description>Recent content in Developer-Tools on D7 的知识库</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.eastseven.cn/tags/developer-tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitNexus</title>
+      <link>https://blog.eastseven.cn/posts/03-ai/gitnexus---%E9%9B%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E5%BC%95%E6%93%8E/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/posts/03-ai/gitnexus---%E9%9B%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E5%BC%95%E6%93%8E/</guid>
+      <description>&lt;h1 id=&#34;gitnexus---零服务端代码智能引擎&#34;&gt;GitNexus - 零服务端代码智能引擎&lt;/h1&gt;
+&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;GitNexus 是一个客户端代码知识图谱生成器，完全在浏览器或本地运行。丢入一个 GitHub 仓库或 ZIP 文件，即可生成交互式知识图谱，并内置 Graph RAG Agent。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

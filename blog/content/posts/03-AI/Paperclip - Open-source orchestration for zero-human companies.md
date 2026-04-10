@@ -1,5 +1,5 @@
 ---
-title: "Paperclip"
+title: Paperclip
 date: 2026-04-10
 slug: paperclip---open-source-orchestration-for-zero-human-companies
 tags: [open-source, ai-agent, orchestration, autonomous-company, multi-agent, startup]

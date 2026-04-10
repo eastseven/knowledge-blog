@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Autonomous-Company on D7 的知识库</title>
+    <link>https://blog.eastseven.cn/tags/autonomous-company/</link>
+    <description>Recent content in Autonomous-Company on D7 的知识库</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.eastseven.cn/tags/autonomous-company/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paperclip</title>
+      <link>https://blog.eastseven.cn/posts/03-ai/paperclip---open-source-orchestration-for-zero-human-companies/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://blog.eastseven.cn/posts/03-ai/paperclip---open-source-orchestration-for-zero-human-companies/</guid>
+      <description>&lt;h1 id=&#34;paperclip---open-source-orchestration-for-zero-human-companies&#34;&gt;Paperclip - Open-source orchestration for zero-human companies&lt;/h1&gt;
+&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;Paperclip 是一个 Node.js 服务端 + React UI 的开源项目，用于编排一组 AI Agent 来运营一个&amp;quot;公司&amp;quot;。你可以接入自己的 Agent，分配目标，并从一个 Dashboard 追踪 Agent 的工作和成本。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

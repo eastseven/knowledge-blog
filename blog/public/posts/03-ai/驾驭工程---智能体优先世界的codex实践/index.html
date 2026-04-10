@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>驾驭工程：在「智能体优先」的世界里借力 Codex | D7 的知识库</title>
+<meta name="keywords" content="article, ai-agent, codex, llm-coding, engineering, agent-first, best-practices, context-engineering">
+<meta name="description" content="驾驭工程：在「智能体优先」的世界里借力 Codex
+简介
+原文作者 Ryan Lopopolo（OpenAI），记述了团队用 Codex（GPT-5 驱动）从零构建一款百万行代码产品的实验：0 行代码由人工编写，3 名工程师 5 个月处理 1500&#43; PR，效率约为手工编码的 10 倍。">
+<meta name="author" content="Ryan Lopopolo">
+<link rel="canonical" href="https://blog.eastseven.cn/posts/03-ai/%E9%A9%BE%E9%A9%AD%E5%B7%A5%E7%A8%8B---%E6%99%BA%E8%83%BD%E4%BD%93%E4%BC%98%E5%85%88%E4%B8%96%E7%95%8C%E7%9A%84codex%E5%AE%9E%E8%B7%B5/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.199042e659bc7245f5609d333d6c044eb554a0640849bb874e1dff8eb0f57209.css" integrity="sha256-GZBC5lm8ckX1YJ0zPWwETrVUoGQISbuHTh3/jrD1cgk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://blog.eastseven.cn/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.eastseven.cn/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.eastseven.cn/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.eastseven.cn/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.eastseven.cn/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh-cn" href="https://blog.eastseven.cn/posts/03-ai/%E9%A9%BE%E9%A9%AD%E5%B7%A5%E7%A8%8B---%E6%99%BA%E8%83%BD%E4%BD%93%E4%BC%98%E5%85%88%E4%B8%96%E7%95%8C%E7%9A%84codex%E5%AE%9E%E8%B7%B5/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://blog.eastseven.cn/posts/03-ai/%E9%A9%BE%E9%A9%AD%E5%B7%A5%E7%A8%8B---%E6%99%BA%E8%83%BD%E4%BD%93%E4%BC%98%E5%85%88%E4%B8%96%E7%95%8C%E7%9A%84codex%E5%AE%9E%E8%B7%B5/">
+  <meta property="og:site_name" content="D7 的知识库">
+  <meta property="og:title" content="驾驭工程：在「智能体优先」的世界里借力 Codex">
+  <meta property="og:description" content="驾驭工程：在「智能体优先」的世界里借力 Codex 简介 原文作者 Ryan Lopopolo（OpenAI），记述了团队用 Codex（GPT-5 驱动）从零构建一款百万行代码产品的实验：0 行代码由人工编写，3 名工程师 5 个月处理 1500&#43; PR，效率约为手工编码的 10 倍。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-10T00:00:00+00:00">
+    <meta property="article:tag" content="Article">
+    <meta property="article:tag" content="Ai-Agent">
+    <meta property="article:tag" content="Codex">
+    <meta property="article:tag" content="Llm-Coding">
+    <meta property="article:tag" content="Engineering">
+    <meta property="article:tag" content="Agent-First">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="驾驭工程：在「智能体优先」的世界里借力 Codex">
+  <meta name="twitter:description" content="驾驭工程：在「智能体优先」的世界里借力 Codex 简介 原文作者 Ryan Lopopolo（OpenAI），记述了团队用 Codex（GPT-5 驱动）从零构建一款百万行代码产品的实验：0 行代码由人工编写，3 名工程师 5 个月处理 1500&#43; PR，效率约为手工编码的 10 倍。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://blog.eastseven.cn/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "驾驭工程：在「智能体优先」的世界里借力 Codex",
+      "item": "https://blog.eastseven.cn/posts/03-ai/%E9%A9%BE%E9%A9%AD%E5%B7%A5%E7%A8%8B---%E6%99%BA%E8%83%BD%E4%BD%93%E4%BC%98%E5%85%88%E4%B8%96%E7%95%8C%E7%9A%84codex%E5%AE%9E%E8%B7%B5/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "驾驭工程：在「智能体优先」的世界里借力 Codex",
+  "name": "驾驭工程：在「智能体优先」的世界里借力 Codex",
+  "description": "驾驭工程：在「智能体优先」的世界里借力 Codex 简介 原文作者 Ryan Lopopolo（OpenAI），记述了团队用 Codex（GPT-5 驱动）从零构建一款百万行代码产品的实验：0 行代码由人工编写，3 名工程师 5 个月处理 1500+ PR，效率约为手工编码的 10 倍。\n",
+  "keywords": [
+    "article", "ai-agent", "codex", "llm-coding", "engineering", "agent-first", "best-practices", "context-engineering"
+  ],
+  "articleBody": "驾驭工程：在「智能体优先」的世界里借力 Codex 简介 原文作者 Ryan Lopopolo（OpenAI），记述了团队用 Codex（GPT-5 驱动）从零构建一款百万行代码产品的实验：0 行代码由人工编写，3 名工程师 5 个月处理 1500+ PR，效率约为手工编码的 10 倍。\n人类掌舵，智能体执行。\n核心经验 1. 从空仓库开始 最初的脚手架（仓库结构、CI、格式化、AGENTS.md）全部由 Codex 生成 5 个月后积累约百万行代码，3 名工程师日均处理 3.5 个 PR 核心信条：绝不手动写代码 2. 重新定义工程师角色 工程师不再是写代码，而是设计环境、明确意图、建立反馈循环 深度优先策略：把大目标拆为更小的积木，通过 Prompt 引导智能体构建 任务失败时不是\"再试一次\"，而是反问：“缺少什么能力？如何让它对智能体可读又可执行？” 大部分代码评审由\"智能体对智能体\"互评完成 3. 提升应用的\"可读性\" 让 UI、日志、指标能被 Codex 直接\"读懂\" 每个 Git Worktree 独立启动应用实例，Codex 可驱动完整实例 Chrome DevTools 协议接入智能体运行时 → 可重现 Bug、验证修复 本地可观测性栈暴露给 Codex，可用 LogQL/PromQL 查询 单次 Codex 运行可持续处理任务 6+ 小时（通常在人类睡觉时） 4. 上下文工程：给地图，不给说明书 AGENTS.md 很短（约 100 行），充当目录而非百科全书 仓库知识库存在于结构化的 docs/ 目录中，作为\"单一事实来源\" 渐进式披露：智能体从小的稳定入口点开始，被教导下一步去哪里看 机械化强制：Linter 和 CI 验证知识库是否最新、交叉链接是否正确 “文档园丁\"智能体定期扫描并修复过时文档 5. 强制架构与\"品味” 通过强制执行不变性，而非微观管理实现细节 严格分层架构：Types → Config → Repo → Service → Runtime → UI 自定义 Linter 机械化强制约束，报错信息直接包含修复指令 “黄金原则\"编码进仓库，后台 Codex 任务定期扫描偏差并开启重构 PR 像垃圾回收一样：持续小额偿还技术债 \u003e 让它利滚利 6. Bug 修复自动化流程 智能体可自主完成完整循环：重现 Bug → 录制故障视频 → 实施修复 → 验证修复 → 录制修复视频 → 开 PR → 响应反馈 → 修复构建失败 → 合并。\n关键洞见 凡是智能体无法从运行时上下文获取的信息，对它来说就不存在 存在 Slack、Google Docs 或人脑中的知识 = 对智能体不可见 构建 AI 友好的代码库和构建新人友好的代码库本质相同 纪律不再体现在代码本身，更多体现在\"脚手架” 链接 原文: https://openai.com/index/harness-engineering/ 译文: https://baoyu.io/translations/2026-02-12/harness-engineering ",
+  "wordCount" : "1030",
+  "inLanguage": "zh-cn",
+  "datePublished": "2026-04-10T00:00:00Z",
+  "dateModified": "2026-04-10T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Ryan Lopopolo"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.eastseven.cn/posts/03-ai/%E9%A9%BE%E9%A9%AD%E5%B7%A5%E7%A8%8B---%E6%99%BA%E8%83%BD%E4%BD%93%E4%BC%98%E5%85%88%E4%B8%96%E7%95%8C%E7%9A%84codex%E5%AE%9E%E8%B7%B5/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "D7 的知识库",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.eastseven.cn/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://blog.eastseven.cn/" accesskey="h" title="D7 的知识库 (Alt + H)">D7 的知识库</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      驾驭工程：在「智能体优先」的世界里借力 Codex
+    </h1>
+    <div class="post-meta"><span title='2026-04-10 00:00:00 +0000 UTC'>April 10, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>Ryan Lopopolo</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e9%a9%be%e9%a9%ad%e5%b7%a5%e7%a8%8b%e5%9c%a8%e6%99%ba%e8%83%bd%e4%bd%93%e4%bc%98%e5%85%88%e7%9a%84%e4%b8%96%e7%95%8c%e9%87%8c%e5%80%9f%e5%8a%9b-codex" aria-label="驾驭工程：在「智能体优先」的世界里借力 Codex">驾驭工程：在「智能体优先」的世界里借力 Codex</a><ul>
+                        
+                <li>
+                    <a href="#%e7%ae%80%e4%bb%8b" aria-label="简介">简介</a></li>
+                <li>
+                    <a href="#%e6%a0%b8%e5%bf%83%e7%bb%8f%e9%aa%8c" aria-label="核心经验">核心经验</a><ul>
+                        
+                <li>
+                    <a href="#1-%e4%bb%8e%e7%a9%ba%e4%bb%93%e5%ba%93%e5%bc%80%e5%a7%8b" aria-label="1. 从空仓库开始">1. 从空仓库开始</a></li>
+                <li>
+                    <a href="#2-%e9%87%8d%e6%96%b0%e5%ae%9a%e4%b9%89%e5%b7%a5%e7%a8%8b%e5%b8%88%e8%a7%92%e8%89%b2" aria-label="2. 重新定义工程师角色">2. 重新定义工程师角色</a></li>
+                <li>
+                    <a href="#3-%e6%8f%90%e5%8d%87%e5%ba%94%e7%94%a8%e7%9a%84%e5%8f%af%e8%af%bb%e6%80%a7" aria-label="3. 提升应用的&quot;可读性&quot;">3. 提升应用的&quot;可读性&quot;</a></li>
+                <li>
+                    <a href="#4-%e4%b8%8a%e4%b8%8b%e6%96%87%e5%b7%a5%e7%a8%8b%e7%bb%99%e5%9c%b0%e5%9b%be%e4%b8%8d%e7%bb%99%e8%af%b4%e6%98%8e%e4%b9%a6" aria-label="4. 上下文工程：给地图，不给说明书">4. 上下文工程：给地图，不给说明书</a></li>
+                <li>
+                    <a href="#5-%e5%bc%ba%e5%88%b6%e6%9e%b6%e6%9e%84%e4%b8%8e%e5%93%81%e5%91%b3" aria-label="5. 强制架构与&quot;品味&rdquo;">5. 强制架构与&quot;品味&rdquo;</a></li>
+                <li>
+                    <a href="#6-bug-%e4%bf%ae%e5%a4%8d%e8%87%aa%e5%8a%a8%e5%8c%96%e6%b5%81%e7%a8%8b" aria-label="6. Bug 修复自动化流程">6. Bug 修复自动化流程</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e5%85%b3%e9%94%ae%e6%b4%9e%e8%a7%81" aria-label="关键洞见">关键洞见</a></li>
+                <li>
+                    <a href="#%e9%93%be%e6%8e%a5" aria-label="链接">链接</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="驾驭工程在智能体优先的世界里借力-codex">驾驭工程：在「智能体优先」的世界里借力 Codex<a hidden class="anchor" aria-hidden="true" href="#驾驭工程在智能体优先的世界里借力-codex">#</a></h1>
+<h2 id="简介">简介<a hidden class="anchor" aria-hidden="true" href="#简介">#</a></h2>
+<p>原文作者 Ryan Lopopolo（OpenAI），记述了团队用 Codex（GPT-5 驱动）从零构建一款百万行代码产品的实验：<strong>0 行代码由人工编写</strong>，3 名工程师 5 个月处理 1500+ PR，效率约为手工编码的 10 倍。</p>
+<blockquote>
+<p>人类掌舵，智能体执行。</p>
+</blockquote>
+<h2 id="核心经验">核心经验<a hidden class="anchor" aria-hidden="true" href="#核心经验">#</a></h2>
+<h3 id="1-从空仓库开始">1. 从空仓库开始<a hidden class="anchor" aria-hidden="true" href="#1-从空仓库开始">#</a></h3>
+<ul>
+<li>最初的脚手架（仓库结构、CI、格式化、AGENTS.md）全部由 Codex 生成</li>
+<li>5 个月后积累约百万行代码，3 名工程师日均处理 3.5 个 PR</li>
+<li>核心信条：绝不手动写代码</li>
+</ul>
+<h3 id="2-重新定义工程师角色">2. 重新定义工程师角色<a hidden class="anchor" aria-hidden="true" href="#2-重新定义工程师角色">#</a></h3>
+<ul>
+<li>工程师不再是写代码，而是<strong>设计环境、明确意图、建立反馈循环</strong></li>
+<li>深度优先策略：把大目标拆为更小的积木，通过 Prompt 引导智能体构建</li>
+<li>任务失败时不是&quot;再试一次&quot;，而是反问：&ldquo;缺少什么能力？如何让它对智能体可读又可执行？&rdquo;</li>
+<li>大部分代码评审由&quot;智能体对智能体&quot;互评完成</li>
+</ul>
+<h3 id="3-提升应用的可读性">3. 提升应用的&quot;可读性&quot;<a hidden class="anchor" aria-hidden="true" href="#3-提升应用的可读性">#</a></h3>
+<ul>
+<li>让 UI、日志、指标能被 Codex 直接&quot;读懂&quot;</li>
+<li>每个 Git Worktree 独立启动应用实例，Codex 可驱动完整实例</li>
+<li>Chrome DevTools 协议接入智能体运行时 → 可重现 Bug、验证修复</li>
+<li>本地可观测性栈暴露给 Codex，可用 LogQL/PromQL 查询</li>
+<li>单次 Codex 运行可持续处理任务 6+ 小时（通常在人类睡觉时）</li>
+</ul>
+<h3 id="4-上下文工程给地图不给说明书">4. 上下文工程：给地图，不给说明书<a hidden class="anchor" aria-hidden="true" href="#4-上下文工程给地图不给说明书">#</a></h3>
+<ul>
+<li>AGENTS.md 很短（约 100 行），充当目录而非百科全书</li>
+<li>仓库知识库存在于结构化的 <code>docs/</code> 目录中，作为&quot;单一事实来源&quot;</li>
+<li>渐进式披露：智能体从小的稳定入口点开始，被教导下一步去哪里看</li>
+<li>机械化强制：Linter 和 CI 验证知识库是否最新、交叉链接是否正确</li>
+<li>&ldquo;文档园丁&quot;智能体定期扫描并修复过时文档</li>
+</ul>
+<h3 id="5-强制架构与品味">5. 强制架构与&quot;品味&rdquo;<a hidden class="anchor" aria-hidden="true" href="#5-强制架构与品味">#</a></h3>
+<ul>
+<li>通过强制执行不变性，而非微观管理实现细节</li>
+<li>严格分层架构：Types → Config → Repo → Service → Runtime → UI</li>
+<li>自定义 Linter 机械化强制约束，报错信息直接包含修复指令</li>
+<li>&ldquo;黄金原则&quot;编码进仓库，后台 Codex 任务定期扫描偏差并开启重构 PR</li>
+<li>像垃圾回收一样：持续小额偿还技术债 &gt; 让它利滚利</li>
+</ul>
+<h3 id="6-bug-修复自动化流程">6. Bug 修复自动化流程<a hidden class="anchor" aria-hidden="true" href="#6-bug-修复自动化流程">#</a></h3>
+<p>智能体可自主完成完整循环：重现 Bug → 录制故障视频 → 实施修复 → 验证修复 → 录制修复视频 → 开 PR → 响应反馈 → 修复构建失败 → 合并。</p>
+<h2 id="关键洞见">关键洞见<a hidden class="anchor" aria-hidden="true" href="#关键洞见">#</a></h2>
+<ul>
+<li>凡是智能体无法从运行时上下文获取的信息，对它来说就不存在</li>
+<li>存在 Slack、Google Docs 或人脑中的知识 = 对智能体不可见</li>
+<li>构建 AI 友好的代码库和构建新人友好的代码库本质相同</li>
+<li>纪律不再体现在代码本身，更多体现在&quot;脚手架&rdquo;</li>
+</ul>
+<h2 id="链接">链接<a hidden class="anchor" aria-hidden="true" href="#链接">#</a></h2>
+<ul>
+<li>原文: <a href="https://openai.com/index/harness-engineering/">https://openai.com/index/harness-engineering/</a></li>
+<li>译文: <a href="https://baoyu.io/translations/2026-02-12/harness-engineering">https://baoyu.io/translations/2026-02-12/harness-engineering</a></li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://blog.eastseven.cn/tags/article/">Article</a></li>
+      <li><a href="https://blog.eastseven.cn/tags/ai-agent/">Ai-Agent</a></li>
+      <li><a href="https://blog.eastseven.cn/tags/codex/">Codex</a></li>
+      <li><a href="https://blog.eastseven.cn/tags/llm-coding/">Llm-Coding</a></li>
+      <li><a href="https://blog.eastseven.cn/tags/engineering/">Engineering</a></li>
+      <li><a href="https://blog.eastseven.cn/tags/agent-first/">Agent-First</a></li>
+      <li><a href="https://blog.eastseven.cn/tags/best-practices/">Best-Practices</a></li>
+      <li><a href="https://blog.eastseven.cn/tags/context-engineering/">Context-Engineering</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://blog.eastseven.cn/">D7 的知识库</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

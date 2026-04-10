@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Andrej Karpathy Skills | D7 的知识库</title>
+<meta name="keywords" content="open-source, llm-coding, claude-code, best-practices, karpathy, prompt-engineering, coding-guidelines">
+<meta name="description" content="Andrej Karpathy Skills - LLM 编码准则
+简介
+一个 CLAUDE.md 文件，源自 Andrej Karpathy 对 LLM 编码常见问题的观察总结，用于改善 Claude Code 的行为。
+Karpathy 指出的 LLM 编码问题
+
+模型会默默做出错误假设，不检查就一路走下去
+不管理困惑、不寻求澄清、不暴露矛盾、不展示权衡
+喜欢过度复杂化代码和 API，臃肿的抽象，不清理死代码
+100 行能搞定的事写成 1000 行
+有时会误删/修改它们不完全理解的注释和代码
+
+四大原则
+1. Think Before Coding（先思考再编码）
+
+不假设、不隐藏困惑、展示权衡
+明确陈述假设 — 不确定就问，不要猜
+展示多种理解 — 有歧义时不要静默选择
+该反驳就反驳 — 如果有更简单的方案，直说
+困惑时停下来 — 说出不清楚的地方，请求澄清
+
+2. Simplicity First（简洁优先）
+
+用最少的代码解决问题，不写投机性代码
+不添加没要求的功能、不为单次使用建抽象
+不搞没请求的&quot;灵活性&quot;和&quot;可配置性&quot;
+如果 200 行可以写成 50 行，就重写
+检验标准：高级工程师会认为这过于复杂吗？
+
+3. Surgical Changes（精准修改）
+
+只触碰必要的代码，只清理自己制造的混乱
+不&quot;改善&quot;相邻代码、注释或格式
+不重构没坏的东西，匹配已有风格
+你的改动产生的废弃代码要删掉，但预存的死代码只提不删
+检验标准：每一行改动都能追溯到用户的请求
+
+4. Goal-Driven Execution（目标驱动执行）
+
+定义成功标准，循环直到验证通过
+把命令式任务转化为可验证的目标：
+
+&ldquo;添加验证&rdquo; → &ldquo;为无效输入写测试，然后让它们通过&rdquo;
+&ldquo;修复 bug&rdquo; → &ldquo;写一个复现它的测试，然后让测试通过&rdquo;
+&ldquo;重构 X&rdquo; → &ldquo;确保重构前后测试都通过&rdquo;
+
+
+多步任务先列计划，每步附验证检查点
+
+安装方式
+Claude Code 插件（推荐）：">
+<meta name="author" content="forrestchang">
+<link rel="canonical" href="https://blog.eastseven.cn/posts/03-ai/andrej-karpathy-skills---llm%E7%BC%96%E7%A0%81%E5%87%86%E5%88%99/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.199042e659bc7245f5609d333d6c044eb554a0640849bb874e1dff8eb0f57209.css" integrity="sha256-GZBC5lm8ckX1YJ0zPWwETrVUoGQISbuHTh3/jrD1cgk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://blog.eastseven.cn/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.eastseven.cn/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.eastseven.cn/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.eastseven.cn/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.eastseven.cn/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh-cn" href="https://blog.eastseven.cn/posts/03-ai/andrej-karpathy-skills---llm%E7%BC%96%E7%A0%81%E5%87%86%E5%88%99/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://blog.eastseven.cn/posts/03-ai/andrej-karpathy-skills---llm%E7%BC%96%E7%A0%81%E5%87%86%E5%88%99/">
+  <meta property="og:site_name" content="D7 的知识库">
+  <meta property="og:title" content="Andrej Karpathy Skills">
+  <meta property="og:description" content="Andrej Karpathy Skills - LLM 编码准则 简介 一个 CLAUDE.md 文件，源自 Andrej Karpathy 对 LLM 编码常见问题的观察总结，用于改善 Claude Code 的行为。
+Karpathy 指出的 LLM 编码问题 模型会默默做出错误假设，不检查就一路走下去 不管理困惑、不寻求澄清、不暴露矛盾、不展示权衡 喜欢过度复杂化代码和 API，臃肿的抽象，不清理死代码 100 行能搞定的事写成 1000 行 有时会误删/修改它们不完全理解的注释和代码 四大原则 1. Think Before Coding（先思考再编码） 不假设、不隐藏困惑、展示权衡 明确陈述假设 — 不确定就问，不要猜 展示多种理解 — 有歧义时不要静默选择 该反驳就反驳 — 如果有更简单的方案，直说 困惑时停下来 — 说出不清楚的地方，请求澄清 2. Simplicity First（简洁优先） 用最少的代码解决问题，不写投机性代码 不添加没要求的功能、不为单次使用建抽象 不搞没请求的&#34;灵活性&#34;和&#34;可配置性&#34; 如果 200 行可以写成 50 行，就重写 检验标准：高级工程师会认为这过于复杂吗？ 3. Surgical Changes（精准修改） 只触碰必要的代码，只清理自己制造的混乱 不&#34;改善&#34;相邻代码、注释或格式 不重构没坏的东西，匹配已有风格 你的改动产生的废弃代码要删掉，但预存的死代码只提不删 检验标准：每一行改动都能追溯到用户的请求 4. Goal-Driven Execution（目标驱动执行） 定义成功标准，循环直到验证通过 把命令式任务转化为可验证的目标： “添加验证” → “为无效输入写测试，然后让它们通过” “修复 bug” → “写一个复现它的测试，然后让测试通过” “重构 X” → “确保重构前后测试都通过” 多步任务先列计划，每步附验证检查点 安装方式 Claude Code 插件（推荐）：">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-10T00:00:00+00:00">
+    <meta property="article:tag" content="Open-Source">
+    <meta property="article:tag" content="Llm-Coding">
+    <meta property="article:tag" content="Claude-Code">
+    <meta property="article:tag" content="Best-Practices">
+    <meta property="article:tag" content="Karpathy">
+    <meta property="article:tag" content="Prompt-Engineering">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Andrej Karpathy Skills">
+  <meta name="twitter:description" content="Andrej Karpathy Skills - LLM 编码准则 简介 一个 CLAUDE.md 文件，源自 Andrej Karpathy 对 LLM 编码常见问题的观察总结，用于改善 Claude Code 的行为。
+Karpathy 指出的 LLM 编码问题 模型会默默做出错误假设，不检查就一路走下去 不管理困惑、不寻求澄清、不暴露矛盾、不展示权衡 喜欢过度复杂化代码和 API，臃肿的抽象，不清理死代码 100 行能搞定的事写成 1000 行 有时会误删/修改它们不完全理解的注释和代码 四大原则 1. Think Before Coding（先思考再编码） 不假设、不隐藏困惑、展示权衡 明确陈述假设 — 不确定就问，不要猜 展示多种理解 — 有歧义时不要静默选择 该反驳就反驳 — 如果有更简单的方案，直说 困惑时停下来 — 说出不清楚的地方，请求澄清 2. Simplicity First（简洁优先） 用最少的代码解决问题，不写投机性代码 不添加没要求的功能、不为单次使用建抽象 不搞没请求的&#34;灵活性&#34;和&#34;可配置性&#34; 如果 200 行可以写成 50 行，就重写 检验标准：高级工程师会认为这过于复杂吗？ 3. Surgical Changes（精准修改） 只触碰必要的代码，只清理自己制造的混乱 不&#34;改善&#34;相邻代码、注释或格式 不重构没坏的东西，匹配已有风格 你的改动产生的废弃代码要删掉，但预存的死代码只提不删 检验标准：每一行改动都能追溯到用户的请求 4. Goal-Driven Execution（目标驱动执行） 定义成功标准，循环直到验证通过 把命令式任务转化为可验证的目标： “添加验证” → “为无效输入写测试，然后让它们通过” “修复 bug” → “写一个复现它的测试，然后让测试通过” “重构 X” → “确保重构前后测试都通过” 多步任务先列计划，每步附验证检查点 安装方式 Claude Code 插件（推荐）：">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://blog.eastseven.cn/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Andrej Karpathy Skills",
+      "item": "https://blog.eastseven.cn/posts/03-ai/andrej-karpathy-skills---llm%E7%BC%96%E7%A0%81%E5%87%86%E5%88%99/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Andrej Karpathy Skills",
+  "name": "Andrej Karpathy Skills",
+  "description": "Andrej Karpathy Skills - LLM 编码准则 简介 一个 CLAUDE.md 文件，源自 Andrej Karpathy 对 LLM 编码常见问题的观察总结，用于改善 Claude Code 的行为。\nKarpathy 指出的 LLM 编码问题 模型会默默做出错误假设，不检查就一路走下去 不管理困惑、不寻求澄清、不暴露矛盾、不展示权衡 喜欢过度复杂化代码和 API，臃肿的抽象，不清理死代码 100 行能搞定的事写成 1000 行 有时会误删/修改它们不完全理解的注释和代码 四大原则 1. Think Before Coding（先思考再编码） 不假设、不隐藏困惑、展示权衡 明确陈述假设 — 不确定就问，不要猜 展示多种理解 — 有歧义时不要静默选择 该反驳就反驳 — 如果有更简单的方案，直说 困惑时停下来 — 说出不清楚的地方，请求澄清 2. Simplicity First（简洁优先） 用最少的代码解决问题，不写投机性代码 不添加没要求的功能、不为单次使用建抽象 不搞没请求的\u0026quot;灵活性\u0026quot;和\u0026quot;可配置性\u0026quot; 如果 200 行可以写成 50 行，就重写 检验标准：高级工程师会认为这过于复杂吗？ 3. Surgical Changes（精准修改） 只触碰必要的代码，只清理自己制造的混乱 不\u0026quot;改善\u0026quot;相邻代码、注释或格式 不重构没坏的东西，匹配已有风格 你的改动产生的废弃代码要删掉，但预存的死代码只提不删 检验标准：每一行改动都能追溯到用户的请求 4. Goal-Driven Execution（目标驱动执行） 定义成功标准，循环直到验证通过 把命令式任务转化为可验证的目标： \u0026ldquo;添加验证\u0026rdquo; → \u0026ldquo;为无效输入写测试，然后让它们通过\u0026rdquo; \u0026ldquo;修复 bug\u0026rdquo; → \u0026ldquo;写一个复现它的测试，然后让测试通过\u0026rdquo; \u0026ldquo;重构 X\u0026rdquo; → \u0026ldquo;确保重构前后测试都通过\u0026rdquo; 多步任务先列计划，每步附验证检查点 安装方式 Claude Code 插件（推荐）：\n",
+  "keywords": [
+    "open-source", "llm-coding", "claude-code", "best-practices", "karpathy", "prompt-engineering", "coding-guidelines"
+  ],
+  "articleBody": "Andrej Karpathy Skills - LLM 编码准则 简介 一个 CLAUDE.md 文件，源自 Andrej Karpathy 对 LLM 编码常见问题的观察总结，用于改善 Claude Code 的行为。\nKarpathy 指出的 LLM 编码问题 模型会默默做出错误假设，不检查就一路走下去 不管理困惑、不寻求澄清、不暴露矛盾、不展示权衡 喜欢过度复杂化代码和 API，臃肿的抽象，不清理死代码 100 行能搞定的事写成 1000 行 有时会误删/修改它们不完全理解的注释和代码 四大原则 1. Think Before Coding（先思考再编码） 不假设、不隐藏困惑、展示权衡 明确陈述假设 — 不确定就问，不要猜 展示多种理解 — 有歧义时不要静默选择 该反驳就反驳 — 如果有更简单的方案，直说 困惑时停下来 — 说出不清楚的地方，请求澄清 2. Simplicity First（简洁优先） 用最少的代码解决问题，不写投机性代码 不添加没要求的功能、不为单次使用建抽象 不搞没请求的\"灵活性\"和\"可配置性\" 如果 200 行可以写成 50 行，就重写 检验标准：高级工程师会认为这过于复杂吗？ 3. Surgical Changes（精准修改） 只触碰必要的代码，只清理自己制造的混乱 不\"改善\"相邻代码、注释或格式 不重构没坏的东西，匹配已有风格 你的改动产生的废弃代码要删掉，但预存的死代码只提不删 检验标准：每一行改动都能追溯到用户的请求 4. Goal-Driven Execution（目标驱动执行） 定义成功标准，循环直到验证通过 把命令式任务转化为可验证的目标： “添加验证” → “为无效输入写测试，然后让它们通过” “修复 bug” → “写一个复现它的测试，然后让测试通过” “重构 X” → “确保重构前后测试都通过” 多步任务先列计划，每步附验证检查点 安装方式 Claude Code 插件（推荐）：\n/plugin marketplace add forrestchang/andrej-karpathy-skills /plugin install andrej-karpathy-skills@karpathy-skills CLAUDE.md（按项目）：\ncurl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md 核心洞见 “LLMs are exceptionally good at looping until they meet specific goals… Don’t tell it what to do, give it success criteria and let it loop.”\n链接 GitHub: https://github.com/forrestchang/andrej-karpathy-skills ",
+  "wordCount" : "771",
+  "inLanguage": "zh-cn",
+  "datePublished": "2026-04-10T00:00:00Z",
+  "dateModified": "2026-04-10T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "forrestchang"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://blog.eastseven.cn/posts/03-ai/andrej-karpathy-skills---llm%E7%BC%96%E7%A0%81%E5%87%86%E5%88%99/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "D7 的知识库",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blog.eastseven.cn/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://blog.eastseven.cn/" accesskey="h" title="D7 的知识库 (Alt + H)">D7 的知识库</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Andrej Karpathy Skills
+    </h1>
+    <div class="post-meta"><span title='2026-04-10 00:00:00 +0000 UTC'>April 10, 2026</span>&nbsp;·&nbsp;<span>2 min</span>&nbsp;·&nbsp;<span>forrestchang</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#andrej-karpathy-skills---llm-%e7%bc%96%e7%a0%81%e5%87%86%e5%88%99" aria-label="Andrej Karpathy Skills - LLM 编码准则">Andrej Karpathy Skills - LLM 编码准则</a><ul>
+                        
+                <li>
+                    <a href="#%e7%ae%80%e4%bb%8b" aria-label="简介">简介</a></li>
+                <li>
+                    <a href="#karpathy-%e6%8c%87%e5%87%ba%e7%9a%84-llm-%e7%bc%96%e7%a0%81%e9%97%ae%e9%a2%98" aria-label="Karpathy 指出的 LLM 编码问题">Karpathy 指出的 LLM 编码问题</a></li>
+                <li>
+                    <a href="#%e5%9b%9b%e5%a4%a7%e5%8e%9f%e5%88%99" aria-label="四大原则">四大原则</a><ul>
+                        
+                <li>
+                    <a href="#1-think-before-coding%e5%85%88%e6%80%9d%e8%80%83%e5%86%8d%e7%bc%96%e7%a0%81" aria-label="1. Think Before Coding（先思考再编码）">1. Think Before Coding（先思考再编码）</a></li>
+                <li>
+                    <a href="#2-simplicity-first%e7%ae%80%e6%b4%81%e4%bc%98%e5%85%88" aria-label="2. Simplicity First（简洁优先）">2. Simplicity First（简洁优先）</a></li>
+                <li>
+                    <a href="#3-surgical-changes%e7%b2%be%e5%87%86%e4%bf%ae%e6%94%b9" aria-label="3. Surgical Changes（精准修改）">3. Surgical Changes（精准修改）</a></li>
+                <li>
+                    <a href="#4-goal-driven-execution%e7%9b%ae%e6%a0%87%e9%a9%b1%e5%8a%a8%e6%89%a7%e8%a1%8c" aria-label="4. Goal-Driven Execution（目标驱动执行）">4. Goal-Driven Execution（目标驱动执行）</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e5%ae%89%e8%a3%85%e6%96%b9%e5%bc%8f" aria-label="安装方式">安装方式</a></li>
+                <li>
+                    <a href="#%e6%a0%b8%e5%bf%83%e6%b4%9e%e8%a7%81" aria-label="核心洞见">核心洞见</a></li>
+                <li>
+                    <a href="#%e9%93%be%e6%8e%a5" aria-label="链接">链接</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="andrej-karpathy-skills---llm-编码准则">Andrej Karpathy Skills - LLM 编码准则<a hidden class="anchor" aria-hidden="true" href="#andrej-karpathy-skills---llm-编码准则">#</a></h1>
+<h2 id="简介">简介<a hidden class="anchor" aria-hidden="true" href="#简介">#</a></h2>
+<p>一个 CLAUDE.md 文件，源自 Andrej Karpathy 对 LLM 编码常见问题的观察总结，用于改善 Claude Code 的行为。</p>
+<h2 id="karpathy-指出的-llm-编码问题">Karpathy 指出的 LLM 编码问题<a hidden class="anchor" aria-hidden="true" href="#karpathy-指出的-llm-编码问题">#</a></h2>
+<ul>
+<li>模型会默默做出错误假设，不检查就一路走下去</li>
+<li>不管理困惑、不寻求澄清、不暴露矛盾、不展示权衡</li>
+<li>喜欢过度复杂化代码和 API，臃肿的抽象，不清理死代码</li>
+<li>100 行能搞定的事写成 1000 行</li>
+<li>有时会误删/修改它们不完全理解的注释和代码</li>
+</ul>
+<h2 id="四大原则">四大原则<a hidden class="anchor" aria-hidden="true" href="#四大原则">#</a></h2>
+<h3 id="1-think-before-coding先思考再编码">1. Think Before Coding（先思考再编码）<a hidden class="anchor" aria-hidden="true" href="#1-think-before-coding先思考再编码">#</a></h3>
+<ul>
+<li>不假设、不隐藏困惑、展示权衡</li>
+<li>明确陈述假设 — 不确定就问，不要猜</li>
+<li>展示多种理解 — 有歧义时不要静默选择</li>
+<li>该反驳就反驳 — 如果有更简单的方案，直说</li>
+<li>困惑时停下来 — 说出不清楚的地方，请求澄清</li>
+</ul>
+<h3 id="2-simplicity-first简洁优先">2. Simplicity First（简洁优先）<a hidden class="anchor" aria-hidden="true" href="#2-simplicity-first简洁优先">#</a></h3>
+<ul>
+<li>用最少的代码解决问题，不写投机性代码</li>
+<li>不添加没要求的功能、不为单次使用建抽象</li>
+<li>不搞没请求的&quot;灵活性&quot;和&quot;可配置性&quot;</li>
+<li>如果 200 行可以写成 50 行，就重写</li>
+<li>检验标准：高级工程师会认为这过于复杂吗？</li>
+</ul>
+<h3 id="3-surgical-changes精准修改">3. Surgical Changes（精准修改）<a hidden class="anchor" aria-hidden="true" href="#3-surgical-changes精准修改">#</a></h3>
+<ul>
+<li>只触碰必要的代码，只清理自己制造的混乱</li>
+<li>不&quot;改善&quot;相邻代码、注释或格式</li>
+<li>不重构没坏的东西，匹配已有风格</li>
+<li>你的改动产生的废弃代码要删掉，但预存的死代码只提不删</li>
+<li>检验标准：每一行改动都能追溯到用户的请求</li>
+</ul>
+<h3 id="4-goal-driven-execution目标驱动执行">4. Goal-Driven Execution（目标驱动执行）<a hidden class="anchor" aria-hidden="true" href="#4-goal-driven-execution目标驱动执行">#</a></h3>
+<ul>
+<li>定义成功标准，循环直到验证通过</li>
+<li>把命令式任务转化为可验证的目标：
+<ul>
+<li>&ldquo;添加验证&rdquo; → &ldquo;为无效输入写测试，然后让它们通过&rdquo;</li>
+<li>&ldquo;修复 bug&rdquo; → &ldquo;写一个复现它的测试，然后让测试通过&rdquo;</li>
+<li>&ldquo;重构 X&rdquo; → &ldquo;确保重构前后测试都通过&rdquo;</li>
+</ul>
+</li>
+<li>多步任务先列计划，每步附验证检查点</li>
+</ul>
+<h2 id="安装方式">安装方式<a hidden class="anchor" aria-hidden="true" href="#安装方式">#</a></h2>
+<p><strong>Claude Code 插件（推荐）：</strong></p>
+<pre tabindex="0"><code>/plugin marketplace add forrestchang/andrej-karpathy-skills
+/plugin install andrej-karpathy-skills@karpathy-skills
+</code></pre><p><strong>CLAUDE.md（按项目）：</strong></p>
+<pre tabindex="0"><code>curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md
+</code></pre><h2 id="核心洞见">核心洞见<a hidden class="anchor" aria-hidden="true" href="#核心洞见">#</a></h2>
+<blockquote>
+<p>&ldquo;LLMs are exceptionally good at looping until they meet specific goals&hellip; Don&rsquo;t tell it what to do, give it success criteria and let it loop.&rdquo;</p>
+</blockquote>
+<h2 id="链接">链接<a hidden class="anchor" aria-hidden="true" href="#链接">#</a></h2>
+<ul>
+<li>GitHub: <a href="https://github.com/forrestchang/andrej-karpathy-skills">https://github.com/forrestchang/andrej-karpathy-skills</a></li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://blog.eastseven.cn/tags/open-source/">Open-Source</a></li>
+      <li><a href="https://blog.eastseven.cn/tags/llm-coding/">Llm-Coding</a></li>
+      <li><a href="https://blog.eastseven.cn/tags/claude-code/">Claude-Code</a></li>
+      <li><a href="https://blog.eastseven.cn/tags/best-practices/">Best-Practices</a></li>
+      <li><a href="https://blog.eastseven.cn/tags/karpathy/">Karpathy</a></li>
+      <li><a href="https://blog.eastseven.cn/tags/prompt-engineering/">Prompt-Engineering</a></li>
+      <li><a href="https://blog.eastseven.cn/tags/coding-guidelines/">Coding-Guidelines</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://blog.eastseven.cn/">D7 的知识库</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

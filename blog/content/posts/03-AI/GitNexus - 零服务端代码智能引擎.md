@@ -1,5 +1,5 @@
 ---
-title: "GitNexus"
+title: GitNexus
 date: 2026-04-10
 slug: gitnexus---零服务端代码智能引擎
 tags: [open-source, code-intelligence, knowledge-graph, mcp, cli-tool, ai-agent, developer-tools]

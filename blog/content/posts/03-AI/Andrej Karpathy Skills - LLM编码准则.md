@@ -1,5 +1,5 @@
 ---
-title: "Andrej Karpathy Skills"
+title: Andrej Karpathy Skills
 date: 2026-04-10
 slug: andrej-karpathy-skills---llm编码准则
 tags: [open-source, llm-coding, claude-code, best-practices, karpathy, prompt-engineering, coding-guidelines]
