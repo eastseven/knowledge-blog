@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="auto" data-theme="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>2026年AI编码的\&#34;渐进式Spec\&#34;实战指南 | D7 的知识库</title>
+<meta name="robots" content="noindex, nofollow">
+<title>2026年AI编码的&#34;渐进式Spec&#34;实战指南 | D7 的知识库</title>
 <meta name="keywords" content="article, ai-coding, spec-coding, agent, engineering, llm-coding, methodology, best-practices, chinese">
 <meta name="description" content="2026年AI编码的&quot;渐进式Spec&quot;实战指南
 简介
 来自阿里工程师逸驹的实战分享，提出&quot;渐进式 Spec Coding&quot;框架——在让 AI 写代码之前，先用结构化文档（Spec）把&quot;要做什么、怎么做、有什么约束&quot;说清楚，然后 AI 围绕文档编码。核心思想：不同复杂度的需求，暴露不同深度的流程。">
 <meta name="author" content="逸驹">
-<link rel="canonical" href="https://blog.eastseven.cn/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/">
+<link rel="canonical" href="http://localhost:1313/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.199042e659bc7245f5609d333d6c044eb554a0640849bb874e1dff8eb0f57209.css" integrity="sha256-GZBC5lm8ckX1YJ0zPWwETrVUoGQISbuHTh3/jrD1cgk=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://blog.eastseven.cn/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://blog.eastseven.cn/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://blog.eastseven.cn/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://blog.eastseven.cn/apple-touch-icon.png">
-<link rel="mask-icon" href="https://blog.eastseven.cn/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh-cn" href="https://blog.eastseven.cn/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/">
+<link rel="alternate" hreflang="zh-cn" href="http://localhost:1313/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/">
 <noscript>
     <style>
         #theme-toggle,
@@ -72,86 +72,13 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://blog.eastseven.cn/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/">
-  <meta property="og:site_name" content="D7 的知识库">
-  <meta property="og:title" content="2026年AI编码的\&#34;渐进式Spec\&#34;实战指南">
-  <meta property="og:description" content="2026年AI编码的&#34;渐进式Spec&#34;实战指南 简介 来自阿里工程师逸驹的实战分享，提出&#34;渐进式 Spec Coding&#34;框架——在让 AI 写代码之前，先用结构化文档（Spec）把&#34;要做什么、怎么做、有什么约束&#34;说清楚，然后 AI 围绕文档编码。核心思想：不同复杂度的需求，暴露不同深度的流程。">
-  <meta property="og:locale" content="zh_cn">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2026-04-10T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-04-10T00:00:00+00:00">
-    <meta property="article:tag" content="Article">
-    <meta property="article:tag" content="Ai-Coding">
-    <meta property="article:tag" content="Spec-Coding">
-    <meta property="article:tag" content="Agent">
-    <meta property="article:tag" content="Engineering">
-    <meta property="article:tag" content="Llm-Coding">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="2026年AI编码的\&#34;渐进式Spec\&#34;实战指南">
-  <meta name="twitter:description" content="2026年AI编码的&#34;渐进式Spec&#34;实战指南 简介 来自阿里工程师逸驹的实战分享，提出&#34;渐进式 Spec Coding&#34;框架——在让 AI 写代码之前，先用结构化文档（Spec）把&#34;要做什么、怎么做、有什么约束&#34;说清楚，然后 AI 围绕文档编码。核心思想：不同复杂度的需求，暴露不同深度的流程。">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://blog.eastseven.cn/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "2026年AI编码的\\\"渐进式Spec\\\"实战指南",
-      "item": "https://blog.eastseven.cn/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "2026年AI编码的\\\"渐进式Spec\\\"实战指南",
-  "name": "2026年AI编码的\\\u0022渐进式Spec\\\u0022实战指南",
-  "description": "2026年AI编码的\u0026quot;渐进式Spec\u0026quot;实战指南 简介 来自阿里工程师逸驹的实战分享，提出\u0026quot;渐进式 Spec Coding\u0026quot;框架——在让 AI 写代码之前，先用结构化文档（Spec）把\u0026quot;要做什么、怎么做、有什么约束\u0026quot;说清楚，然后 AI 围绕文档编码。核心思想：不同复杂度的需求，暴露不同深度的流程。\n",
-  "keywords": [
-    "article", "ai-coding", "spec-coding", "agent", "engineering", "llm-coding", "methodology", "best-practices", "chinese"
-  ],
-  "articleBody": "2026年AI编码的\"渐进式Spec\"实战指南 简介 来自阿里工程师逸驹的实战分享，提出\"渐进式 Spec Coding\"框架——在让 AI 写代码之前，先用结构化文档（Spec）把\"要做什么、怎么做、有什么约束\"说清楚，然后 AI 围绕文档编码。核心思想：不同复杂度的需求，暴露不同深度的流程。\n三个基础认知 1. 如何理解大模型 当前顶级模型可独立完成中等复杂度编码任务，但仍需人审查 模型梯队差异是断崖式的：T0 三轮搞定的事，T2 可能 15 轮还不对 核心结论：模型是地基，方法论是上层建筑 2. 如何理解 Agent Agent = while 循环 + Tool Use + 工具执行器 工具的边界就是 Agent 的能力边界 Cursor、Claude Code、opencode 本质上都是这个循环的不同包装 3. 回归本质：软件复杂度视角 软件复杂度 = 本质复杂度 + 偶然复杂度 AI 能帮你更高效应对本质复杂度，但工具自身也会引入偶然复杂度 评判标准：高效应对本质复杂度，同时压缩偶然复杂度 Spec Coding 三条铁律 No Spec, No Code — 没有文档，不准写代码 Spec is Truth — 文档和代码冲突时，错的一定是代码 Reverse Sync — 发现 Bug，先修文档，再修代码 核心设计：渐进式复杂度 70% 的需求是 ≤5 人日的小需求，不应强制走完整流程：\n简单需求：只加载 Rules，直接编码 中等需求：Rules + 轻量 Spec 复杂需求：Rules + 完整 Spec + Tasks + Review 简单需求不承担复杂流程的成本——改个字段不需要先写 spec 再拆 tasks\n工作流：Propose → Apply → Review → Archive Propose（提案）：人主导，AI 辅助。Research → 逐个提问 → 分段生成文档 → 确认门控 Apply（执行）：AI 主导，人审查。逐步执行，零偏差原则，必须展示可验证证据 Fix（修正）：Review 后的增量修正，文档同步是铁律 Review（审查）：两阶段 Sub Agent 审查（Spec 合规 + 代码质量），上下文与实现者隔离 Archive（归档）：知识沉淀到 knowledge/，变更目录归档 编排层 + 执行层两层架构 层 职责 模型选择 编排层 理解需求、生成 Spec、审查决策 强模型（Claude Opus、Gemini Pro） 执行层 读写代码、执行命令、快速迭代 编码优化模型（Sonnet、Kimi） 关键观点 人到底该干什么？ 传统编程：人 = 设计者 + 实施者 + 验收者 AI 编程：人 = 设计者 + 验收者，AI = 实施者 自由度曲线：调研（中）→ 方案设计（高）→ 规划（低）→ 执行（零）→ 验收（中） 大部分人的问题是自由度给反了 知识底座才是真正的护城河 最关键的领域 Know-How、架构决策前因后果，恰恰是 Spec 框架最难覆盖的 没有 knowledge/ 的 Spec 框架 = 让应届生对着编码规范写代码 工具会趋同，领域知识才是不可复制的护城河 容易忽略的代价 心流中断：从连续流变成间歇流 上下文隐性成本：每次压缩都引入不确定性 现在不是终态：框架价值随模型进步放大收益 参考资料 Superpowers agentic skills 框架: https://github.com/obra/superpowers Simon Willison - Agentic Engineering Patterns Chatbot Arena Leaderboard: https://arena.ai/ 链接 原文: https://mp.weixin.qq.com/s/7Lgb3GfgXKI0J9L9e9sq0w ",
-  "wordCount" : "1163",
-  "inLanguage": "zh-cn",
-  "datePublished": "2026-04-10T00:00:00Z",
-  "dateModified": "2026-04-10T00:00:00Z",
-  "author":{
-    "@type": "Person",
-    "name": "逸驹"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://blog.eastseven.cn/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "D7 的知识库",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://blog.eastseven.cn/favicon.ico"
-    }
-  }
-}
 </script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://blog.eastseven.cn/" accesskey="h" title="D7 的知识库 (Alt + H)">D7 的知识库</a>
+            <a href="http://localhost:1313/" accesskey="h" title="D7 的知识库 (Alt + H)">D7 的知识库</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -185,7 +112,7 @@
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      2026年AI编码的\&#34;渐进式Spec\&#34;实战指南
+      2026年AI编码的&#34;渐进式Spec&#34;实战指南
     </h1>
     <div class="post-meta"><span title='2026-04-10 00:00:00 +0000 UTC'>April 10, 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>逸驹</span>
 
@@ -346,22 +273,22 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://blog.eastseven.cn/tags/article/">Article</a></li>
-      <li><a href="https://blog.eastseven.cn/tags/ai-coding/">Ai-Coding</a></li>
-      <li><a href="https://blog.eastseven.cn/tags/spec-coding/">Spec-Coding</a></li>
-      <li><a href="https://blog.eastseven.cn/tags/agent/">Agent</a></li>
-      <li><a href="https://blog.eastseven.cn/tags/engineering/">Engineering</a></li>
-      <li><a href="https://blog.eastseven.cn/tags/llm-coding/">Llm-Coding</a></li>
-      <li><a href="https://blog.eastseven.cn/tags/methodology/">Methodology</a></li>
-      <li><a href="https://blog.eastseven.cn/tags/best-practices/">Best-Practices</a></li>
-      <li><a href="https://blog.eastseven.cn/tags/chinese/">Chinese</a></li>
+      <li><a href="http://localhost:1313/tags/article/">Article</a></li>
+      <li><a href="http://localhost:1313/tags/ai-coding/">Ai-Coding</a></li>
+      <li><a href="http://localhost:1313/tags/spec-coding/">Spec-Coding</a></li>
+      <li><a href="http://localhost:1313/tags/agent/">Agent</a></li>
+      <li><a href="http://localhost:1313/tags/engineering/">Engineering</a></li>
+      <li><a href="http://localhost:1313/tags/llm-coding/">Llm-Coding</a></li>
+      <li><a href="http://localhost:1313/tags/methodology/">Methodology</a></li>
+      <li><a href="http://localhost:1313/tags/best-practices/">Best-Practices</a></li>
+      <li><a href="http://localhost:1313/tags/chinese/">Chinese</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://blog.eastseven.cn/">D7 的知识库</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">D7 的知识库</a></span> · 
 
     <span>
         Powered by

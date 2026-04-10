@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>AI on D7 的知识库</title>
-    <link>https://blog.eastseven.cn/categories/ai/</link>
+    <link>http://localhost:1313/categories/ai/</link>
     <description>Recent content in AI on D7 的知识库</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.eastseven.cn/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2026年AI编码的\&#34;渐进式Spec\&#34;实战指南</title>
-      <link>https://blog.eastseven.cn/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</link>
+      <link>http://localhost:1313/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</link>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.eastseven.cn/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</guid>
+      <guid>http://localhost:1313/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</guid>
       <description>&lt;h1 id=&#34;2026年ai编码的渐进式spec实战指南&#34;&gt;2026年AI编码的&amp;quot;渐进式Spec&amp;quot;实战指南&lt;/h1&gt;
 &lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;p&gt;来自阿里工程师逸驹的实战分享，提出&amp;quot;渐进式 Spec Coding&amp;quot;框架——在让 AI 写代码之前，先用结构化文档（Spec）把&amp;quot;要做什么、怎么做、有什么约束&amp;quot;说清楚，然后 AI 围绕文档编码。核心思想：不同复杂度的需求，暴露不同深度的流程。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Andrej Karpathy Skills</title>
-      <link>https://blog.eastseven.cn/posts/03-ai/andrej-karpathy-skills---llm%E7%BC%96%E7%A0%81%E5%87%86%E5%88%99/</link>
+      <link>http://localhost:1313/posts/03-ai/andrej-karpathy-skills---llm%E7%BC%96%E7%A0%81%E5%87%86%E5%88%99/</link>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.eastseven.cn/posts/03-ai/andrej-karpathy-skills---llm%E7%BC%96%E7%A0%81%E5%87%86%E5%88%99/</guid>
+      <guid>http://localhost:1313/posts/03-ai/andrej-karpathy-skills---llm%E7%BC%96%E7%A0%81%E5%87%86%E5%88%99/</guid>
       <description>&lt;h1 id=&#34;andrej-karpathy-skills---llm-编码准则&#34;&gt;Andrej Karpathy Skills - LLM 编码准则&lt;/h1&gt;
 &lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;p&gt;一个 CLAUDE.md 文件，源自 Andrej Karpathy 对 LLM 编码常见问题的观察总结，用于改善 Claude Code 的行为。&lt;/p&gt;
@@ -75,27 +75,27 @@
     </item>
     <item>
       <title>GitNexus</title>
-      <link>https://blog.eastseven.cn/posts/03-ai/gitnexus---%E9%9B%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E5%BC%95%E6%93%8E/</link>
+      <link>http://localhost:1313/posts/03-ai/gitnexus---%E9%9B%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E5%BC%95%E6%93%8E/</link>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.eastseven.cn/posts/03-ai/gitnexus---%E9%9B%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E5%BC%95%E6%93%8E/</guid>
+      <guid>http://localhost:1313/posts/03-ai/gitnexus---%E9%9B%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E5%BC%95%E6%93%8E/</guid>
       <description>&lt;h1 id=&#34;gitnexus---零服务端代码智能引擎&#34;&gt;GitNexus - 零服务端代码智能引擎&lt;/h1&gt;
 &lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;p&gt;GitNexus 是一个客户端代码知识图谱生成器，完全在浏览器或本地运行。丢入一个 GitHub 仓库或 ZIP 文件，即可生成交互式知识图谱，并内置 Graph RAG Agent。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paperclip</title>
-      <link>https://blog.eastseven.cn/posts/03-ai/paperclip---open-source-orchestration-for-zero-human-companies/</link>
+      <link>http://localhost:1313/posts/03-ai/paperclip---open-source-orchestration-for-zero-human-companies/</link>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.eastseven.cn/posts/03-ai/paperclip---open-source-orchestration-for-zero-human-companies/</guid>
+      <guid>http://localhost:1313/posts/03-ai/paperclip---open-source-orchestration-for-zero-human-companies/</guid>
       <description>&lt;h1 id=&#34;paperclip---open-source-orchestration-for-zero-human-companies&#34;&gt;Paperclip - Open-source orchestration for zero-human companies&lt;/h1&gt;
 &lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;p&gt;Paperclip 是一个 Node.js 服务端 + React UI 的开源项目，用于编排一组 AI Agent 来运营一个&amp;quot;公司&amp;quot;。你可以接入自己的 Agent，分配目标，并从一个 Dashboard 追踪 Agent 的工作和成本。&lt;/p&gt;</description>
     </item>
     <item>
       <title>System Design Notes</title>
-      <link>https://blog.eastseven.cn/posts/03-ai/system-design-notes---%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/</link>
+      <link>http://localhost:1313/posts/03-ai/system-design-notes---%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.eastseven.cn/posts/03-ai/system-design-notes---%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://localhost:1313/posts/03-ai/system-design-notes---%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/</guid>
       <description>&lt;h1 id=&#34;system-design-notes---系统设计面试笔记&#34;&gt;System Design Notes - 系统设计面试笔记&lt;/h1&gt;
 &lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;p&gt;基于《System Design Interview - An Insider&amp;rsquo;s Guide》Vol 1 和 Vol 2（第2版）的读书笔记，涵盖系统设计面试的核心知识点。&lt;/p&gt;
@@ -103,9 +103,9 @@
     </item>
     <item>
       <title>驾驭工程：在「智能体优先」的世界里借力 Codex</title>
-      <link>https://blog.eastseven.cn/posts/03-ai/%E9%A9%BE%E9%A9%AD%E5%B7%A5%E7%A8%8B---%E6%99%BA%E8%83%BD%E4%BD%93%E4%BC%98%E5%85%88%E4%B8%96%E7%95%8C%E7%9A%84codex%E5%AE%9E%E8%B7%B5/</link>
+      <link>http://localhost:1313/posts/03-ai/%E9%A9%BE%E9%A9%AD%E5%B7%A5%E7%A8%8B---%E6%99%BA%E8%83%BD%E4%BD%93%E4%BC%98%E5%85%88%E4%B8%96%E7%95%8C%E7%9A%84codex%E5%AE%9E%E8%B7%B5/</link>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://blog.eastseven.cn/posts/03-ai/%E9%A9%BE%E9%A9%AD%E5%B7%A5%E7%A8%8B---%E6%99%BA%E8%83%BD%E4%BD%93%E4%BC%98%E5%85%88%E4%B8%96%E7%95%8C%E7%9A%84codex%E5%AE%9E%E8%B7%B5/</guid>
+      <guid>http://localhost:1313/posts/03-ai/%E9%A9%BE%E9%A9%AD%E5%B7%A5%E7%A8%8B---%E6%99%BA%E8%83%BD%E4%BD%93%E4%BC%98%E5%85%88%E4%B8%96%E7%95%8C%E7%9A%84codex%E5%AE%9E%E8%B7%B5/</guid>
       <description>&lt;h1 id=&#34;驾驭工程在智能体优先的世界里借力-codex&#34;&gt;驾驭工程：在「智能体优先」的世界里借力 Codex&lt;/h1&gt;
 &lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;p&gt;原文作者 Ryan Lopopolo（OpenAI），记述了团队用 Codex（GPT-5 驱动）从零构建一款百万行代码产品的实验：&lt;strong&gt;0 行代码由人工编写&lt;/strong&gt;，3 名工程师 5 个月处理 1500+ PR，效率约为手工编码的 10 倍。&lt;/p&gt;</description>

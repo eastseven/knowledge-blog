@@ -1,0 +1,11 @@
+# Obsidian 配置
+notes/.obsidian/
+
+# 草稿目录（不发布）
+notes/99-草稿/
+
+# 模板目录
+notes/templates/
+
+# macOS
+.DS_Store

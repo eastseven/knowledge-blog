@@ -1,5 +1,5 @@
 ---
-title: 2026年AI编码的\"渐进式Spec\"实战指南
+title: 2026年AI编码的"渐进式Spec"实战指南
 date: 2026-04-10
 slug: 2026年ai编码的渐进式spec实战指南
 tags: [article, ai-coding, spec-coding, agent, engineering, llm-coding, methodology, best-practices, chinese]

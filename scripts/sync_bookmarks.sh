@@ -77,12 +77,9 @@ if isinstance(tags, list):
 else:
     tags_str = '[' + str(tags) + ']'
 
-# Escape double quotes in title
-title_safe = title.replace(chr(34), chr(92)+chr(34))
-
 # Build Hugo FM
 hugo_fm = f'''---
-title: "{title_safe}"
+title: {title}
 date: {date}
 slug: "{slug}"
 tags: {tags_str}
