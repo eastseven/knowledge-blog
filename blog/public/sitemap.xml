@@ -2,13 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</loc>
-    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/agent/</loc>
-    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/agent-first/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/agentic-engineering/</loc>
     <lastmod>2026-04-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/ai/</loc>
@@ -35,7 +32,7 @@
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/chinese/</loc>
+    <loc>http://localhost:1313/posts/03-ai/claude-code-best-practices---claude-code%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</loc>
     <lastmod>2026-04-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/claude-code/</loc>
@@ -86,9 +83,6 @@
     <loc>http://localhost:1313/tags/mcp/</loc>
     <lastmod>2026-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/methodology/</loc>
-    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/multi-agent/</loc>
     <lastmod>2026-04-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -110,9 +104,6 @@
     <loc>http://localhost:1313/tags/prompt-engineering/</loc>
     <lastmod>2026-04-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/spec-coding/</loc>
-    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/startup/</loc>
     <lastmod>2026-04-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -130,6 +121,21 @@
   </url><url>
     <loc>http://localhost:1313/posts/03-ai/%E9%A9%BE%E9%A9%AD%E5%B7%A5%E7%A8%8B---%E6%99%BA%E8%83%BD%E4%BD%93%E4%BC%98%E5%85%88%E4%B8%96%E7%95%8C%E7%9A%84codex%E5%AE%9E%E8%B7%B5/</loc>
     <lastmod>2026-04-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</loc>
+    <lastmod>2026-04-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/agent/</loc>
+    <lastmod>2026-04-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/chinese/</loc>
+    <lastmod>2026-04-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/methodology/</loc>
+    <lastmod>2026-04-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/spec-coding/</loc>
+    <lastmod>2026-04-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/99-%E8%8D%89%E7%A8%BF/vibecoding%E5%B7%A5%E7%A8%8B%E5%8C%96/</loc>
   </url>

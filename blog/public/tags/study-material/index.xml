@@ -9,6 +9,14 @@
     <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/study-material/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Claude Code Best Practices</title>
+      <link>http://localhost:1313/posts/03-ai/claude-code-best-practices---claude-code%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/03-ai/claude-code-best-practices---claude-code%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</guid>
+      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;Claude Code 最佳实践合集，口号是 &amp;ldquo;from vibe coding to agentic engineering&amp;rdquo;。由 shanraisshan 维护，Anthropic Claude Code 创造者 Boris Cherny 等人贡献内容，是目前最全面的 Claude Code 使用指南。&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>System Design Notes</title>
       <link>http://localhost:1313/posts/03-ai/system-design-notes---%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>

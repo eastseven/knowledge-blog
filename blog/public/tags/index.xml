@@ -9,17 +9,17 @@
     <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Agent</title>
-      <link>http://localhost:1313/tags/agent/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/agent/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Agent-First</title>
       <link>http://localhost:1313/tags/agent-first/</link>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/agent-first/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agentic-Engineering</title>
+      <link>http://localhost:1313/tags/agentic-engineering/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/agentic-engineering/</guid>
       <description></description>
     </item>
     <item>
@@ -55,13 +55,6 @@
       <link>http://localhost:1313/tags/best-practices/</link>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/best-practices/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Chinese</title>
-      <link>http://localhost:1313/tags/chinese/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/chinese/</guid>
       <description></description>
     </item>
     <item>
@@ -163,13 +156,6 @@
       <description></description>
     </item>
     <item>
-      <title>Methodology</title>
-      <link>http://localhost:1313/tags/methodology/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/methodology/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Multi-Agent</title>
       <link>http://localhost:1313/tags/multi-agent/</link>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
@@ -205,13 +191,6 @@
       <description></description>
     </item>
     <item>
-      <title>Spec-Coding</title>
-      <link>http://localhost:1313/tags/spec-coding/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/spec-coding/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Startup</title>
       <link>http://localhost:1313/tags/startup/</link>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
@@ -230,6 +209,34 @@
       <link>http://localhost:1313/tags/system-design/</link>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/system-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agent</title>
+      <link>http://localhost:1313/tags/agent/</link>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/agent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chinese</title>
+      <link>http://localhost:1313/tags/chinese/</link>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/chinese/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Methodology</title>
+      <link>http://localhost:1313/tags/methodology/</link>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/methodology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spec-Coding</title>
+      <link>http://localhost:1313/tags/spec-coding/</link>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/spec-coding/</guid>
       <description></description>
     </item>
   </channel>

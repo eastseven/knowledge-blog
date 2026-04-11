@@ -6,14 +6,14 @@
     <description>Recent content in Spec-Coding on D7 的知识库</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/spec-coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2026年AI编码的\&#34;渐进式Spec\&#34;实战指南</title>
+      <title>2026年AI编码的渐进式Spec实战指南</title>
       <link>http://localhost:1313/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</guid>
-      <description>&lt;h1 id=&#34;2026年ai编码的渐进式spec实战指南&#34;&gt;2026年AI编码的&amp;quot;渐进式Spec&amp;quot;实战指南&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;2026年ai编码的渐进式spec实战指南&#34;&gt;2026年AI编码的渐进式Spec实战指南&lt;/h1&gt;
 &lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;p&gt;来自阿里工程师逸驹的实战分享，提出&amp;quot;渐进式 Spec Coding&amp;quot;框架——在让 AI 写代码之前，先用结构化文档（Spec）把&amp;quot;要做什么、怎么做、有什么约束&amp;quot;说清楚，然后 AI 围绕文档编码。核心思想：不同复杂度的需求，暴露不同深度的流程。&lt;/p&gt;</description>
     </item>
