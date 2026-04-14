@@ -183,8 +183,10 @@
       "bases:新建数据库": false
     }
   },
-  "active": "d96d1b832dce24d6",
+  "active": "7a1c78452589ee05",
   "lastOpenFiles": [
+    "03-AI/Multica - 开源AI Agent管理平台.md",
+    "03-AI/Graphify - AI代码知识图谱生成工具.md",
     "03-AI/RTK - LLM Token 消耗优化CLI代理.md",
     "03-AI/Markdown Viewer Skills - AI Agent 图表可视化技能集合.md",
     "03-AI/Hermes Agent - Nous Research自学习AI代理.md",
