@@ -1,12 +1,12 @@
 ---
 title: Andrej Karpathy Skills
 date: 2026-04-10
-slug: andrej-karpathy-skills---llm编码准则
+slug: "andrej-karpathy-skills---llm编码准则"
 tags: [open-source, llm-coding, claude-code, best-practices, karpathy, prompt-engineering, coding-guidelines]
-categories: [AI]
+categories: [DevOps]
 draft: false
-source: https://github.com/forrestchang/andrej-karpathy-skills
-author: forrestchang
+source: "https://github.com/forrestchang/andrej-karpathy-skills"
+author: "forrestchang"
 ---
 
 # Andrej Karpathy Skills - LLM 编码准则

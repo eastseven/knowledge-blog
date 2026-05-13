@@ -1,12 +1,12 @@
 ---
 title: Infisical - 开源密钥与特权访问管理平台
 date: 2026-05-05
-slug: infisical---开源密钥与特权访问管理平台
+slug: "infisical---开源密钥与特权访问管理平台"
 tags: [open-source, secret-management, devops, devsecops, infrastructure, pki, best-practices, self-hosted]
-categories: [AI]
+categories: [DevOps]
 draft: false
-source: https://github.com/Infisical/infisical
-author: Infisical
+source: "https://github.com/Infisical/infisical"
+author: "Infisical"
 ---
 
 ## 简介

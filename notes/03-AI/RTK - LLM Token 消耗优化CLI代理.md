@@ -1,12 +1,12 @@
 ---
 title: RTK - Rust Token Killer
 date: 2026-04-11
-slug: rtk---llm-token-消耗优化cli代理
+slug: "rtk---llm-token-消耗优化cli代理"
 tags: [open-source, llm, token-optimization, cli, rust, ai-agent, developer-tools, claude-code, copilot, cursor, codex, devops]
 categories: [AI]
 draft: false
-source: https://github.com/rtk-ai/rtk
-author: rtk-ai / aeppling
+source: "https://github.com/rtk-ai/rtk"
+author: "rtk-ai / aeppling"
 ---
 
 ## 简介

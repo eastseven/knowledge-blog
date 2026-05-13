@@ -1,12 +1,12 @@
 ---
 title: Multica
 date: 2026-04-14
-slug: multica---开源ai-agent管理平台
+slug: "multica---开源ai-agent管理平台"
 tags: [open-source, ai-agent, agent-platform, coding-agent, team-collaboration, multi-agent, self-hosted, go, nextjs]
 categories: [AI]
 draft: false
-source: https://github.com/multica-ai/multica
-author: multica-ai
+source: "https://github.com/multica-ai/multica"
+author: "multica-ai"
 ---
 
 ## 简介

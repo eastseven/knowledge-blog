@@ -1,12 +1,12 @@
 ---
 title: CodeBurn
 date: 2026-04-15
-slug: codeburn---ai编程token成本可视化仪表盘
+slug: "codeburn---ai编程token成本可视化仪表盘"
 tags: [open-source, ai-agent, claude-code, coding-agent, token-cost, observability, tui, typescript, dev-tools]
 categories: [AI]
 draft: false
-source: https://github.com/AgentSeal/codeburn
-author: AgentSeal
+source: "https://github.com/AgentSeal/codeburn"
+author: "AgentSeal"
 ---
 
 ## 简介

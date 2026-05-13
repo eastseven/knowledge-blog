@@ -1,12 +1,12 @@
 ---
 title: 2026年AI编码的"渐进式Spec"实战指南
 date: 2026-04-10
-slug: 2026年ai编码的渐进式spec实战指南
+slug: "2026年ai编码的渐进式spec实战指南"
 tags: [article, ai-coding, spec-coding, agent, engineering, llm-coding, methodology, best-practices, chinese]
 categories: [AI]
 draft: false
-source: https://mp.weixin.qq.com/s/7Lgb3GfgXKI0J9L9e9sq0w
-author: 逸驹
+source: "https://mp.weixin.qq.com/s/7Lgb3GfgXKI0J9L9e9sq0w"
+author: "逸驹"
 ---
 
 # 2026年AI编码的"渐进式Spec"实战指南

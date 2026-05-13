@@ -1,12 +1,12 @@
 ---
 title: Paperclip
 date: 2026-04-10
-slug: paperclip---open-source-orchestration-for-zero-human-companies
+slug: "paperclip---open-source-orchestration-for-zero-human-companies"
 tags: [open-source, ai-agent, orchestration, autonomous-company, multi-agent, startup]
 categories: [AI]
 draft: false
-source: https://github.com/paperclipai/paperclip
-author: paperclipai
+source: "https://github.com/paperclipai/paperclip"
+author: "paperclipai"
 ---
 
 # Paperclip - Open-source orchestration for zero-human companies

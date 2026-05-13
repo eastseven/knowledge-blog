@@ -1,12 +1,12 @@
 ---
 title: GitNexus
 date: 2026-04-10
-slug: gitnexus---零服务端代码智能引擎
+slug: "gitnexus---零服务端代码智能引擎"
 tags: [open-source, code-intelligence, knowledge-graph, mcp, cli-tool, ai-agent, developer-tools]
 categories: [AI]
 draft: false
-source: https://github.com/abhigyanpatwari/GitNexus
-author: abhigyanpatwari
+source: "https://github.com/abhigyanpatwari/GitNexus"
+author: "abhigyanpatwari"
 ---
 
 # GitNexus - 零服务端代码智能引擎

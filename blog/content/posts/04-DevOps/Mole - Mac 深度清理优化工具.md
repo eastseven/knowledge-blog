@@ -1,12 +1,12 @@
 ---
 title: Mole
 date: 2026-05-06
-slug: mole---mac-深度清理优化工具
+slug: "mole---mac-深度清理优化工具"
 tags: [open-source, mac-tool, system-utility, cli, disk-cleaner, system-monitor, developer-tools, homebrew]
-categories: [AI]
+categories: [DevOps]
 draft: false
-source: https://github.com/tw93/Mole
-author: tw93
+source: "https://github.com/tw93/Mole"
+author: "tw93"
 ---
 
 ## 简介

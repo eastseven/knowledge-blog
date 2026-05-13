@@ -1,12 +1,12 @@
 ---
 title: Huashu Design - HTML原生AI设计Skill
 date: 2026-04-21
-slug: huashu-design---html原生ai设计skill
+slug: "huashu-design---html原生ai设计skill"
 tags: [open-source, ai-design, claude-code, design-skill, html, prototype, animation, infographic, chinese, ai-agent]
 categories: [AI]
 draft: false
-source: https://github.com/alchaincyf/huashu-design
-author: alchaincyf
+source: "https://github.com/alchaincyf/huashu-design"
+author: "alchaincyf"
 ---
 
 ## 简介

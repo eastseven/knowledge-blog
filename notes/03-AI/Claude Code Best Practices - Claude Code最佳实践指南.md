@@ -1,12 +1,12 @@
 ---
 title: Claude Code Best Practices
 date: 2026-04-10
-slug: claude-code-best-practices---claude-code最佳实践指南
+slug: "claude-code-best-practices---claude-code最佳实践指南"
 tags: [open-source, claude-code, ai-agent, best-practices, ai-coding, prompt-engineering, study-material, agentic-engineering]
 categories: [AI]
 draft: false
-source: https://github.com/shanraisshan/claude-code-best-practice
-author: shanraisshan
+source: "https://github.com/shanraisshan/claude-code-best-practice"
+author: "shanraisshan"
 ---
 
 ## 简介

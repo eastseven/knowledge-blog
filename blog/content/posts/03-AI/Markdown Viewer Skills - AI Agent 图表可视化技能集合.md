@@ -1,12 +1,12 @@
 ---
 title: Markdown Viewer Skills
 date: 2026-04-11
-slug: markdown-viewer-skills---ai-agent-图表可视化技能集合
+slug: "markdown-viewer-skills---ai-agent-图表可视化技能集合"
 tags: [open-source, ai-agent, markdown, diagram, visualization, mermaid, plantuml, vega, graphviz, infographic, code-fence, skill]
 categories: [AI]
 draft: false
-source: https://github.com/markdown-viewer/skills
-author: xicilion
+source: "https://github.com/markdown-viewer/skills"
+author: "xicilion"
 ---
 
 ## 简介

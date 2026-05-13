@@ -1,12 +1,12 @@
 ---
 title: Fireworks Tech Graph
 date: 2026-04-23
-slug: fireworks-tech-graph---ai技术图表生成技能
+slug: "fireworks-tech-graph---ai技术图表生成技能"
 tags: [open-source, claude-code, ai-diagram, svg, technical-diagram, ai-agent, visualization, uml]
 categories: [AI]
 draft: false
-source: https://github.com/yizhiyanhua-ai/fireworks-tech-graph
-author: yizhiyanhua-ai
+source: "https://github.com/yizhiyanhua-ai/fireworks-tech-graph"
+author: "yizhiyanhua-ai"
 ---
 
 ## 简介

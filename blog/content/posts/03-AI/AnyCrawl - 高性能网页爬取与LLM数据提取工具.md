@@ -1,12 +1,12 @@
 ---
 title: AnyCrawl - 高性能网页爬取与LLM数据提取工具
 date: 2026-04-21
-slug: anycrawl---高性能网页爬取与llm数据提取工具
+slug: "anycrawl---高性能网页爬取与llm数据提取工具"
 tags: [open-source, web-crawler, web-scraping, llm, data-extraction, nodejs, typescript, serp, search-engine]
 categories: [AI]
 draft: false
-source: https://github.com/any4ai/anycrawl
-author: any4ai
+source: "https://github.com/any4ai/anycrawl"
+author: "any4ai"
 ---
 
 ## 简介

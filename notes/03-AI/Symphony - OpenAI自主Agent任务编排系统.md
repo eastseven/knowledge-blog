@@ -1,12 +1,12 @@
 ---
 title: Symphony - OpenAI自主Agent任务编排系统
 date: 2026-04-30
-slug: symphony---openai自主agent任务编排系统
+slug: "symphony---openai自主agent任务编排系统"
 tags: [open-source, ai-agent, coding-agent, autonomous-agent, orchestration, linear-integration, harness-engineering, elixir]
 categories: [AI]
 draft: false
-source: https://github.com/openai/symphony
-author: openai
+source: "https://github.com/openai/symphony"
+author: "openai"
 ---
 
 ## 简介

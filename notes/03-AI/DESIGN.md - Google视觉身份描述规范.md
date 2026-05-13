@@ -1,12 +1,12 @@
 ---
 title: DESIGN.md
 date: 2026-04-23
-slug: design.md---google视觉身份描述规范
+slug: "design.md---google视觉身份描述规范"
 tags: [open-source, design-system, ai-agent, design-token, claude-code, cli, google, best-practices]
 categories: [AI]
 draft: false
-source: https://github.com/google-labs-code/design.md
-author: google-labs-code
+source: "https://github.com/google-labs-code/design.md"
+author: "google-labs-code"
 ---
 
 ## 简介

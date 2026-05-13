@@ -1,12 +1,12 @@
 ---
 title: Graphify
 date: 2026-04-11
-slug: graphify---ai代码知识图谱生成工具
+slug: "graphify---ai代码知识图谱生成工具"
 tags: [open-source, ai-agent, knowledge-graph, claude-code, code-analysis, multimodal, developer-tools, tree-sitter, python]
 categories: [AI]
 draft: false
-source: https://github.com/safishamsi/graphify
-author: safishamsi
+source: "https://github.com/safishamsi/graphify"
+author: "safishamsi"
 ---
 
 ## 简介

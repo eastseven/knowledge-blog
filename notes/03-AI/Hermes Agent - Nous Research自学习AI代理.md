@@ -1,12 +1,12 @@
 ---
 title: Hermes Agent
 date: 2026-04-11
-slug: hermes-agent---nous-research自学习ai代理
+slug: "hermes-agent---nous-research自学习ai代理"
 tags: [open-source, ai-agent, hermes, nous-research, llm-agent, self-improving, cli-tool, messaging-gateway, skill-system]
 categories: [AI]
 draft: false
-source: https://github.com/nousresearch/hermes-agent
-author: NousResearch
+source: "https://github.com/nousresearch/hermes-agent"
+author: "NousResearch"
 ---
 
 ## 简介

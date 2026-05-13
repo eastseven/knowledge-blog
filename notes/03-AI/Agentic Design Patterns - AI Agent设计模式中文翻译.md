@@ -1,12 +1,12 @@
 ---
 title: Agentic Design Patterns - AI Agent设计模式中文翻译
 date: 2026-04-20
-slug: agentic-design-patterns---ai-agent设计模式中文翻译
+slug: "agentic-design-patterns---ai-agent设计模式中文翻译"
 tags: [open-source, ai-agent, design-patterns, chinese, study-material, translation, book]
 categories: [AI]
 draft: false
-source: https://github.com/xindoo/agentic-design-patterns
-author: xindoo
+source: "https://github.com/xindoo/agentic-design-patterns"
+author: "xindoo"
 ---
 
 ## 简介

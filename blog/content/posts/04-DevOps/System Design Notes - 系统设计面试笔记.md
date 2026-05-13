@@ -1,12 +1,12 @@
 ---
 title: System Design Notes
 date: 2026-04-10
-slug: system-design-notes---系统设计面试笔记
+slug: "system-design-notes---系统设计面试笔记"
 tags: [open-source, system-design, interview, notes, study-material, distributed-systems]
-categories: [AI]
+categories: [DevOps]
 draft: false
-source: https://github.com/liquidslr/system-design-notes
-author: liquidslr
+source: "https://github.com/liquidslr/system-design-notes"
+author: "liquidslr"
 ---
 
 # System Design Notes - 系统设计面试笔记

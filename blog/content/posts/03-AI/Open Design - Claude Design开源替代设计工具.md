@@ -1,12 +1,12 @@
 ---
 title: Open Design
 date: 2026-04-29
-slug: open-design---claude-design开源替代设计工具
+slug: "open-design---claude-design开源替代设计工具"
 tags: [open-source, ai-design, ai-agent, design-system, coding-agent, claude-code, ui-design, prototype, local-first, byok]
 categories: [AI]
 draft: false
-source: https://github.com/nexu-io/open-design
-author: nexu-io
+source: "https://github.com/nexu-io/open-design"
+author: "nexu-io"
 ---
 
 ## 简介

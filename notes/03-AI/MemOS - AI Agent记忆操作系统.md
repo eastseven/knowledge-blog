@@ -1,12 +1,12 @@
 ---
 title: MemOS
 date: 2026-04-29
-slug: memos---ai-agent记忆操作系统
+slug: "memos---ai-agent记忆操作系统"
 tags: [open-source, ai-memory, ai-agent, llm, memory-os, knowledge-base, multi-modal, personalization, mcp]
 categories: [AI]
 draft: false
-source: https://github.com/MemTensor/MemOS
-author: MemTensor
+source: "https://github.com/MemTensor/MemOS"
+author: "MemTensor"
 ---
 
 ## 简介

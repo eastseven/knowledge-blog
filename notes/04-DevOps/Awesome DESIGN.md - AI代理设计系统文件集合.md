@@ -1,12 +1,12 @@
 ---
 title: Awesome DESIGN.md
 date: 2026-04-11
-slug: awesome-design.md---ai代理设计系统文件集合
+slug: "awesome-design.md---ai代理设计系统文件集合"
 tags: [open-source, design-system, ai-coding, ui-design, prompt-engineering, llm-ui, best-practices, design-token]
-categories: [AI]
+categories: [DevOps]
 draft: false
-source: https://github.com/VoltAgent/awesome-design-md
-author: VoltAgent
+source: "https://github.com/VoltAgent/awesome-design-md"
+author: "VoltAgent"
 ---
 
 ## 简介

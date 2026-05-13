@@ -1,12 +1,12 @@
 ---
 title: OSV-Scanner
 date: 2026-04-27
-slug: osv-scanner---google开源漏洞扫描器
+slug: "osv-scanner---google开源漏洞扫描器"
 tags: [open-source, security, vulnerability-scanner, devops, dependency-management, supply-chain-security, go, best-practices]
-categories: [AI]
+categories: [DevOps]
 draft: false
-source: https://github.com/google/osv-scanner
-author: google
+source: "https://github.com/google/osv-scanner"
+author: "google"
 ---
 
 ## 简介

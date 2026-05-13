@@ -1,12 +1,12 @@
 ---
 title: Architecture Diagram Generator
 date: 2026-04-15
-slug: architecture-diagram-generator---claude架构图生成skill
+slug: "architecture-diagram-generator---claude架构图生成skill"
 tags: [open-source, ai-agent, claude, claude-skill, architecture-diagram, visualization, svg, dev-tools, system-design]
 categories: [AI]
 draft: false
-source: https://github.com/Cocoon-AI/architecture-diagram-generator
-author: Cocoon-AI
+source: "https://github.com/Cocoon-AI/architecture-diagram-generator"
+author: "Cocoon-AI"
 ---
 
 ## 简介

@@ -1,12 +1,12 @@
 ---
 title: Kami
 date: 2026-04-22
-slug: kami---ai-文档设计系统
+slug: "kami---ai-文档设计系统"
 tags: [open-source, ai-agent, document-design, design-system, typography, claude-code, codex, pdf-generation, best-practices, chinese]
 categories: [AI]
 draft: false
-source: https://github.com/tw93/kami
-author: tw93
+source: "https://github.com/tw93/kami"
+author: "tw93"
 ---
 
 # 简介

@@ -1,12 +1,12 @@
 ---
 title: GStack
 date: 2026-04-25
-slug: gstack---claude-code-ai虚拟工程团队框架
+slug: "gstack---claude-code-ai虚拟工程团队框架"
 tags: [open-source, ai-agent, ai-coding, claude-code, developer-tools, prompt-engineering, best-practices, multi-agent]
 categories: [AI]
 draft: false
-source: https://github.com/garrytan/gstack
-author: garrytan
+source: "https://github.com/garrytan/gstack"
+author: "garrytan"
 ---
 
 ## 简介

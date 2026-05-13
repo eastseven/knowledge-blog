@@ -1,12 +1,12 @@
 ---
 title: llmfit
 date: 2026-05-11
-slug: llmfit---本地硬件适配的-llm-模型推荐工具
+slug: "llmfit---本地硬件适配的-llm-模型推荐工具"
 tags: [open-source, github, llm, local-llm, model-selection, hardware-detection, inference, benchmarking, cli-tool, tui, rust, ollama, llama-cpp, mlx, lm-studio, vllm, ai-tools]
 categories: [AI]
 draft: false
-source: https://github.com/AlexsJones/llmfit
-author: AlexsJones
+source: "https://github.com/AlexsJones/llmfit"
+author: "AlexsJones"
 ---
 
 ## 简介
