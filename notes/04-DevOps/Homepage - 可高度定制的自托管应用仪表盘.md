@@ -3,7 +3,7 @@ title: Homepage
 date: 2026-05-13
 slug: homepage---可高度定制的自托管应用仪表盘
 tags: [open-source, self-hosted, dashboard, homepage, startpage, docker, docker-compose, yaml, service-discovery, widgets, homelab, devops, nextjs, application-dashboard, reverse-proxy, security, i18n, productivity]
-categories: [AI]
+categories: [DevOps]
 draft: false
 source: https://github.com/gethomepage/homepage
 author: gethomepage
