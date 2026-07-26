@@ -34,18 +34,17 @@ OpenWorker 是 Andrew Ng（吴恩达）开源的桌面端 AI 同事（AI Coworke
 
 三层架构，全部运行在本地：
 
-```
-┌──────────────────────────────────────────────────┐
-│  Desktop App (surfaces/gui/)                     │  React UI + Tauri Shell
-│  原生桌面壳 + GUI，监督 server 进程                │
-├──────────────────────────────────────────────────┤
-│  Local Agent Server (coworker/)                  │  Python 后端
-│  引擎 + 工具 + 连接器，构建于 aisuite 之上          │  FastAPI
-├──────────┬───────────────┬───────────────────────┤
-│ 文件&终端  │ 25+ 连接器     │ 任意模型               │  全部用你的密钥，
-│ 本地工具   │ SaaS 集成     │ 任意 Provider          │  在你的机器上运行
-└──────────┴───────────────┴───────────────────────┘
-```
+| 层 | 目录 | 技术栈 | 职责 |
+|---|---|---|---|
+| Desktop App | `surfaces/gui/` | React UI + Tauri Shell | 原生桌面壳 + GUI，监督 server 进程 |
+| Local Agent Server | `coworker/` | Python + FastAPI，构建于 aisuite 之上 | 引擎 + 工具 + 连接器 |
+| 底层能力 | — | 全部用你的密钥，在你的机器上运行 | 见下表分解 |
+
+底层能力三列：
+
+| 本地工具 | SaaS 集成 | 模型 |
+|---|---|---|
+| 文件 & 终端 | 25+ 连接器（Slack/GitHub/Jira/Notion 等） | 任意 Provider（OpenAI/Anthropic/Gemini/Ollama 等） |
 
 另有 `stt/` 目录（Rust）提供语音输入 sidecar。
 
