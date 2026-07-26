@@ -89,25 +89,13 @@ coworker/ 目录揭示了完整能力矩阵：
 
 - `agents/` — Agent 引擎
 - `automation/` — 定时任务（cron 调度）：每日简报、周报、频道监控
-- `connectors/` — 25+ SaaS 集成（核心卖点）
-  - Slack：@mention 触发本地 session
-  - GitHub / Jira / Notion / Linear / HubSpot
-  - Outlook / Gmail / Google Calendar / monday.com
-  - Browser Automation（Playwright）
-  - MCP 通用接入（任何 MCP 工具可插入）
+- `connectors/` — 25+ SaaS 集成（核心卖点）：Slack、GitHub、Jira、Notion、Linear、HubSpot、Outlook、Gmail、Google Calendar、monday.com、Browser Automation（Playwright）、MCP 通用接入
 - `mcp/` — 自有 MCP 客户端层（async 封装）
 - `memory/` — 会话记忆
 - `personas/` — 人格配置（Markdown + YAML frontmatter）
 - `server/` — FastAPI 服务端
 - `skills/` — 技能系统
-- `tools/` — 内置工具集
-  - files / directories — 文件操作
-  - shell — 终端命令执行
-  - git — 版本控制
-  - search — 搜索（默认 DuckDuckGo）
-  - plan / todo — 规划与任务管理
-  - subagent — 子 Agent 派发
-  - ask — 用户交互
+- `tools/` — 内置工具集：files/directories（文件操作）、shell（终端命令）、git（版本控制）、search（搜索）、plan/todo（规划任务）、subagent（子Agent派发）、ask（用户交互）
 - `tui/` — 终端界面（Textual）
 - `web/` — Web API 层
 
