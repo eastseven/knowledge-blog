@@ -1,21 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Chinese on D7 的知识库</title>
-    <link>http://localhost:1313/tags/chinese/</link>
-    <description>Recent content in Chinese on D7 的知识库</description>
-    <generator>Hugo</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Thu, 09 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/chinese/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>2026年AI编码的渐进式Spec实战指南</title>
-      <link>http://localhost:1313/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</link>
-      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</guid>
-      <description>&lt;h1 id=&#34;2026年ai编码的渐进式spec实战指南&#34;&gt;2026年AI编码的渐进式Spec实战指南&lt;/h1&gt;
-&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
-&lt;p&gt;来自阿里工程师逸驹的实战分享，提出&amp;quot;渐进式 Spec Coding&amp;quot;框架——在让 AI 写代码之前，先用结构化文档（Spec）把&amp;quot;要做什么、怎么做、有什么约束&amp;quot;说清楚，然后 AI 围绕文档编码。核心思想：不同复杂度的需求，暴露不同深度的流程。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Chinese on D7 的知识库</title><link>https://blog.eastseven.cn/tags/chinese/</link><description>Recent content in Chinese on D7 的知识库</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Wed, 22 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.eastseven.cn/tags/chinese/index.xml" rel="self" type="application/rss+xml"/><item><title>Kami</title><link>https://blog.eastseven.cn/posts/03-ai/kami---ai-%E6%96%87%E6%A1%A3%E8%AE%BE%E8%AE%A1%E7%B3%BB%E7%BB%9F/</link><pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/kami---ai-%E6%96%87%E6%A1%A3%E8%AE%BE%E8%AE%A1%E7%B3%BB%E7%BB%9F/</guid><description>&lt;h1 id="简介"&gt;简介&lt;/h1&gt;
+&lt;p&gt;Kami（紙，かみ）是 tw93（大漠穷秋）开源的 AI 文档设计系统，核心理念是&amp;quot;好内容值得好纸张&amp;quot;。它不是 UI 框架，而是一套美学约束系统，让 AI Agent 生成排版精美的文档（HTML/PDF），告别千篇一律的默认样式。&lt;/p&gt;</description></item><item><title>Huashu Design - HTML原生AI设计Skill</title><link>https://blog.eastseven.cn/posts/03-ai/huashu-design---html%E5%8E%9F%E7%94%9Fai%E8%AE%BE%E8%AE%A1skill/</link><pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/huashu-design---html%E5%8E%9F%E7%94%9Fai%E8%AE%BE%E8%AE%A1skill/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Huashu Design 是一个 HTML 原生的设计 Skill，适用于 Claude Code、Cursor、Codex 等任意兼容 skill 的 AI Agent。一句话 prompt 即可交付高保真原型、幻灯片、动画和信息图。&lt;/p&gt;</description></item><item><title>Agentic Design Patterns - AI Agent设计模式中文翻译</title><link>https://blog.eastseven.cn/posts/03-ai/agentic-design-patterns---ai-agent%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%AD%E6%96%87%E7%BF%BB%E8%AF%91/</link><pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/agentic-design-patterns---ai-agent%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%AD%E6%96%87%E7%BF%BB%E8%AF%91/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;谷歌新书《Agentic Design Patterns》的最佳中文翻译版，由 xindoo 发起并维护。系统介绍了 AI Agent 系统的 21 个核心设计模式。&lt;/p&gt;
+&lt;h2 id="核心内容"&gt;核心内容&lt;/h2&gt;
+&lt;p&gt;覆盖从基础到高级的完整 Agent 设计模式：&lt;/p&gt;</description></item><item><title>2026年AI编码的"渐进式Spec"实战指南</title><link>https://blog.eastseven.cn/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</link><pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</guid><description>&lt;h1 id="2026年ai编码的渐进式spec实战指南"&gt;2026年AI编码的&amp;quot;渐进式Spec&amp;quot;实战指南&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;来自阿里工程师逸驹的实战分享，提出&amp;quot;渐进式 Spec Coding&amp;quot;框架——在让 AI 写代码之前，先用结构化文档（Spec）把&amp;quot;要做什么、怎么做、有什么约束&amp;quot;说清楚，然后 AI 围绕文档编码。核心思想：不同复杂度的需求，暴露不同深度的流程。&lt;/p&gt;</description></item></channel></rss>

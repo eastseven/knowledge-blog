@@ -1,6 +1,6 @@
 ---
 title: ego lite - AI 智能体专用并行浏览器
-date: 2026-10-29
+date: 2026-10-29T00:06:59+09:00
 slug: "ego-lite---ai-智能体专用并行浏览器"
 tags: [ai-agent, browser-automation, browser, agent-tools, codex, claude-code, web-automation, local-first, privacy, open-source, mit-license, developer-tools]
 categories: [AI]

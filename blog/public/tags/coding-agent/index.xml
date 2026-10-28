@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Coding-Agent on D7 的知识库</title><link>https://blog.eastseven.cn/tags/coding-agent/</link><description>Recent content in Coding-Agent on D7 的知识库</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 30 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.eastseven.cn/tags/coding-agent/index.xml" rel="self" type="application/rss+xml"/><item><title>Symphony - OpenAI自主Agent任务编排系统</title><link>https://blog.eastseven.cn/posts/03-ai/symphony---openai%E8%87%AA%E4%B8%BBagent%E4%BB%BB%E5%8A%A1%E7%BC%96%E6%8E%92%E7%B3%BB%E7%BB%9F/</link><pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/symphony---openai%E8%87%AA%E4%B8%BBagent%E4%BB%BB%E5%8A%A1%E7%BC%96%E6%8E%92%E7%B3%BB%E7%BB%9F/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;OpenAI Symphony 是一个将项目工作转化为隔离、自主的执行运行（implementation runs）的系统，让团队管理任务而非监督编码 Agent。目前定位为工程预览版（engineering preview），适合在可信环境中测试。&lt;/p&gt;</description></item><item><title>Open Design</title><link>https://blog.eastseven.cn/posts/03-ai/open-design---claude-design%E5%BC%80%E6%BA%90%E6%9B%BF%E4%BB%A3%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7/</link><pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/open-design---claude-design%E5%BC%80%E6%BA%90%E6%9B%BF%E4%BB%A3%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Open Design 是 Anthropic Claude Design 的开源替代方案。本地优先、可部署到 Vercel、全链路 BYOK（Bring Your Own Key）。核心理念：不内置 Agent，而是复用你已有的编码 Agent（Claude Code、Codex CLI、Cursor Agent、Gemini CLI、OpenCode、Qwen Code）作为设计引擎，通过 19 个可组合 Skills 和 71 个品牌级 Design Systems 驱动设计工作流。&lt;/p&gt;</description></item><item><title>CodeBurn</title><link>https://blog.eastseven.cn/posts/03-ai/codeburn---ai%E7%BC%96%E7%A8%8Btoken%E6%88%90%E6%9C%AC%E5%8F%AF%E8%A7%86%E5%8C%96%E4%BB%AA%E8%A1%A8%E7%9B%98/</link><pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/codeburn---ai%E7%BC%96%E7%A8%8Btoken%E6%88%90%E6%9C%AC%E5%8F%AF%E8%A7%86%E5%8C%96%E4%BB%AA%E8%A1%A8%E7%9B%98/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;CodeBurn 是一个交互式 TUI 仪表盘，用于分析 Claude Code / Codex / Cursor 的会话记录，提供详细的 token 消耗和成本拆解。直接读取磁盘上的会话数据，无需代理、包装器或 API Key。&lt;/p&gt;
+&lt;h2 id="核心特性"&gt;核心特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;多 IDE 支持&lt;/strong&gt;：Claude Code（&lt;code&gt;~/.claude/projects/&lt;/code&gt;）、Claude Desktop（code tab）、Cursor IDE&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;13 类任务分类&lt;/strong&gt;：基于工具使用模式和关键词的确定性分类（Coding、Debugging、Feature Dev、Refactoring、Testing、Exploration 等），不调用 LLM&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多维度拆解&lt;/strong&gt;：按日、项目、模型（Opus/Sonnet/Haiku/GPT-4o/Gemini）、活动类型、核心工具、MCP 服务器分解成本&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;定价数据&lt;/strong&gt;：从 LiteLLM 自动获取（24h 缓存），覆盖 input/output/cache write/cache read/web search 成本&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;macOS 菜单栏小组件&lt;/strong&gt;：支持 SwiftBar/xbar，显示今日花费火焰图标，5 分钟刷新&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;导出&lt;/strong&gt;：支持 CSV 和 JSON 格式导出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="安装与使用"&gt;安装与使用&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;npm install -g codeburn
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;codeburn &lt;span style="color:#75715e"&gt;# 交互式仪表盘（默认7天）&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;codeburn today &lt;span style="color:#75715e"&gt;# 今日用量&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;codeburn month &lt;span style="color:#75715e"&gt;# 本月用量&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;codeburn status &lt;span style="color:#75715e"&gt;# 紧凑一行输出&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;codeburn export &lt;span style="color:#75715e"&gt;# CSV 导出&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="链接"&gt;链接&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub: &lt;a href="https://github.com/AgentSeal/codeburn"&gt;https://github.com/AgentSeal/codeburn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;许可证: MIT&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Multica</title><link>https://blog.eastseven.cn/posts/03-ai/multica---%E5%BC%80%E6%BA%90ai-agent%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/</link><pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/multica---%E5%BC%80%E6%BA%90ai-agent%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Multica 是一个开源的 AI 编码 Agent 管理平台，核心理念是&amp;quot;把 AI coding agent 变成真正的队友&amp;quot;。支持将 Claude Code、Codex、OpenClaw、OpenCode 等 agent 以看板方式管理，像分配任务给同事一样给 agent 派活——它们自主执行、汇报状态、积累可复用技能。&lt;/p&gt;</description></item></channel></rss>

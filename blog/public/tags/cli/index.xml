@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Cli on D7 的知识库</title><link>https://blog.eastseven.cn/tags/cli/</link><description>Recent content in Cli on D7 的知识库</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 15 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.eastseven.cn/tags/cli/index.xml" rel="self" type="application/rss+xml"/><item><title>Oh My Pi (omp)</title><link>https://blog.eastseven.cn/posts/03-ai/oh-my-pi---%E7%BB%88%E7%AB%AFai%E7%BC%96%E7%A0%81%E4%BB%A3%E7%90%86pi%E5%A2%9E%E5%BC%BA%E7%89%88harness%E4%BC%98%E5%8C%96---omp/</link><pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/oh-my-pi---%E7%BB%88%E7%AB%AFai%E7%BC%96%E7%A0%81%E4%BB%A3%E7%90%86pi%E5%A2%9E%E5%BC%BA%E7%89%88harness%E4%BC%98%E5%8C%96---omp/</guid><description>&lt;h1 id="oh-my-pi-omp"&gt;Oh My Pi (omp)&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Oh My Pi（命令名 &lt;code&gt;omp&lt;/code&gt;）是 can1357 基于 Mario Zechner 的 &lt;a href="https://github.com/badlogic/pi-mono"&gt;Pi&lt;/a&gt; 深度改造的终端 AI 编码代理，口号是 &amp;ldquo;A coding agent with the IDE wired in&amp;rdquo;。核心理念：不换模型，只靠优化工具管线（harness）榨出模型的全部能力——官方基准显示 Grok Code Fast 1 编辑成功率从 6.7% 提升到 68.3%，Grok 4 Fast 输出 token 减少 61%，MiniMax 通过率翻倍（同一权重同一提示词）。技术栈为 TypeScript + 约 8 万行 Rust 原生核心，MIT 协议，支持 macOS / Linux / Windows 原生运行（无需 WSL）。&lt;/p&gt;</description></item><item><title>Mole</title><link>https://blog.eastseven.cn/posts/04-devops/mole---mac-%E6%B7%B1%E5%BA%A6%E6%B8%85%E7%90%86%E4%BC%98%E5%8C%96%E5%B7%A5%E5%85%B7/</link><pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/04-devops/mole---mac-%E6%B7%B1%E5%BA%A6%E6%B8%85%E7%90%86%E4%BC%98%E5%8C%96%E5%B7%A5%E5%85%B7/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Mole 是一个 macOS 系统清理和优化工具，集合了 CleanMyMac + AppCleaner + DaisyDisk + iStat Menus 的功能于一体，通过命令行操作，轻量高效。&lt;/p&gt;
+&lt;h2 id="核心特性"&gt;核心特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;深度清理&lt;/strong&gt;：清除缓存、日志、浏览器残留、孤立应用数据，回收大量磁盘空间&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;智能卸载&lt;/strong&gt;：移除应用及其关联的启动代理、偏好设置、隐藏残留文件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;磁盘分析&lt;/strong&gt;：可视化磁盘使用，查找大文件，支持交互式导航&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;实时监控&lt;/strong&gt;：CPU、GPU、内存、磁盘、网络的实时状态面板&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;项目清理&lt;/strong&gt;：清理 node_modules、target、.build 等构建产物&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;安全设计&lt;/strong&gt;：默认安全优先，路径校验、受保护目录规则、确认机制，支持 &lt;code&gt;--dry-run&lt;/code&gt; 预览&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON 输出&lt;/strong&gt;：analyze 和 status 支持 &lt;code&gt;--json&lt;/code&gt;，方便脚本集成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="安装"&gt;安装&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;brew install mole
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="链接"&gt;链接&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub: &lt;a href="https://github.com/tw93/Mole"&gt;https://github.com/tw93/Mole&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>DESIGN.md</title><link>https://blog.eastseven.cn/posts/03-ai/design.md---google%E8%A7%86%E8%A7%89%E8%BA%AB%E4%BB%BD%E6%8F%8F%E8%BF%B0%E8%A7%84%E8%8C%83/</link><pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/design.md---google%E8%A7%86%E8%A7%89%E8%BA%AB%E4%BB%BD%E6%8F%8F%E8%BF%B0%E8%A7%84%E8%8C%83/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;DESIGN.md 是 Google Labs 推出的一个格式规范，用于向 AI 编码 Agent 描述项目的视觉身份。通过 YAML front matter 定义机器可读的设计 token，配合 Markdown 正文说明设计理念，让 Agent 获得持久、结构化的设计系统理解。&lt;/p&gt;</description></item><item><title>RTK - Rust Token Killer</title><link>https://blog.eastseven.cn/posts/03-ai/rtk---llm-token-%E6%B6%88%E8%80%97%E4%BC%98%E5%8C%96cli%E4%BB%A3%E7%90%86/</link><pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/rtk---llm-token-%E6%B6%88%E8%80%97%E4%BC%98%E5%8C%96cli%E4%BB%A3%E7%90%86/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;RTK（Rust Token Killer）是一个高性能 CLI 代理，在命令输出到达 LLM 上下文之前进行过滤和压缩，可将 token 消耗降低 60-90%。单个 Rust 二进制文件，零依赖，100+ 支持命令，开销 &amp;lt;10ms。&lt;/p&gt;</description></item></channel></rss>

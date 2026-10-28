@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Claude-Skill on D7 的知识库</title><link>https://blog.eastseven.cn/tags/claude-skill/</link><description>Recent content in Claude-Skill on D7 的知识库</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Wed, 15 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.eastseven.cn/tags/claude-skill/index.xml" rel="self" type="application/rss+xml"/><item><title>Architecture Diagram Generator</title><link>https://blog.eastseven.cn/posts/03-ai/architecture-diagram-generator---claude%E6%9E%B6%E6%9E%84%E5%9B%BE%E7%94%9F%E6%88%90skill/</link><pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/architecture-diagram-generator---claude%E6%9E%B6%E6%9E%84%E5%9B%BE%E7%94%9F%E6%88%90skill/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Architecture Diagram Generator 是一个 Claude AI Skill，能用自然语言描述生成专业深色主题的系统架构图，输出为独立的 HTML/SVG 文件，无需任何依赖。&lt;/p&gt;
+&lt;h2 id="核心特性"&gt;核心特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;自然语言驱动&lt;/strong&gt;：用纯文本描述系统架构，自动生成可视化图表&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;深色主题&lt;/strong&gt;：Slate-950 背景 + 40px 网格，专业美观&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;语义色彩编码&lt;/strong&gt;：Frontend（青色）、Backend（绿色）、Database（紫色）、Cloud（琥珀色）、Security（玫瑰色）、External（灰色）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;独立输出&lt;/strong&gt;：单 HTML 文件，内嵌 CSS + SVG，任何浏览器直接打开&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多种安装方式&lt;/strong&gt;：claude.ai Skills、Claude Code CLI（&lt;code&gt;~/.claude/skills/&lt;/code&gt;）、Projects Knowledge&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="使用方式"&gt;使用方式&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;安装 Skill（下载 zip 上传到 claude.ai Settings → Skills）&lt;/li&gt;
+&lt;li&gt;描述架构（让 AI 分析代码库、手写描述、或让 Claude 生成典型架构）&lt;/li&gt;
+&lt;li&gt;生成图表，支持迭代修改组件、布局&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;适用于 Claude Pro/Max/Team/Enterprise 计划。&lt;/p&gt;</description></item></channel></rss>

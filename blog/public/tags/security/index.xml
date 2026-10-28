@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Security on D7 的知识库</title><link>https://blog.eastseven.cn/tags/security/</link><description>Recent content in Security on D7 的知识库</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Wed, 13 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.eastseven.cn/tags/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Homepage</title><link>https://blog.eastseven.cn/posts/04-devops/homepage---%E5%8F%AF%E9%AB%98%E5%BA%A6%E5%AE%9A%E5%88%B6%E7%9A%84%E8%87%AA%E6%89%98%E7%AE%A1%E5%BA%94%E7%94%A8%E4%BB%AA%E8%A1%A8%E7%9B%98/</link><pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/04-devops/homepage---%E5%8F%AF%E9%AB%98%E5%BA%A6%E5%AE%9A%E5%88%B6%E7%9A%84%E8%87%AA%E6%89%98%E7%AE%A1%E5%BA%94%E7%94%A8%E4%BB%AA%E8%A1%A8%E7%9B%98/</guid><description>&lt;h1 id="homepage"&gt;Homepage&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Homepage 是一个现代化、自托管、可高度定制的主页 / 起始页 / 应用仪表盘项目。它适合 homelab、NAS、自托管服务入口、团队内部工具导航等场景，可以通过 YAML 配置或 Docker Label 自动发现服务，并集成大量第三方服务 API 与信息组件。&lt;/p&gt;</description></item><item><title>OSV-Scanner</title><link>https://blog.eastseven.cn/posts/04-devops/osv-scanner---google%E5%BC%80%E6%BA%90%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F%E5%99%A8/</link><pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/04-devops/osv-scanner---google%E5%BC%80%E6%BA%90%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F%E5%99%A8/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;OSV-Scanner 是 Google 开源的漏洞扫描工具，基于 Go 编写，使用 &lt;a href="https://osv.dev"&gt;OSV.dev&lt;/a&gt; 数据库扫描项目依赖中的已知安全漏洞。提供 OSV 数据库的官方前端接口和 OSV-Scalibr 的 CLI 接口。&lt;/p&gt;
+&lt;h2 id="核心特性"&gt;核心特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;多语言支持&lt;/strong&gt;: C/C++, Dart, Elixir, Go, Java, JavaScript, PHP, Python, R, Ruby, Rust&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多包管理器&lt;/strong&gt;: npm, pip, yarn, maven, go modules, cargo, gem, composer, nuget 等&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;操作系统包扫描&lt;/strong&gt;: 检测 Linux 系统上的 OS 包漏洞&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器镜像扫描&lt;/strong&gt;: 层级感知的容器漏洞扫描，支持 Alpine/Debian/Ubuntu 基础镜像&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;许可证扫描&lt;/strong&gt;: 基于 deps.dev 数据检查依赖许可证合规性&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;离线扫描&lt;/strong&gt;: 支持下载本地数据库后离线运行&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;引导修复(Guided Remediation)&lt;/strong&gt;: 根据依赖深度、严重程度、修复策略等建议升级方案（实验性）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Call Analysis&lt;/strong&gt;: 分析是否实际调用了有漏洞的函数，减少误报&lt;/li&gt;
+&lt;li&gt;** Vendored C/C++ 检测**: 扫描内嵌的 C/C++ 代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="链接"&gt;链接&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub: &lt;a href="https://github.com/google/osv-scanner"&gt;https://github.com/google/osv-scanner&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;OSV 数据库: &lt;a href="https://osv.dev"&gt;https://osv.dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;文档: &lt;a href="https://google.github.io/osv-scanner/"&gt;https://google.github.io/osv-scanner/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

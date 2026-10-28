@@ -1,29 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Ai-Coding on D7 的知识库</title>
-    <link>http://localhost:1313/tags/ai-coding/</link>
-    <description>Recent content in Ai-Coding on D7 的知识库</description>
-    <generator>Hugo</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ai-coding/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Claude Code Best Practices</title>
-      <link>http://localhost:1313/posts/03-ai/claude-code-best-practices---claude-code%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/03-ai/claude-code-best-practices---claude-code%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</guid>
-      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
-&lt;p&gt;Claude Code 最佳实践合集，口号是 &amp;ldquo;from vibe coding to agentic engineering&amp;rdquo;。由 shanraisshan 维护，Anthropic Claude Code 创造者 Boris Cherny 等人贡献内容，是目前最全面的 Claude Code 使用指南。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>2026年AI编码的渐进式Spec实战指南</title>
-      <link>http://localhost:1313/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</link>
-      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</guid>
-      <description>&lt;h1 id=&#34;2026年ai编码的渐进式spec实战指南&#34;&gt;2026年AI编码的渐进式Spec实战指南&lt;/h1&gt;
-&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
-&lt;p&gt;来自阿里工程师逸驹的实战分享，提出&amp;quot;渐进式 Spec Coding&amp;quot;框架——在让 AI 写代码之前，先用结构化文档（Spec）把&amp;quot;要做什么、怎么做、有什么约束&amp;quot;说清楚，然后 AI 围绕文档编码。核心思想：不同复杂度的需求，暴露不同深度的流程。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Ai-Coding on D7 的知识库</title><link>https://blog.eastseven.cn/tags/ai-coding/</link><description>Recent content in Ai-Coding on D7 的知识库</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sat, 25 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.eastseven.cn/tags/ai-coding/index.xml" rel="self" type="application/rss+xml"/><item><title>GStack</title><link>https://blog.eastseven.cn/posts/03-ai/gstack---claude-code-ai%E8%99%9A%E6%8B%9F%E5%B7%A5%E7%A8%8B%E5%9B%A2%E9%98%9F%E6%A1%86%E6%9E%B6/</link><pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/gstack---claude-code-ai%E8%99%9A%E6%8B%9F%E5%B7%A5%E7%A8%8B%E5%9B%A2%E9%98%9F%E6%A1%86%E6%9E%B6/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;GStack 是 Y Combinator 总裁 Garry Tan 开源的 Claude Code 技能框架，将 Claude Code 变成一个虚拟工程团队。包含 23 个专业角色（CEO、设计师、工程经理、发布工程师、文档工程师、QA 等）和 8 个强力工具，全部通过斜杠命令调用，纯 Markdown 配置，MIT 协议免费使用。&lt;/p&gt;</description></item><item><title>Awesome DESIGN.md</title><link>https://blog.eastseven.cn/posts/04-devops/awesome-design.md---ai%E4%BB%A3%E7%90%86%E8%AE%BE%E8%AE%A1%E7%B3%BB%E7%BB%9F%E6%96%87%E4%BB%B6%E9%9B%86%E5%90%88/</link><pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/04-devops/awesome-design.md---ai%E4%BB%A3%E7%90%86%E8%AE%BE%E8%AE%A1%E7%B3%BB%E7%BB%9F%E6%96%87%E4%BB%B6%E9%9B%86%E5%90%88/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Awesome DESIGN.md 是一个精选的 DESIGN.md 文件集合，灵感来源于真实知名网站的视觉设计系统。由 VoltAgent 维护，核心理念是：把一个 DESIGN.md 丢进项目根目录，告诉 AI 代理&amp;quot;按这个风格生成 UI&amp;quot;，就能得到像素级匹配的界面。&lt;/p&gt;</description></item><item><title>2026年AI编码的"渐进式Spec"实战指南</title><link>https://blog.eastseven.cn/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</link><pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</guid><description>&lt;h1 id="2026年ai编码的渐进式spec实战指南"&gt;2026年AI编码的&amp;quot;渐进式Spec&amp;quot;实战指南&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;来自阿里工程师逸驹的实战分享，提出&amp;quot;渐进式 Spec Coding&amp;quot;框架——在让 AI 写代码之前，先用结构化文档（Spec）把&amp;quot;要做什么、怎么做、有什么约束&amp;quot;说清楚，然后 AI 围绕文档编码。核心思想：不同复杂度的需求，暴露不同深度的流程。&lt;/p&gt;</description></item><item><title>Claude Code Best Practices</title><link>https://blog.eastseven.cn/posts/03-ai/claude-code-best-practices---claude-code%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</link><pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/claude-code-best-practices---claude-code%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Claude Code 最佳实践合集，口号是 &amp;ldquo;from vibe coding to agentic engineering&amp;rdquo;。由 shanraisshan 维护，Anthropic Claude Code 创造者 Boris Cherny 等人贡献内容，是目前最全面的 Claude Code 使用指南。&lt;/p&gt;</description></item></channel></rss>

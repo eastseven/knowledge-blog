@@ -1,21 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Codex on D7 的知识库</title>
-    <link>http://localhost:1313/tags/codex/</link>
-    <description>Recent content in Codex on D7 的知识库</description>
-    <generator>Hugo</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/codex/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>驾驭工程：在「智能体优先」的世界里借力 Codex</title>
-      <link>http://localhost:1313/posts/03-ai/%E9%A9%BE%E9%A9%AD%E5%B7%A5%E7%A8%8B---%E6%99%BA%E8%83%BD%E4%BD%93%E4%BC%98%E5%85%88%E4%B8%96%E7%95%8C%E7%9A%84codex%E5%AE%9E%E8%B7%B5/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/03-ai/%E9%A9%BE%E9%A9%AD%E5%B7%A5%E7%A8%8B---%E6%99%BA%E8%83%BD%E4%BD%93%E4%BC%98%E5%85%88%E4%B8%96%E7%95%8C%E7%9A%84codex%E5%AE%9E%E8%B7%B5/</guid>
-      <description>&lt;h1 id=&#34;驾驭工程在智能体优先的世界里借力-codex&#34;&gt;驾驭工程：在「智能体优先」的世界里借力 Codex&lt;/h1&gt;
-&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
-&lt;p&gt;原文作者 Ryan Lopopolo（OpenAI），记述了团队用 Codex（GPT-5 驱动）从零构建一款百万行代码产品的实验：&lt;strong&gt;0 行代码由人工编写&lt;/strong&gt;，3 名工程师 5 个月处理 1500+ PR，效率约为手工编码的 10 倍。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Codex on D7 的知识库</title><link>https://blog.eastseven.cn/tags/codex/</link><description>Recent content in Codex on D7 的知识库</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.eastseven.cn/tags/codex/index.xml" rel="self" type="application/rss+xml"/><item><title>Archify</title><link>https://blog.eastseven.cn/posts/03-ai/archify---%E6%8A%8A%E6%83%B3%E6%B3%95%E6%88%96%E4%BB%A3%E7%A0%81%E5%BA%93%E5%8F%98%E6%88%90%E5%8F%AF%E4%BA%A4%E4%BA%92%E6%9E%B6%E6%9E%84%E5%9B%BE%E7%9A%84-agent-%E6%8A%80%E8%83%BD/</link><pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/archify---%E6%8A%8A%E6%83%B3%E6%B3%95%E6%88%96%E4%BB%A3%E7%A0%81%E5%BA%93%E5%8F%98%E6%88%90%E5%8F%AF%E4%BA%A4%E4%BA%92%E6%9E%B6%E6%9E%84%E5%9B%BE%E7%9A%84-agent-%E6%8A%80%E8%83%BD/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Archify 是一个 Agent 技能（skill），可以把任意想法、计划或代码库转成漂亮的&lt;strong&gt;可交互 HTML 架构图&lt;/strong&gt;。适用于 Claude Code、Codex、Cursor、OpenCode 等编码 Agent。曾登上 GitHub Trending 周榜全语言第一，skills.sh 上安装量 13 万+。&lt;/p&gt;</description></item><item><title>Understand Anything</title><link>https://blog.eastseven.cn/posts/03-ai/understand-anything---%E4%BA%A4%E4%BA%92%E5%BC%8F%E4%BB%A3%E7%A0%81%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E4%B8%8E%E9%A1%B9%E7%9B%AE%E7%90%86%E8%A7%A3%E5%B7%A5%E5%85%B7/</link><pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/understand-anything---%E4%BA%A4%E4%BA%92%E5%BC%8F%E4%BB%A3%E7%A0%81%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E4%B8%8E%E9%A1%B9%E7%9B%AE%E7%90%86%E8%A7%A3%E5%B7%A5%E5%85%B7/</guid><description>&lt;h1 id="understand-anything"&gt;Understand Anything&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Understand Anything 是一个面向代码库、知识库和文档的交互式知识图谱工具。它可以把项目中的文件、函数、类、依赖关系、架构层次和业务流程抽取成可探索、可搜索、可提问的图谱，帮助开发者从“逐文件阅读代码”转向“先理解整体结构”。&lt;/p&gt;</description></item><item><title>Kami</title><link>https://blog.eastseven.cn/posts/03-ai/kami---ai-%E6%96%87%E6%A1%A3%E8%AE%BE%E8%AE%A1%E7%B3%BB%E7%BB%9F/</link><pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/kami---ai-%E6%96%87%E6%A1%A3%E8%AE%BE%E8%AE%A1%E7%B3%BB%E7%BB%9F/</guid><description>&lt;h1 id="简介"&gt;简介&lt;/h1&gt;
+&lt;p&gt;Kami（紙，かみ）是 tw93（大漠穷秋）开源的 AI 文档设计系统，核心理念是&amp;quot;好内容值得好纸张&amp;quot;。它不是 UI 框架，而是一套美学约束系统，让 AI Agent 生成排版精美的文档（HTML/PDF），告别千篇一律的默认样式。&lt;/p&gt;</description></item><item><title>RTK - Rust Token Killer</title><link>https://blog.eastseven.cn/posts/03-ai/rtk---llm-token-%E6%B6%88%E8%80%97%E4%BC%98%E5%8C%96cli%E4%BB%A3%E7%90%86/</link><pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/rtk---llm-token-%E6%B6%88%E8%80%97%E4%BC%98%E5%8C%96cli%E4%BB%A3%E7%90%86/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;RTK（Rust Token Killer）是一个高性能 CLI 代理，在命令输出到达 LLM 上下文之前进行过滤和压缩，可将 token 消耗降低 60-90%。单个 Rust 二进制文件，零依赖，100+ 支持命令，开销 &amp;lt;10ms。&lt;/p&gt;</description></item><item><title>驾驭工程：在「智能体优先」的世界里借力 Codex</title><link>https://blog.eastseven.cn/posts/03-ai/%E9%A9%BE%E9%A9%AD%E5%B7%A5%E7%A8%8B---%E6%99%BA%E8%83%BD%E4%BD%93%E4%BC%98%E5%85%88%E4%B8%96%E7%95%8C%E7%9A%84codex%E5%AE%9E%E8%B7%B5/</link><pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/%E9%A9%BE%E9%A9%AD%E5%B7%A5%E7%A8%8B---%E6%99%BA%E8%83%BD%E4%BD%93%E4%BC%98%E5%85%88%E4%B8%96%E7%95%8C%E7%9A%84codex%E5%AE%9E%E8%B7%B5/</guid><description>&lt;h1 id="驾驭工程在智能体优先的世界里借力-codex"&gt;驾驭工程：在「智能体优先」的世界里借力 Codex&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;原文作者 Ryan Lopopolo（OpenAI），记述了团队用 Codex（GPT-5 驱动）从零构建一款百万行代码产品的实验：&lt;strong&gt;0 行代码由人工编写&lt;/strong&gt;，3 名工程师 5 个月处理 1500+ PR，效率约为手工编码的 10 倍。&lt;/p&gt;</description></item></channel></rss>

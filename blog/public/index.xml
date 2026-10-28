@@ -1,22 +1,122 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>D7 的知识库</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on D7 的知识库</description>
-    <generator>Hugo</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Andrej Karpathy Skills</title>
-      <link>http://localhost:1313/posts/03-ai/andrej-karpathy-skills---llm%E7%BC%96%E7%A0%81%E5%87%86%E5%88%99/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/03-ai/andrej-karpathy-skills---llm%E7%BC%96%E7%A0%81%E5%87%86%E5%88%99/</guid>
-      <description>&lt;h1 id=&#34;andrej-karpathy-skills---llm-编码准则&#34;&gt;Andrej Karpathy Skills - LLM 编码准则&lt;/h1&gt;
-&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>D7 的知识库</title><link>https://blog.eastseven.cn/</link><description>Recent content on D7 的知识库</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Sun, 25 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.eastseven.cn/index.xml" rel="self" type="application/rss+xml"/><item><title>Langfuse - 开源 LLM 可观测性与评估平台</title><link>https://blog.eastseven.cn/posts/03-ai/langfuse---%E5%BC%80%E6%BA%90-llm-%E5%8F%AF%E8%A7%82%E6%B5%8B%E6%80%A7%E4%B8%8E%E8%AF%84%E4%BC%B0%E5%B9%B3%E5%8F%B0/</link><pubDate>Sun, 25 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/langfuse---%E5%BC%80%E6%BA%90-llm-%E5%8F%AF%E8%A7%82%E6%B5%8B%E6%80%A7%E4%B8%8E%E8%AF%84%E4%BC%B0%E5%B9%B3%E5%8F%B0/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Langfuse 是面向 LLM 应用与智能体的开源工程平台，统一提供调用链路追踪、调试、提示词管理、评估和数据集能力。它适合把模型调用、RAG、Embedding 与 Agent 工具调用串成可检索的全链路记录，并基于真实运行数据持续改进应用。&lt;/p&gt;</description></item><item><title>Archify</title><link>https://blog.eastseven.cn/posts/03-ai/archify---%E6%8A%8A%E6%83%B3%E6%B3%95%E6%88%96%E4%BB%A3%E7%A0%81%E5%BA%93%E5%8F%98%E6%88%90%E5%8F%AF%E4%BA%A4%E4%BA%92%E6%9E%B6%E6%9E%84%E5%9B%BE%E7%9A%84-agent-%E6%8A%80%E8%83%BD/</link><pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/archify---%E6%8A%8A%E6%83%B3%E6%B3%95%E6%88%96%E4%BB%A3%E7%A0%81%E5%BA%93%E5%8F%98%E6%88%90%E5%8F%AF%E4%BA%A4%E4%BA%92%E6%9E%B6%E6%9E%84%E5%9B%BE%E7%9A%84-agent-%E6%8A%80%E8%83%BD/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Archify 是一个 Agent 技能（skill），可以把任意想法、计划或代码库转成漂亮的&lt;strong&gt;可交互 HTML 架构图&lt;/strong&gt;。适用于 Claude Code、Codex、Cursor、OpenCode 等编码 Agent。曾登上 GitHub Trending 周榜全语言第一，skills.sh 上安装量 13 万+。&lt;/p&gt;</description></item><item><title>Bonsai 2 27B 本地部署与接入 Hermes Agent</title><link>https://blog.eastseven.cn/posts/03-ai/bonsai-2-27b-%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E4%B8%8E%E6%8E%A5%E5%85%A5-hermes-agent---%E4%BD%8E%E6%98%BE%E5%AD%98%E5%A4%9A%E6%A8%A1%E6%80%81%E6%A8%A1%E5%9E%8B%E6%95%99%E7%A8%8B/</link><pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/bonsai-2-27b-%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2%E4%B8%8E%E6%8E%A5%E5%85%A5-hermes-agent---%E4%BD%8E%E6%98%BE%E5%AD%98%E5%A4%9A%E6%A8%A1%E6%80%81%E6%A8%A1%E5%9E%8B%E6%95%99%E7%A8%8B/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;本文介绍如何在 Windows 上部署 PrismML 的 Ternary-Bonsai-2-27B GGUF 模型，并通过 llama.cpp 提供 OpenAI 兼容 API，供 Hermes Agent 调用。文章将该模型描述为基于 Qwen3.8-27B 的约 9 倍压缩版本：主模型约 5.9GB，并支持最长 262K 上下文与图片输入。&lt;/p&gt;</description></item><item><title>Oh My Pi (omp)</title><link>https://blog.eastseven.cn/posts/03-ai/oh-my-pi---%E7%BB%88%E7%AB%AFai%E7%BC%96%E7%A0%81%E4%BB%A3%E7%90%86pi%E5%A2%9E%E5%BC%BA%E7%89%88harness%E4%BC%98%E5%8C%96---omp/</link><pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/oh-my-pi---%E7%BB%88%E7%AB%AFai%E7%BC%96%E7%A0%81%E4%BB%A3%E7%90%86pi%E5%A2%9E%E5%BC%BA%E7%89%88harness%E4%BC%98%E5%8C%96---omp/</guid><description>&lt;h1 id="oh-my-pi-omp"&gt;Oh My Pi (omp)&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Oh My Pi（命令名 &lt;code&gt;omp&lt;/code&gt;）是 can1357 基于 Mario Zechner 的 &lt;a href="https://github.com/badlogic/pi-mono"&gt;Pi&lt;/a&gt; 深度改造的终端 AI 编码代理，口号是 &amp;ldquo;A coding agent with the IDE wired in&amp;rdquo;。核心理念：不换模型，只靠优化工具管线（harness）榨出模型的全部能力——官方基准显示 Grok Code Fast 1 编辑成功率从 6.7% 提升到 68.3%，Grok 4 Fast 输出 token 减少 61%，MiniMax 通过率翻倍（同一权重同一提示词）。技术栈为 TypeScript + 约 8 万行 Rust 原生核心，MIT 协议，支持 macOS / Linux / Windows 原生运行（无需 WSL）。&lt;/p&gt;</description></item><item><title>RustFS — Rust 编写的高性能 S3 兼容对象存储</title><link>https://blog.eastseven.cn/posts/04-devops/rustfs---rust%E7%BC%96%E5%86%99%E7%9A%84%E9%AB%98%E6%80%A7%E8%83%BDs3%E5%85%BC%E5%AE%B9%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8---%E6%AF%94minio%E5%BF%AB2.3%E5%80%8D/</link><pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/04-devops/rustfs---rust%E7%BC%96%E5%86%99%E7%9A%84%E9%AB%98%E6%80%A7%E8%83%BDs3%E5%85%BC%E5%AE%B9%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8---%E6%AF%94minio%E5%BF%AB2.3%E5%80%8D/</guid><description>&lt;h1 id="rustfs--rust-编写的高性能-s3-兼容对象存储"&gt;RustFS — Rust 编写的高性能 S3 兼容对象存储&lt;/h1&gt;
+&lt;h2 id="一句话简介"&gt;一句话简介&lt;/h2&gt;
+&lt;p&gt;RustFS 是用 Rust 编写的高性能分布式对象存储系统，完整兼容 S3 API，定位为 MinIO 的替代方案。4KB 小对象场景下速度比 MinIO 快 2.3 倍。&lt;/p&gt;</description></item><item><title>OpenWorker - Andrew Ng开源桌面AI同事</title><link>https://blog.eastseven.cn/posts/03-ai/openworker---andrew-ng%E5%BC%80%E6%BA%90%E6%A1%8C%E9%9D%A2ai%E5%90%8C%E4%BA%8B/</link><pubDate>Sun, 26 Jul 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/openworker---andrew-ng%E5%BC%80%E6%BA%90%E6%A1%8C%E9%9D%A2ai%E5%90%8C%E4%BA%8B/</guid><description>&lt;h1 id="openworker---andrew-ng开源桌面ai同事"&gt;OpenWorker - Andrew Ng开源桌面AI同事&lt;/h1&gt;
+&lt;p&gt;官网：https://openworker.com
+GitHub：https://github.com/andrewyng/openworker&lt;/p&gt;</description></item><item><title>tsuru</title><link>https://blog.eastseven.cn/posts/04-devops/tsuru---%E5%BC%80%E6%BA%90%E5%8F%AF%E6%89%A9%E5%B1%95-paas-%E5%B9%B3%E5%8F%B0/</link><pubDate>Mon, 29 Jun 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/04-devops/tsuru---%E5%BC%80%E6%BA%90%E5%8F%AF%E6%89%A9%E5%B1%95-paas-%E5%B9%B3%E5%8F%B0/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;tsuru 是一个开源、可扩展的 Platform as a Service（PaaS）平台，目标是让应用部署更快、更简单。它隐藏底层服务器和基础设施细节，让开发者可以专注于应用本身，并通过命令行工具完成应用管理与部署。&lt;/p&gt;</description></item><item><title>Understand Anything</title><link>https://blog.eastseven.cn/posts/03-ai/understand-anything---%E4%BA%A4%E4%BA%92%E5%BC%8F%E4%BB%A3%E7%A0%81%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E4%B8%8E%E9%A1%B9%E7%9B%AE%E7%90%86%E8%A7%A3%E5%B7%A5%E5%85%B7/</link><pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/understand-anything---%E4%BA%A4%E4%BA%92%E5%BC%8F%E4%BB%A3%E7%A0%81%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E4%B8%8E%E9%A1%B9%E7%9B%AE%E7%90%86%E8%A7%A3%E5%B7%A5%E5%85%B7/</guid><description>&lt;h1 id="understand-anything"&gt;Understand Anything&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Understand Anything 是一个面向代码库、知识库和文档的交互式知识图谱工具。它可以把项目中的文件、函数、类、依赖关系、架构层次和业务流程抽取成可探索、可搜索、可提问的图谱，帮助开发者从“逐文件阅读代码”转向“先理解整体结构”。&lt;/p&gt;</description></item><item><title>LLM Wiki</title><link>https://blog.eastseven.cn/posts/03-ai/llm-wiki---%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E5%BA%93%E7%9A%84%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8/</link><pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/llm-wiki---%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%9F%A5%E8%AF%86%E5%BA%93%E7%9A%84%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8/</guid><description>&lt;h1 id="llm-wiki"&gt;LLM Wiki&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;LLM Wiki 是一个跨平台桌面应用，用来把个人文档自动整理成结构化、可互链、可持续维护的知识库。它不是每次提问时临时检索并重新生成答案的传统 RAG 方式，而是让 LLM 在导入资料时增量地阅读、分析、生成并维护 wiki 页面，让知识“编译一次、持续更新”。&lt;/p&gt;</description></item><item><title>TencentDB Agent Memory</title><link>https://blog.eastseven.cn/posts/03-ai/tencentdb-agent-memory---%E6%9C%AC%E5%9C%B0%E4%BC%98%E5%85%88%E7%9A%84-ai-agent-%E5%88%86%E5%B1%82%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86/</link><pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/tencentdb-agent-memory---%E6%9C%AC%E5%9C%B0%E4%BC%98%E5%85%88%E7%9A%84-ai-agent-%E5%88%86%E5%B1%82%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86/</guid><description>&lt;h1 id="tencentdb-agent-memory"&gt;TencentDB Agent Memory&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;TencentDB Agent Memory 是腾讯开源的 AI Agent 记忆系统，定位是为 Agent 提供“符号化短期记忆 + 分层式长期记忆”。&lt;/p&gt;
+&lt;p&gt;项目强调本地优先和可追溯：不是把历史对话粗暴堆进上下文，也不是做不可逆摘要，而是通过分层结构保留高层语义与底层证据之间的下钻链路。&lt;/p&gt;</description></item><item><title>Homepage</title><link>https://blog.eastseven.cn/posts/04-devops/homepage---%E5%8F%AF%E9%AB%98%E5%BA%A6%E5%AE%9A%E5%88%B6%E7%9A%84%E8%87%AA%E6%89%98%E7%AE%A1%E5%BA%94%E7%94%A8%E4%BB%AA%E8%A1%A8%E7%9B%98/</link><pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/04-devops/homepage---%E5%8F%AF%E9%AB%98%E5%BA%A6%E5%AE%9A%E5%88%B6%E7%9A%84%E8%87%AA%E6%89%98%E7%AE%A1%E5%BA%94%E7%94%A8%E4%BB%AA%E8%A1%A8%E7%9B%98/</guid><description>&lt;h1 id="homepage"&gt;Homepage&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Homepage 是一个现代化、自托管、可高度定制的主页 / 起始页 / 应用仪表盘项目。它适合 homelab、NAS、自托管服务入口、团队内部工具导航等场景，可以通过 YAML 配置或 Docker Label 自动发现服务，并集成大量第三方服务 API 与信息组件。&lt;/p&gt;</description></item><item><title>llmfit</title><link>https://blog.eastseven.cn/posts/03-ai/llmfit---%E6%9C%AC%E5%9C%B0%E7%A1%AC%E4%BB%B6%E9%80%82%E9%85%8D%E7%9A%84-llm-%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90%E5%B7%A5%E5%85%B7/</link><pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/llmfit---%E6%9C%AC%E5%9C%B0%E7%A1%AC%E4%BB%B6%E9%80%82%E9%85%8D%E7%9A%84-llm-%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90%E5%B7%A5%E5%85%B7/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;llmfit 是一个用于“根据本机硬件选择合适 LLM 模型”的开源终端工具。它会检测系统的 CPU、内存、GPU/显存与推理后端，然后从大量模型与 provider 中评估哪些模型能跑、跑得好不好，并给出推荐排序。&lt;/p&gt;</description></item><item><title>Mole</title><link>https://blog.eastseven.cn/posts/04-devops/mole---mac-%E6%B7%B1%E5%BA%A6%E6%B8%85%E7%90%86%E4%BC%98%E5%8C%96%E5%B7%A5%E5%85%B7/</link><pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/04-devops/mole---mac-%E6%B7%B1%E5%BA%A6%E6%B8%85%E7%90%86%E4%BC%98%E5%8C%96%E5%B7%A5%E5%85%B7/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Mole 是一个 macOS 系统清理和优化工具，集合了 CleanMyMac + AppCleaner + DaisyDisk + iStat Menus 的功能于一体，通过命令行操作，轻量高效。&lt;/p&gt;
+&lt;h2 id="核心特性"&gt;核心特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;深度清理&lt;/strong&gt;：清除缓存、日志、浏览器残留、孤立应用数据，回收大量磁盘空间&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;智能卸载&lt;/strong&gt;：移除应用及其关联的启动代理、偏好设置、隐藏残留文件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;磁盘分析&lt;/strong&gt;：可视化磁盘使用，查找大文件，支持交互式导航&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;实时监控&lt;/strong&gt;：CPU、GPU、内存、磁盘、网络的实时状态面板&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;项目清理&lt;/strong&gt;：清理 node_modules、target、.build 等构建产物&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;安全设计&lt;/strong&gt;：默认安全优先，路径校验、受保护目录规则、确认机制，支持 &lt;code&gt;--dry-run&lt;/code&gt; 预览&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON 输出&lt;/strong&gt;：analyze 和 status 支持 &lt;code&gt;--json&lt;/code&gt;，方便脚本集成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="安装"&gt;安装&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;brew install mole
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="链接"&gt;链接&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub: &lt;a href="https://github.com/tw93/Mole"&gt;https://github.com/tw93/Mole&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Infisical - 开源密钥与特权访问管理平台</title><link>https://blog.eastseven.cn/posts/04-devops/infisical---%E5%BC%80%E6%BA%90%E5%AF%86%E9%92%A5%E4%B8%8E%E7%89%B9%E6%9D%83%E8%AE%BF%E9%97%AE%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/</link><pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/04-devops/infisical---%E5%BC%80%E6%BA%90%E5%AF%86%E9%92%A5%E4%B8%8E%E7%89%B9%E6%9D%83%E8%AE%BF%E9%97%AE%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Infisical 是一个开源的密钥（Secrets）、证书（Certificates）和特权访问管理（PAM）平台。团队可以用它集中管理应用配置和密钥（API Key、数据库凭证），并管理内部 PKI 基础设施。相当于开源版 HashiCorp Vault 的现代替代方案。&lt;/p&gt;</description></item><item><title>Symphony - OpenAI自主Agent任务编排系统</title><link>https://blog.eastseven.cn/posts/03-ai/symphony---openai%E8%87%AA%E4%B8%BBagent%E4%BB%BB%E5%8A%A1%E7%BC%96%E6%8E%92%E7%B3%BB%E7%BB%9F/</link><pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/symphony---openai%E8%87%AA%E4%B8%BBagent%E4%BB%BB%E5%8A%A1%E7%BC%96%E6%8E%92%E7%B3%BB%E7%BB%9F/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;OpenAI Symphony 是一个将项目工作转化为隔离、自主的执行运行（implementation runs）的系统，让团队管理任务而非监督编码 Agent。目前定位为工程预览版（engineering preview），适合在可信环境中测试。&lt;/p&gt;</description></item><item><title>MemOS</title><link>https://blog.eastseven.cn/posts/03-ai/memos---ai-agent%E8%AE%B0%E5%BF%86%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link><pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/memos---ai-agent%E8%AE%B0%E5%BF%86%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;MemOS 是一个面向 LLM 和 AI Agent 的记忆操作系统（Memory Operating System），统一了记忆的存储/检索/管理，支持长期记忆、知识库、多模态记忆、工具记忆等，实现上下文感知和个性化交互。当前版本 v2.0「星尘（Stardust）」，在多项基准测试中表现优异：LoCoMo 75.80、LongMemEval +40.43%、PrefEval-10 +2568%，相比 OpenAI Memory 准确率提升 43.70%，节省 35.24% 记忆 Token。&lt;/p&gt;</description></item><item><title>Open Design</title><link>https://blog.eastseven.cn/posts/03-ai/open-design---claude-design%E5%BC%80%E6%BA%90%E6%9B%BF%E4%BB%A3%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7/</link><pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/open-design---claude-design%E5%BC%80%E6%BA%90%E6%9B%BF%E4%BB%A3%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Open Design 是 Anthropic Claude Design 的开源替代方案。本地优先、可部署到 Vercel、全链路 BYOK（Bring Your Own Key）。核心理念：不内置 Agent，而是复用你已有的编码 Agent（Claude Code、Codex CLI、Cursor Agent、Gemini CLI、OpenCode、Qwen Code）作为设计引擎，通过 19 个可组合 Skills 和 71 个品牌级 Design Systems 驱动设计工作流。&lt;/p&gt;</description></item><item><title>OSV-Scanner</title><link>https://blog.eastseven.cn/posts/04-devops/osv-scanner---google%E5%BC%80%E6%BA%90%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F%E5%99%A8/</link><pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/04-devops/osv-scanner---google%E5%BC%80%E6%BA%90%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F%E5%99%A8/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;OSV-Scanner 是 Google 开源的漏洞扫描工具，基于 Go 编写，使用 &lt;a href="https://osv.dev"&gt;OSV.dev&lt;/a&gt; 数据库扫描项目依赖中的已知安全漏洞。提供 OSV 数据库的官方前端接口和 OSV-Scalibr 的 CLI 接口。&lt;/p&gt;
+&lt;h2 id="核心特性"&gt;核心特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;多语言支持&lt;/strong&gt;: C/C++, Dart, Elixir, Go, Java, JavaScript, PHP, Python, R, Ruby, Rust&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多包管理器&lt;/strong&gt;: npm, pip, yarn, maven, go modules, cargo, gem, composer, nuget 等&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;操作系统包扫描&lt;/strong&gt;: 检测 Linux 系统上的 OS 包漏洞&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器镜像扫描&lt;/strong&gt;: 层级感知的容器漏洞扫描，支持 Alpine/Debian/Ubuntu 基础镜像&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;许可证扫描&lt;/strong&gt;: 基于 deps.dev 数据检查依赖许可证合规性&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;离线扫描&lt;/strong&gt;: 支持下载本地数据库后离线运行&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;引导修复(Guided Remediation)&lt;/strong&gt;: 根据依赖深度、严重程度、修复策略等建议升级方案（实验性）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Call Analysis&lt;/strong&gt;: 分析是否实际调用了有漏洞的函数，减少误报&lt;/li&gt;
+&lt;li&gt;** Vendored C/C++ 检测**: 扫描内嵌的 C/C++ 代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="链接"&gt;链接&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub: &lt;a href="https://github.com/google/osv-scanner"&gt;https://github.com/google/osv-scanner&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;OSV 数据库: &lt;a href="https://osv.dev"&gt;https://osv.dev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;文档: &lt;a href="https://google.github.io/osv-scanner/"&gt;https://google.github.io/osv-scanner/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>GStack</title><link>https://blog.eastseven.cn/posts/03-ai/gstack---claude-code-ai%E8%99%9A%E6%8B%9F%E5%B7%A5%E7%A8%8B%E5%9B%A2%E9%98%9F%E6%A1%86%E6%9E%B6/</link><pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/gstack---claude-code-ai%E8%99%9A%E6%8B%9F%E5%B7%A5%E7%A8%8B%E5%9B%A2%E9%98%9F%E6%A1%86%E6%9E%B6/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;GStack 是 Y Combinator 总裁 Garry Tan 开源的 Claude Code 技能框架，将 Claude Code 变成一个虚拟工程团队。包含 23 个专业角色（CEO、设计师、工程经理、发布工程师、文档工程师、QA 等）和 8 个强力工具，全部通过斜杠命令调用，纯 Markdown 配置，MIT 协议免费使用。&lt;/p&gt;</description></item><item><title>DESIGN.md</title><link>https://blog.eastseven.cn/posts/03-ai/design.md---google%E8%A7%86%E8%A7%89%E8%BA%AB%E4%BB%BD%E6%8F%8F%E8%BF%B0%E8%A7%84%E8%8C%83/</link><pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/design.md---google%E8%A7%86%E8%A7%89%E8%BA%AB%E4%BB%BD%E6%8F%8F%E8%BF%B0%E8%A7%84%E8%8C%83/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;DESIGN.md 是 Google Labs 推出的一个格式规范，用于向 AI 编码 Agent 描述项目的视觉身份。通过 YAML front matter 定义机器可读的设计 token，配合 Markdown 正文说明设计理念，让 Agent 获得持久、结构化的设计系统理解。&lt;/p&gt;</description></item><item><title>Fireworks Tech Graph</title><link>https://blog.eastseven.cn/posts/03-ai/fireworks-tech-graph---ai%E6%8A%80%E6%9C%AF%E5%9B%BE%E8%A1%A8%E7%94%9F%E6%88%90%E6%8A%80%E8%83%BD/</link><pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/fireworks-tech-graph---ai%E6%8A%80%E6%9C%AF%E5%9B%BE%E8%A1%A8%E7%94%9F%E6%88%90%E6%8A%80%E8%83%BD/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Fireworks Tech Graph 是一个 Claude Code 技能，用于从自然语言描述生成生产级 SVG+PNG 技术图表。支持 8 种图表类型、7 种视觉风格，内置 AI/Agent 领域知识（RAG、Agentic Search、Mem0、Multi-Agent、Tool Call 等），覆盖全部 14 种 UML 图表类型。&lt;/p&gt;</description></item><item><title>Kami</title><link>https://blog.eastseven.cn/posts/03-ai/kami---ai-%E6%96%87%E6%A1%A3%E8%AE%BE%E8%AE%A1%E7%B3%BB%E7%BB%9F/</link><pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/kami---ai-%E6%96%87%E6%A1%A3%E8%AE%BE%E8%AE%A1%E7%B3%BB%E7%BB%9F/</guid><description>&lt;h1 id="简介"&gt;简介&lt;/h1&gt;
+&lt;p&gt;Kami（紙，かみ）是 tw93（大漠穷秋）开源的 AI 文档设计系统，核心理念是&amp;quot;好内容值得好纸张&amp;quot;。它不是 UI 框架，而是一套美学约束系统，让 AI Agent 生成排版精美的文档（HTML/PDF），告别千篇一律的默认样式。&lt;/p&gt;</description></item><item><title>AnyCrawl - 高性能网页爬取与LLM数据提取工具</title><link>https://blog.eastseven.cn/posts/03-ai/anycrawl---%E9%AB%98%E6%80%A7%E8%83%BD%E7%BD%91%E9%A1%B5%E7%88%AC%E5%8F%96%E4%B8%8Ellm%E6%95%B0%E6%8D%AE%E6%8F%90%E5%8F%96%E5%B7%A5%E5%85%B7/</link><pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/anycrawl---%E9%AB%98%E6%80%A7%E8%83%BD%E7%BD%91%E9%A1%B5%E7%88%AC%E5%8F%96%E4%B8%8Ellm%E6%95%B0%E6%8D%AE%E6%8F%90%E5%8F%96%E5%B7%A5%E5%85%B7/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;AnyCrawl 是一个高性能爬取和抓取工具包，将网站转化为 LLM 可用的数据，并支持从 Google/Bing/百度等搜索引擎提取结构化 SERP 结果。基于 Node.js/TypeScript，支持原生多线程批量处理。&lt;/p&gt;</description></item><item><title>Huashu Design - HTML原生AI设计Skill</title><link>https://blog.eastseven.cn/posts/03-ai/huashu-design---html%E5%8E%9F%E7%94%9Fai%E8%AE%BE%E8%AE%A1skill/</link><pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/huashu-design---html%E5%8E%9F%E7%94%9Fai%E8%AE%BE%E8%AE%A1skill/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Huashu Design 是一个 HTML 原生的设计 Skill，适用于 Claude Code、Cursor、Codex 等任意兼容 skill 的 AI Agent。一句话 prompt 即可交付高保真原型、幻灯片、动画和信息图。&lt;/p&gt;</description></item><item><title>Agentic Design Patterns - AI Agent设计模式中文翻译</title><link>https://blog.eastseven.cn/posts/03-ai/agentic-design-patterns---ai-agent%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%AD%E6%96%87%E7%BF%BB%E8%AF%91/</link><pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/agentic-design-patterns---ai-agent%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%AD%E6%96%87%E7%BF%BB%E8%AF%91/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;谷歌新书《Agentic Design Patterns》的最佳中文翻译版，由 xindoo 发起并维护。系统介绍了 AI Agent 系统的 21 个核心设计模式。&lt;/p&gt;
+&lt;h2 id="核心内容"&gt;核心内容&lt;/h2&gt;
+&lt;p&gt;覆盖从基础到高级的完整 Agent 设计模式：&lt;/p&gt;</description></item><item><title>Architecture Diagram Generator</title><link>https://blog.eastseven.cn/posts/03-ai/architecture-diagram-generator---claude%E6%9E%B6%E6%9E%84%E5%9B%BE%E7%94%9F%E6%88%90skill/</link><pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/architecture-diagram-generator---claude%E6%9E%B6%E6%9E%84%E5%9B%BE%E7%94%9F%E6%88%90skill/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Architecture Diagram Generator 是一个 Claude AI Skill，能用自然语言描述生成专业深色主题的系统架构图，输出为独立的 HTML/SVG 文件，无需任何依赖。&lt;/p&gt;
+&lt;h2 id="核心特性"&gt;核心特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;自然语言驱动&lt;/strong&gt;：用纯文本描述系统架构，自动生成可视化图表&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;深色主题&lt;/strong&gt;：Slate-950 背景 + 40px 网格，专业美观&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;语义色彩编码&lt;/strong&gt;：Frontend（青色）、Backend（绿色）、Database（紫色）、Cloud（琥珀色）、Security（玫瑰色）、External（灰色）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;独立输出&lt;/strong&gt;：单 HTML 文件，内嵌 CSS + SVG，任何浏览器直接打开&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多种安装方式&lt;/strong&gt;：claude.ai Skills、Claude Code CLI（&lt;code&gt;~/.claude/skills/&lt;/code&gt;）、Projects Knowledge&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="使用方式"&gt;使用方式&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;安装 Skill（下载 zip 上传到 claude.ai Settings → Skills）&lt;/li&gt;
+&lt;li&gt;描述架构（让 AI 分析代码库、手写描述、或让 Claude 生成典型架构）&lt;/li&gt;
+&lt;li&gt;生成图表，支持迭代修改组件、布局&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;适用于 Claude Pro/Max/Team/Enterprise 计划。&lt;/p&gt;</description></item><item><title>CodeBurn</title><link>https://blog.eastseven.cn/posts/03-ai/codeburn---ai%E7%BC%96%E7%A8%8Btoken%E6%88%90%E6%9C%AC%E5%8F%AF%E8%A7%86%E5%8C%96%E4%BB%AA%E8%A1%A8%E7%9B%98/</link><pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/codeburn---ai%E7%BC%96%E7%A8%8Btoken%E6%88%90%E6%9C%AC%E5%8F%AF%E8%A7%86%E5%8C%96%E4%BB%AA%E8%A1%A8%E7%9B%98/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;CodeBurn 是一个交互式 TUI 仪表盘，用于分析 Claude Code / Codex / Cursor 的会话记录，提供详细的 token 消耗和成本拆解。直接读取磁盘上的会话数据，无需代理、包装器或 API Key。&lt;/p&gt;
+&lt;h2 id="核心特性"&gt;核心特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;多 IDE 支持&lt;/strong&gt;：Claude Code（&lt;code&gt;~/.claude/projects/&lt;/code&gt;）、Claude Desktop（code tab）、Cursor IDE&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;13 类任务分类&lt;/strong&gt;：基于工具使用模式和关键词的确定性分类（Coding、Debugging、Feature Dev、Refactoring、Testing、Exploration 等），不调用 LLM&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多维度拆解&lt;/strong&gt;：按日、项目、模型（Opus/Sonnet/Haiku/GPT-4o/Gemini）、活动类型、核心工具、MCP 服务器分解成本&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;定价数据&lt;/strong&gt;：从 LiteLLM 自动获取（24h 缓存），覆盖 input/output/cache write/cache read/web search 成本&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;macOS 菜单栏小组件&lt;/strong&gt;：支持 SwiftBar/xbar，显示今日花费火焰图标，5 分钟刷新&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;导出&lt;/strong&gt;：支持 CSV 和 JSON 格式导出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="安装与使用"&gt;安装与使用&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;npm install -g codeburn
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;codeburn &lt;span style="color:#75715e"&gt;# 交互式仪表盘（默认7天）&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;codeburn today &lt;span style="color:#75715e"&gt;# 今日用量&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;codeburn month &lt;span style="color:#75715e"&gt;# 本月用量&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;codeburn status &lt;span style="color:#75715e"&gt;# 紧凑一行输出&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;codeburn export &lt;span style="color:#75715e"&gt;# CSV 导出&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="链接"&gt;链接&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub: &lt;a href="https://github.com/AgentSeal/codeburn"&gt;https://github.com/AgentSeal/codeburn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;许可证: MIT&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Multica</title><link>https://blog.eastseven.cn/posts/03-ai/multica---%E5%BC%80%E6%BA%90ai-agent%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/</link><pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/multica---%E5%BC%80%E6%BA%90ai-agent%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Multica 是一个开源的 AI 编码 Agent 管理平台，核心理念是&amp;quot;把 AI coding agent 变成真正的队友&amp;quot;。支持将 Claude Code、Codex、OpenClaw、OpenCode 等 agent 以看板方式管理，像分配任务给同事一样给 agent 派活——它们自主执行、汇报状态、积累可复用技能。&lt;/p&gt;</description></item><item><title>Awesome DESIGN.md</title><link>https://blog.eastseven.cn/posts/04-devops/awesome-design.md---ai%E4%BB%A3%E7%90%86%E8%AE%BE%E8%AE%A1%E7%B3%BB%E7%BB%9F%E6%96%87%E4%BB%B6%E9%9B%86%E5%90%88/</link><pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/04-devops/awesome-design.md---ai%E4%BB%A3%E7%90%86%E8%AE%BE%E8%AE%A1%E7%B3%BB%E7%BB%9F%E6%96%87%E4%BB%B6%E9%9B%86%E5%90%88/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Awesome DESIGN.md 是一个精选的 DESIGN.md 文件集合，灵感来源于真实知名网站的视觉设计系统。由 VoltAgent 维护，核心理念是：把一个 DESIGN.md 丢进项目根目录，告诉 AI 代理&amp;quot;按这个风格生成 UI&amp;quot;，就能得到像素级匹配的界面。&lt;/p&gt;</description></item><item><title>Graphify</title><link>https://blog.eastseven.cn/posts/03-ai/graphify---ai%E4%BB%A3%E7%A0%81%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/</link><pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/graphify---ai%E4%BB%A3%E7%A0%81%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Graphify 是一个 Claude Code 技能，输入 &lt;code&gt;/graphify&lt;/code&gt; 即可读取文件并构建知识图谱。支持代码、PDF、Markdown、截图、图表、白板照片甚至其他语言的图片 &amp;ndash; 使用 Claude 视觉从所有内容中提取概念和关系，连接成一张图。&lt;/p&gt;</description></item><item><title>Hermes Agent</title><link>https://blog.eastseven.cn/posts/03-ai/hermes-agent---nous-research%E8%87%AA%E5%AD%A6%E4%B9%A0ai%E4%BB%A3%E7%90%86/</link><pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/hermes-agent---nous-research%E8%87%AA%E5%AD%A6%E4%B9%A0ai%E4%BB%A3%E7%90%86/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Hermes Agent 是 Nous Research 开发的自学习 AI 代理，口号是 &amp;ldquo;The agent that grows with you&amp;rdquo;。最大特点是内置闭环学习：从经验中创建技能、使用中自我改进、主动持久化知识、搜索历史对话、跨会话构建用户模型。&lt;/p&gt;</description></item><item><title>Markdown Viewer Skills</title><link>https://blog.eastseven.cn/posts/03-ai/markdown-viewer-skills---ai-agent-%E5%9B%BE%E8%A1%A8%E5%8F%AF%E8%A7%86%E5%8C%96%E6%8A%80%E8%83%BD%E9%9B%86%E5%90%88/</link><pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/markdown-viewer-skills---ai-agent-%E5%9B%BE%E8%A1%A8%E5%8F%AF%E8%A7%86%E5%8C%96%E6%8A%80%E8%83%BD%E9%9B%86%E5%90%88/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Markdown Viewer Skills 是一套专为 AI 编码代理（Claude Code、Codex、Cursor 等）设计的技能集合，让 AI 能直接在 Markdown 中生成各种精美的图表和可视化内容。遵循 Agent Skills (agentskills.io) 标准格式，配合 Markdown Viewer 浏览器扩展渲染。&lt;/p&gt;</description></item><item><title>RTK - Rust Token Killer</title><link>https://blog.eastseven.cn/posts/03-ai/rtk---llm-token-%E6%B6%88%E8%80%97%E4%BC%98%E5%8C%96cli%E4%BB%A3%E7%90%86/</link><pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/rtk---llm-token-%E6%B6%88%E8%80%97%E4%BC%98%E5%8C%96cli%E4%BB%A3%E7%90%86/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;RTK（Rust Token Killer）是一个高性能 CLI 代理，在命令输出到达 LLM 上下文之前进行过滤和压缩，可将 token 消耗降低 60-90%。单个 Rust 二进制文件，零依赖，100+ 支持命令，开销 &amp;lt;10ms。&lt;/p&gt;</description></item><item><title>2026年AI编码的"渐进式Spec"实战指南</title><link>https://blog.eastseven.cn/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</link><pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</guid><description>&lt;h1 id="2026年ai编码的渐进式spec实战指南"&gt;2026年AI编码的&amp;quot;渐进式Spec&amp;quot;实战指南&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;来自阿里工程师逸驹的实战分享，提出&amp;quot;渐进式 Spec Coding&amp;quot;框架——在让 AI 写代码之前，先用结构化文档（Spec）把&amp;quot;要做什么、怎么做、有什么约束&amp;quot;说清楚，然后 AI 围绕文档编码。核心思想：不同复杂度的需求，暴露不同深度的流程。&lt;/p&gt;</description></item><item><title>Andrej Karpathy Skills</title><link>https://blog.eastseven.cn/posts/04-devops/andrej-karpathy-skills---llm%E7%BC%96%E7%A0%81%E5%87%86%E5%88%99/</link><pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/04-devops/andrej-karpathy-skills---llm%E7%BC%96%E7%A0%81%E5%87%86%E5%88%99/</guid><description>&lt;h1 id="andrej-karpathy-skills---llm-编码准则"&gt;Andrej Karpathy Skills - LLM 编码准则&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
 &lt;p&gt;一个 CLAUDE.md 文件，源自 Andrej Karpathy 对 LLM 编码常见问题的观察总结，用于改善 Claude Code 的行为。&lt;/p&gt;
-&lt;h2 id=&#34;karpathy-指出的-llm-编码问题&#34;&gt;Karpathy 指出的 LLM 编码问题&lt;/h2&gt;
+&lt;h2 id="karpathy-指出的-llm-编码问题"&gt;Karpathy 指出的 LLM 编码问题&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;模型会默默做出错误假设，不检查就一路走下去&lt;/li&gt;
 &lt;li&gt;不管理困惑、不寻求澄清、不暴露矛盾、不展示权衡&lt;/li&gt;
@@ -24,8 +124,8 @@
 &lt;li&gt;100 行能搞定的事写成 1000 行&lt;/li&gt;
 &lt;li&gt;有时会误删/修改它们不完全理解的注释和代码&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;四大原则&#34;&gt;四大原则&lt;/h2&gt;
-&lt;h3 id=&#34;1-think-before-coding先思考再编码&#34;&gt;1. Think Before Coding（先思考再编码）&lt;/h3&gt;
+&lt;h2 id="四大原则"&gt;四大原则&lt;/h2&gt;
+&lt;h3 id="1-think-before-coding先思考再编码"&gt;1. Think Before Coding（先思考再编码）&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;不假设、不隐藏困惑、展示权衡&lt;/li&gt;
 &lt;li&gt;明确陈述假设 — 不确定就问，不要猜&lt;/li&gt;
@@ -33,7 +133,7 @@
 &lt;li&gt;该反驳就反驳 — 如果有更简单的方案，直说&lt;/li&gt;
 &lt;li&gt;困惑时停下来 — 说出不清楚的地方，请求澄清&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;2-simplicity-first简洁优先&#34;&gt;2. Simplicity First（简洁优先）&lt;/h3&gt;
+&lt;h3 id="2-simplicity-first简洁优先"&gt;2. Simplicity First（简洁优先）&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;用最少的代码解决问题，不写投机性代码&lt;/li&gt;
 &lt;li&gt;不添加没要求的功能、不为单次使用建抽象&lt;/li&gt;
@@ -41,7 +141,7 @@
 &lt;li&gt;如果 200 行可以写成 50 行，就重写&lt;/li&gt;
 &lt;li&gt;检验标准：高级工程师会认为这过于复杂吗？&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;3-surgical-changes精准修改&#34;&gt;3. Surgical Changes（精准修改）&lt;/h3&gt;
+&lt;h3 id="3-surgical-changes精准修改"&gt;3. Surgical Changes（精准修改）&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;只触碰必要的代码，只清理自己制造的混乱&lt;/li&gt;
 &lt;li&gt;不&amp;quot;改善&amp;quot;相邻代码、注释或格式&lt;/li&gt;
@@ -49,7 +149,7 @@
 &lt;li&gt;你的改动产生的废弃代码要删掉，但预存的死代码只提不删&lt;/li&gt;
 &lt;li&gt;检验标准：每一行改动都能追溯到用户的请求&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;4-goal-driven-execution目标驱动执行&#34;&gt;4. Goal-Driven Execution（目标驱动执行）&lt;/h3&gt;
+&lt;h3 id="4-goal-driven-execution目标驱动执行"&gt;4. Goal-Driven Execution（目标驱动执行）&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;定义成功标准，循环直到验证通过&lt;/li&gt;
 &lt;li&gt;把命令式任务转化为可验证的目标：
@@ -61,76 +161,22 @@
 &lt;/li&gt;
 &lt;li&gt;多步任务先列计划，每步附验证检查点&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;安装方式&#34;&gt;安装方式&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Claude Code 插件（推荐）：&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Claude Code Best Practices</title>
-      <link>http://localhost:1313/posts/03-ai/claude-code-best-practices---claude-code%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/03-ai/claude-code-best-practices---claude-code%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</guid>
-      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
-&lt;p&gt;Claude Code 最佳实践合集，口号是 &amp;ldquo;from vibe coding to agentic engineering&amp;rdquo;。由 shanraisshan 维护，Anthropic Claude Code 创造者 Boris Cherny 等人贡献内容，是目前最全面的 Claude Code 使用指南。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>GitNexus</title>
-      <link>http://localhost:1313/posts/03-ai/gitnexus---%E9%9B%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E5%BC%95%E6%93%8E/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/03-ai/gitnexus---%E9%9B%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E5%BC%95%E6%93%8E/</guid>
-      <description>&lt;h1 id=&#34;gitnexus---零服务端代码智能引擎&#34;&gt;GitNexus - 零服务端代码智能引擎&lt;/h1&gt;
-&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
-&lt;p&gt;GitNexus 是一个客户端代码知识图谱生成器，完全在浏览器或本地运行。丢入一个 GitHub 仓库或 ZIP 文件，即可生成交互式知识图谱，并内置 Graph RAG Agent。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Paperclip</title>
-      <link>http://localhost:1313/posts/03-ai/paperclip---open-source-orchestration-for-zero-human-companies/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/03-ai/paperclip---open-source-orchestration-for-zero-human-companies/</guid>
-      <description>&lt;h1 id=&#34;paperclip---open-source-orchestration-for-zero-human-companies&#34;&gt;Paperclip - Open-source orchestration for zero-human companies&lt;/h1&gt;
-&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
-&lt;p&gt;Paperclip 是一个 Node.js 服务端 + React UI 的开源项目，用于编排一组 AI Agent 来运营一个&amp;quot;公司&amp;quot;。你可以接入自己的 Agent，分配目标，并从一个 Dashboard 追踪 Agent 的工作和成本。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>System Design Notes</title>
-      <link>http://localhost:1313/posts/03-ai/system-design-notes---%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/03-ai/system-design-notes---%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/</guid>
-      <description>&lt;h1 id=&#34;system-design-notes---系统设计面试笔记&#34;&gt;System Design Notes - 系统设计面试笔记&lt;/h1&gt;
-&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;h2 id="安装方式"&gt;安装方式&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Claude Code 插件（推荐）：&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Claude Code Best Practices</title><link>https://blog.eastseven.cn/posts/03-ai/claude-code-best-practices---claude-code%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</link><pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/claude-code-best-practices---claude-code%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Claude Code 最佳实践合集，口号是 &amp;ldquo;from vibe coding to agentic engineering&amp;rdquo;。由 shanraisshan 维护，Anthropic Claude Code 创造者 Boris Cherny 等人贡献内容，是目前最全面的 Claude Code 使用指南。&lt;/p&gt;</description></item><item><title>GitNexus</title><link>https://blog.eastseven.cn/posts/03-ai/gitnexus---%E9%9B%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E5%BC%95%E6%93%8E/</link><pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/gitnexus---%E9%9B%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E5%BC%95%E6%93%8E/</guid><description>&lt;h1 id="gitnexus---零服务端代码智能引擎"&gt;GitNexus - 零服务端代码智能引擎&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;GitNexus 是一个客户端代码知识图谱生成器，完全在浏览器或本地运行。丢入一个 GitHub 仓库或 ZIP 文件，即可生成交互式知识图谱，并内置 Graph RAG Agent。&lt;/p&gt;</description></item><item><title>Paperclip</title><link>https://blog.eastseven.cn/posts/03-ai/paperclip---open-source-orchestration-for-zero-human-companies/</link><pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/paperclip---open-source-orchestration-for-zero-human-companies/</guid><description>&lt;h1 id="paperclip---open-source-orchestration-for-zero-human-companies"&gt;Paperclip - Open-source orchestration for zero-human companies&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Paperclip 是一个 Node.js 服务端 + React UI 的开源项目，用于编排一组 AI Agent 来运营一个&amp;quot;公司&amp;quot;。你可以接入自己的 Agent，分配目标，并从一个 Dashboard 追踪 Agent 的工作和成本。&lt;/p&gt;</description></item><item><title>System Design Notes</title><link>https://blog.eastseven.cn/posts/04-devops/system-design-notes---%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/</link><pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/04-devops/system-design-notes---%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/</guid><description>&lt;h1 id="system-design-notes---系统设计面试笔记"&gt;System Design Notes - 系统设计面试笔记&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
 &lt;p&gt;基于《System Design Interview - An Insider&amp;rsquo;s Guide》Vol 1 和 Vol 2（第2版）的读书笔记，涵盖系统设计面试的核心知识点。&lt;/p&gt;
-&lt;p&gt;在线阅读：https://pagefy.io/system-design-interview&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>驾驭工程：在「智能体优先」的世界里借力 Codex</title>
-      <link>http://localhost:1313/posts/03-ai/%E9%A9%BE%E9%A9%AD%E5%B7%A5%E7%A8%8B---%E6%99%BA%E8%83%BD%E4%BD%93%E4%BC%98%E5%85%88%E4%B8%96%E7%95%8C%E7%9A%84codex%E5%AE%9E%E8%B7%B5/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/03-ai/%E9%A9%BE%E9%A9%AD%E5%B7%A5%E7%A8%8B---%E6%99%BA%E8%83%BD%E4%BD%93%E4%BC%98%E5%85%88%E4%B8%96%E7%95%8C%E7%9A%84codex%E5%AE%9E%E8%B7%B5/</guid>
-      <description>&lt;h1 id=&#34;驾驭工程在智能体优先的世界里借力-codex&#34;&gt;驾驭工程：在「智能体优先」的世界里借力 Codex&lt;/h1&gt;
-&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
-&lt;p&gt;原文作者 Ryan Lopopolo（OpenAI），记述了团队用 Codex（GPT-5 驱动）从零构建一款百万行代码产品的实验：&lt;strong&gt;0 行代码由人工编写&lt;/strong&gt;，3 名工程师 5 个月处理 1500+ PR，效率约为手工编码的 10 倍。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>2026年AI编码的渐进式Spec实战指南</title>
-      <link>http://localhost:1313/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</link>
-      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/03-ai/2026%E5%B9%B4ai%E7%BC%96%E7%A0%81%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8Fspec%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97/</guid>
-      <description>&lt;h1 id=&#34;2026年ai编码的渐进式spec实战指南&#34;&gt;2026年AI编码的渐进式Spec实战指南&lt;/h1&gt;
-&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
-&lt;p&gt;来自阿里工程师逸驹的实战分享，提出&amp;quot;渐进式 Spec Coding&amp;quot;框架——在让 AI 写代码之前，先用结构化文档（Spec）把&amp;quot;要做什么、怎么做、有什么约束&amp;quot;说清楚，然后 AI 围绕文档编码。核心思想：不同复杂度的需求，暴露不同深度的流程。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/posts/99-%E8%8D%89%E7%A8%BF/vibecoding%E5%B7%A5%E7%A8%8B%E5%8C%96/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/99-%E8%8D%89%E7%A8%BF/vibecoding%E5%B7%A5%E7%A8%8B%E5%8C%96/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://claude.ai/project/019d244f-738e-7100-81ca-c9fae521566a&#34;&gt;VibeCoding工程化&lt;/a&gt;/&lt;/p&gt;
+&lt;p&gt;在线阅读：https://pagefy.io/system-design-interview&lt;/p&gt;</description></item><item><title>驾驭工程：在「智能体优先」的世界里借力 Codex</title><link>https://blog.eastseven.cn/posts/03-ai/%E9%A9%BE%E9%A9%AD%E5%B7%A5%E7%A8%8B---%E6%99%BA%E8%83%BD%E4%BD%93%E4%BC%98%E5%85%88%E4%B8%96%E7%95%8C%E7%9A%84codex%E5%AE%9E%E8%B7%B5/</link><pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/%E9%A9%BE%E9%A9%AD%E5%B7%A5%E7%A8%8B---%E6%99%BA%E8%83%BD%E4%BD%93%E4%BC%98%E5%85%88%E4%B8%96%E7%95%8C%E7%9A%84codex%E5%AE%9E%E8%B7%B5/</guid><description>&lt;h1 id="驾驭工程在智能体优先的世界里借力-codex"&gt;驾驭工程：在「智能体优先」的世界里借力 Codex&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;原文作者 Ryan Lopopolo（OpenAI），记述了团队用 Codex（GPT-5 驱动）从零构建一款百万行代码产品的实验：&lt;strong&gt;0 行代码由人工编写&lt;/strong&gt;，3 名工程师 5 个月处理 1500+ PR，效率约为手工编码的 10 倍。&lt;/p&gt;</description></item><item><title/><link>https://blog.eastseven.cn/posts/99-%E8%8D%89%E7%A8%BF/vibecoding%E5%B7%A5%E7%A8%8B%E5%8C%96/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/99-%E8%8D%89%E7%A8%BF/vibecoding%E5%B7%A5%E7%A8%8B%E5%8C%96/</guid><description>&lt;p&gt;&lt;a href="https://claude.ai/project/019d244f-738e-7100-81ca-c9fae521566a"&gt;VibeCoding工程化&lt;/a&gt;/&lt;/p&gt;
 &lt;p&gt;Vibe Coding概念解析&lt;/p&gt;
 &lt;p&gt;Shared by D7&lt;/p&gt;
 &lt;p&gt;This is a copy of a chat between Claude and D7. Content may include unverified or unsafe content that do not represent the views of Anthropic. Shared snapshot may contain attachments and data not displayed here.&lt;/p&gt;
 &lt;p&gt;Vibe Coding是什么&lt;/p&gt;
 &lt;p&gt;3月24日&lt;/p&gt;
-&lt;h2 id=&#34;vibe-coding-是什么&#34;&gt;Vibe Coding 是什么？&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Vibe Coding&lt;/strong&gt;（氛围编程）是一种新兴的 AI 辅助编程方式，由 OpenAI 联合创始人 Andrej Karpathy 于 2025 年初提出并推广。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;h2 id="vibe-coding-是什么"&gt;Vibe Coding 是什么？&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Vibe Coding&lt;/strong&gt;（氛围编程）是一种新兴的 AI 辅助编程方式，由 OpenAI 联合创始人 Andrej Karpathy 于 2025 年初提出并推广。&lt;/p&gt;</description></item></channel></rss>

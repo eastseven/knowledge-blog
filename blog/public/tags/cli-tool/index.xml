@@ -1,21 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Cli-Tool on D7 的知识库</title>
-    <link>http://localhost:1313/tags/cli-tool/</link>
-    <description>Recent content in Cli-Tool on D7 的知识库</description>
-    <generator>Hugo</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cli-tool/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>GitNexus</title>
-      <link>http://localhost:1313/posts/03-ai/gitnexus---%E9%9B%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E5%BC%95%E6%93%8E/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/03-ai/gitnexus---%E9%9B%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E5%BC%95%E6%93%8E/</guid>
-      <description>&lt;h1 id=&#34;gitnexus---零服务端代码智能引擎&#34;&gt;GitNexus - 零服务端代码智能引擎&lt;/h1&gt;
-&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
-&lt;p&gt;GitNexus 是一个客户端代码知识图谱生成器，完全在浏览器或本地运行。丢入一个 GitHub 仓库或 ZIP 文件，即可生成交互式知识图谱，并内置 Graph RAG Agent。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Cli-Tool on D7 的知识库</title><link>https://blog.eastseven.cn/tags/cli-tool/</link><description>Recent content in Cli-Tool on D7 的知识库</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 11 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.eastseven.cn/tags/cli-tool/index.xml" rel="self" type="application/rss+xml"/><item><title>llmfit</title><link>https://blog.eastseven.cn/posts/03-ai/llmfit---%E6%9C%AC%E5%9C%B0%E7%A1%AC%E4%BB%B6%E9%80%82%E9%85%8D%E7%9A%84-llm-%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90%E5%B7%A5%E5%85%B7/</link><pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/llmfit---%E6%9C%AC%E5%9C%B0%E7%A1%AC%E4%BB%B6%E9%80%82%E9%85%8D%E7%9A%84-llm-%E6%A8%A1%E5%9E%8B%E6%8E%A8%E8%8D%90%E5%B7%A5%E5%85%B7/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;llmfit 是一个用于“根据本机硬件选择合适 LLM 模型”的开源终端工具。它会检测系统的 CPU、内存、GPU/显存与推理后端，然后从大量模型与 provider 中评估哪些模型能跑、跑得好不好，并给出推荐排序。&lt;/p&gt;</description></item><item><title>Hermes Agent</title><link>https://blog.eastseven.cn/posts/03-ai/hermes-agent---nous-research%E8%87%AA%E5%AD%A6%E4%B9%A0ai%E4%BB%A3%E7%90%86/</link><pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/hermes-agent---nous-research%E8%87%AA%E5%AD%A6%E4%B9%A0ai%E4%BB%A3%E7%90%86/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Hermes Agent 是 Nous Research 开发的自学习 AI 代理，口号是 &amp;ldquo;The agent that grows with you&amp;rdquo;。最大特点是内置闭环学习：从经验中创建技能、使用中自我改进、主动持久化知识、搜索历史对话、跨会话构建用户模型。&lt;/p&gt;</description></item><item><title>GitNexus</title><link>https://blog.eastseven.cn/posts/03-ai/gitnexus---%E9%9B%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E5%BC%95%E6%93%8E/</link><pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/gitnexus---%E9%9B%B6%E6%9C%8D%E5%8A%A1%E7%AB%AF%E4%BB%A3%E7%A0%81%E6%99%BA%E8%83%BD%E5%BC%95%E6%93%8E/</guid><description>&lt;h1 id="gitnexus---零服务端代码智能引擎"&gt;GitNexus - 零服务端代码智能引擎&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;GitNexus 是一个客户端代码知识图谱生成器，完全在浏览器或本地运行。丢入一个 GitHub 仓库或 ZIP 文件，即可生成交互式知识图谱，并内置 Graph RAG Agent。&lt;/p&gt;</description></item></channel></rss>

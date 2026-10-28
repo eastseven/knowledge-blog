@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>System-Utility on D7 的知识库</title><link>https://blog.eastseven.cn/tags/system-utility/</link><description>Recent content in System-Utility on D7 的知识库</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Wed, 06 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.eastseven.cn/tags/system-utility/index.xml" rel="self" type="application/rss+xml"/><item><title>Mole</title><link>https://blog.eastseven.cn/posts/04-devops/mole---mac-%E6%B7%B1%E5%BA%A6%E6%B8%85%E7%90%86%E4%BC%98%E5%8C%96%E5%B7%A5%E5%85%B7/</link><pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/04-devops/mole---mac-%E6%B7%B1%E5%BA%A6%E6%B8%85%E7%90%86%E4%BC%98%E5%8C%96%E5%B7%A5%E5%85%B7/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Mole 是一个 macOS 系统清理和优化工具，集合了 CleanMyMac + AppCleaner + DaisyDisk + iStat Menus 的功能于一体，通过命令行操作，轻量高效。&lt;/p&gt;
+&lt;h2 id="核心特性"&gt;核心特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;深度清理&lt;/strong&gt;：清除缓存、日志、浏览器残留、孤立应用数据，回收大量磁盘空间&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;智能卸载&lt;/strong&gt;：移除应用及其关联的启动代理、偏好设置、隐藏残留文件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;磁盘分析&lt;/strong&gt;：可视化磁盘使用，查找大文件，支持交互式导航&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;实时监控&lt;/strong&gt;：CPU、GPU、内存、磁盘、网络的实时状态面板&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;项目清理&lt;/strong&gt;：清理 node_modules、target、.build 等构建产物&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;安全设计&lt;/strong&gt;：默认安全优先，路径校验、受保护目录规则、确认机制，支持 &lt;code&gt;--dry-run&lt;/code&gt; 预览&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON 输出&lt;/strong&gt;：analyze 和 status 支持 &lt;code&gt;--json&lt;/code&gt;，方便脚本集成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="安装"&gt;安装&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;brew install mole
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="链接"&gt;链接&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub: &lt;a href="https://github.com/tw93/Mole"&gt;https://github.com/tw93/Mole&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

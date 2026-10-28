@@ -1,30 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Study-Material on D7 的知识库</title>
-    <link>http://localhost:1313/tags/study-material/</link>
-    <description>Recent content in Study-Material on D7 的知识库</description>
-    <generator>Hugo</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/study-material/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Claude Code Best Practices</title>
-      <link>http://localhost:1313/posts/03-ai/claude-code-best-practices---claude-code%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/03-ai/claude-code-best-practices---claude-code%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</guid>
-      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
-&lt;p&gt;Claude Code 最佳实践合集，口号是 &amp;ldquo;from vibe coding to agentic engineering&amp;rdquo;。由 shanraisshan 维护，Anthropic Claude Code 创造者 Boris Cherny 等人贡献内容，是目前最全面的 Claude Code 使用指南。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>System Design Notes</title>
-      <link>http://localhost:1313/posts/03-ai/system-design-notes---%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/03-ai/system-design-notes---%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/</guid>
-      <description>&lt;h1 id=&#34;system-design-notes---系统设计面试笔记&#34;&gt;System Design Notes - 系统设计面试笔记&lt;/h1&gt;
-&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Study-Material on D7 的知识库</title><link>https://blog.eastseven.cn/tags/study-material/</link><description>Recent content in Study-Material on D7 的知识库</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Mon, 25 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.eastseven.cn/tags/study-material/index.xml" rel="self" type="application/rss+xml"/><item><title>Understand Anything</title><link>https://blog.eastseven.cn/posts/03-ai/understand-anything---%E4%BA%A4%E4%BA%92%E5%BC%8F%E4%BB%A3%E7%A0%81%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E4%B8%8E%E9%A1%B9%E7%9B%AE%E7%90%86%E8%A7%A3%E5%B7%A5%E5%85%B7/</link><pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/understand-anything---%E4%BA%A4%E4%BA%92%E5%BC%8F%E4%BB%A3%E7%A0%81%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E4%B8%8E%E9%A1%B9%E7%9B%AE%E7%90%86%E8%A7%A3%E5%B7%A5%E5%85%B7/</guid><description>&lt;h1 id="understand-anything"&gt;Understand Anything&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Understand Anything 是一个面向代码库、知识库和文档的交互式知识图谱工具。它可以把项目中的文件、函数、类、依赖关系、架构层次和业务流程抽取成可探索、可搜索、可提问的图谱，帮助开发者从“逐文件阅读代码”转向“先理解整体结构”。&lt;/p&gt;</description></item><item><title>Agentic Design Patterns - AI Agent设计模式中文翻译</title><link>https://blog.eastseven.cn/posts/03-ai/agentic-design-patterns---ai-agent%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%AD%E6%96%87%E7%BF%BB%E8%AF%91/</link><pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/agentic-design-patterns---ai-agent%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%AD%E6%96%87%E7%BF%BB%E8%AF%91/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;谷歌新书《Agentic Design Patterns》的最佳中文翻译版，由 xindoo 发起并维护。系统介绍了 AI Agent 系统的 21 个核心设计模式。&lt;/p&gt;
+&lt;h2 id="核心内容"&gt;核心内容&lt;/h2&gt;
+&lt;p&gt;覆盖从基础到高级的完整 Agent 设计模式：&lt;/p&gt;</description></item><item><title>Claude Code Best Practices</title><link>https://blog.eastseven.cn/posts/03-ai/claude-code-best-practices---claude-code%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</link><pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/claude-code-best-practices---claude-code%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;Claude Code 最佳实践合集，口号是 &amp;ldquo;from vibe coding to agentic engineering&amp;rdquo;。由 shanraisshan 维护，Anthropic Claude Code 创造者 Boris Cherny 等人贡献内容，是目前最全面的 Claude Code 使用指南。&lt;/p&gt;</description></item><item><title>System Design Notes</title><link>https://blog.eastseven.cn/posts/04-devops/system-design-notes---%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/</link><pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/04-devops/system-design-notes---%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/</guid><description>&lt;h1 id="system-design-notes---系统设计面试笔记"&gt;System Design Notes - 系统设计面试笔记&lt;/h1&gt;
+&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
 &lt;p&gt;基于《System Design Interview - An Insider&amp;rsquo;s Guide》Vol 1 和 Vol 2（第2版）的读书笔记，涵盖系统设计面试的核心知识点。&lt;/p&gt;
-&lt;p&gt;在线阅读：https://pagefy.io/system-design-interview&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;p&gt;在线阅读：https://pagefy.io/system-design-interview&lt;/p&gt;</description></item></channel></rss>

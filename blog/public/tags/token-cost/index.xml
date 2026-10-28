@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Token-Cost on D7 的知识库</title><link>https://blog.eastseven.cn/tags/token-cost/</link><description>Recent content in Token-Cost on D7 的知识库</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Wed, 15 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.eastseven.cn/tags/token-cost/index.xml" rel="self" type="application/rss+xml"/><item><title>CodeBurn</title><link>https://blog.eastseven.cn/posts/03-ai/codeburn---ai%E7%BC%96%E7%A8%8Btoken%E6%88%90%E6%9C%AC%E5%8F%AF%E8%A7%86%E5%8C%96%E4%BB%AA%E8%A1%A8%E7%9B%98/</link><pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><guid>https://blog.eastseven.cn/posts/03-ai/codeburn---ai%E7%BC%96%E7%A8%8Btoken%E6%88%90%E6%9C%AC%E5%8F%AF%E8%A7%86%E5%8C%96%E4%BB%AA%E8%A1%A8%E7%9B%98/</guid><description>&lt;h2 id="简介"&gt;简介&lt;/h2&gt;
+&lt;p&gt;CodeBurn 是一个交互式 TUI 仪表盘，用于分析 Claude Code / Codex / Cursor 的会话记录，提供详细的 token 消耗和成本拆解。直接读取磁盘上的会话数据，无需代理、包装器或 API Key。&lt;/p&gt;
+&lt;h2 id="核心特性"&gt;核心特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;多 IDE 支持&lt;/strong&gt;：Claude Code（&lt;code&gt;~/.claude/projects/&lt;/code&gt;）、Claude Desktop（code tab）、Cursor IDE&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;13 类任务分类&lt;/strong&gt;：基于工具使用模式和关键词的确定性分类（Coding、Debugging、Feature Dev、Refactoring、Testing、Exploration 等），不调用 LLM&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多维度拆解&lt;/strong&gt;：按日、项目、模型（Opus/Sonnet/Haiku/GPT-4o/Gemini）、活动类型、核心工具、MCP 服务器分解成本&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;定价数据&lt;/strong&gt;：从 LiteLLM 自动获取（24h 缓存），覆盖 input/output/cache write/cache read/web search 成本&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;macOS 菜单栏小组件&lt;/strong&gt;：支持 SwiftBar/xbar，显示今日花费火焰图标，5 分钟刷新&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;导出&lt;/strong&gt;：支持 CSV 和 JSON 格式导出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="安装与使用"&gt;安装与使用&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-shell" data-lang="shell"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;npm install -g codeburn
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;codeburn &lt;span style="color:#75715e"&gt;# 交互式仪表盘（默认7天）&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;codeburn today &lt;span style="color:#75715e"&gt;# 今日用量&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;codeburn month &lt;span style="color:#75715e"&gt;# 本月用量&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;codeburn status &lt;span style="color:#75715e"&gt;# 紧凑一行输出&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;codeburn export &lt;span style="color:#75715e"&gt;# CSV 导出&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="链接"&gt;链接&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub: &lt;a href="https://github.com/AgentSeal/codeburn"&gt;https://github.com/AgentSeal/codeburn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;许可证: MIT&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
